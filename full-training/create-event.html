@@ -1,0 +1,2852 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Provider Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/custom_style_2.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap-fileupload.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-timepicker.min.css" type="text/css" />
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="js/tinymce/jquery.tinymce.js"></script>-->
+<script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery.autogrow-textarea.js"></script>
+<script type="text/javascript" src="js/charCount.js"></script>
+<script type="text/javascript" src="js/ui.spinner.min.js"></script>
+<script type="text/javascript" src="js/jquery.alerts.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/forms.js"></script>
+     
+<!--<script src="js/jquery-1.10.2.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery-ui.js"></script>-->
+
+<!---------- styles for Demo planner tab part ---------->
+<style>
+.addkeywords{
+    width: 100%;
+    float: left;
+}
+.left-label{
+     width: 35%;
+}
+.createevnet-page-content {
+  min-height: 650px !important;
+}
+.maxcharactersforvideo {
+  display: block;
+  float: left;
+  font-size: 10px;
+  margin: -35px 0 0 83px;
+  width: 11%;
+}
+.assign-trainersection .chzn-container-single {
+    float: left;
+}
+        
+.right-label {
+  float: left;
+}
+.right-label .input-append {
+  margin: 12px 0 6px !important;
+}
+.right-label ul li{
+    list-style-type: none;
+    margin-left: 0px;
+}
+.key {
+  margin-left: 220px;
+    float: left;
+}
+.table.table-bordered.tableforslotsummary > li {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-color: #ddd;
+  border-image: none;
+  border-right: 1px solid #ddd;
+  border-style: solid;
+  border-top: 1px solid #ddd;
+  float: left;
+  list-style: outside none none;
+  text-align: center;
+  width: 19.8%;
+}
+/*
+.tableforslotsummary {
+  box-shadow: 2px 1px 1px 1px #ddd;
+  float: left;
+  margin: 0 0 0 180px;
+  width: 100%;
+}
+*/
+.peviewslots {
+  float: left;
+  height: 305px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.modal-open{
+        overflow: hidden;
+ }
+.tooltipoptions {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-family: Open Sans regular;
+  font-size: 12px;
+  padding: 1px 10px;
+  position: absolute;
+  right: 23%;
+  top: 21.5%;
+}
+.courseFeecreate-event {
+  margin: 0px 0px 0px -111px;
+}
+.hostwrapper {
+  float: left;
+  width: 100%;
+}
+.ui-state-active{
+background-color: #81ac01 !important;
+color:#fff !important;
+}
+.popletcurrency .input-small.courseFeecreate-event {
+  margin-left: 2px;
+}
+.viewvideobuttonpreview{
+      margin: -8px 0 0 0px !important;
+}
+.repeateventsection th {
+  font-family: Open Sans !important;
+}
+ .confirmslotsbutton {
+  font-family: Open Sans !important;
+}
+.coursefeesection {
+    float: left;
+    width: 100%;
+}
+.offerfortraining {
+  float: left;
+  width: 100%;
+}
+.offeramountsection {
+  float: left;
+  width: 100%;
+}
+</style>
+    
+<!---------- styles for Demo planner tab part ---------->
+    
+</head>
+<body class="">
+<div class="gallary-images-wrapper" id="gallary-images-wrapper" style="display:none;">
+  <div class="close-pop-images" id="closebigorgimage"><i class="iconfa-remove"></i></div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="img/appIcon_256.png" alt="Chania" >
+      </div>
+
+      <div class="item">
+        <img src="img/appIcon_256.png" alt="Chania" >
+      </div>
+    
+      <div class="item">
+        <img src="img/sample.jpg" alt="Flower" >
+      </div>
+
+      <div class="item">
+        <img src="img/appIcon_256.png" alt="Flower" >
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="iconfa-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="iconfa-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+</div>
+ <iframe id="allchatiframediv" src="allchats.html" class="chatiframesection" style="display:none;"></iframe>
+<iframe id="allviewsiframediv" src="views-global.html" class="chatviewframesection" style="display:none;"></iframe>
+<iframe id="alldemosiframediv" src="demo.html" class="demoframesection" style="display:none;"></iframe> 
+<iframe id="allregisteriframediv" src="registration_global.html" class="registerframesection" style="display:none;"></iframe>
+
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+     <div class="leftpanel mainLogo-wrapper">
+    	
+        <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/><span>v1.0</span></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form>
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+          <div class="plainwidget animate3 fadeInUp">
+            <div id="chats-right-top" class="enquiries">
+             <span><img src="img/chat.png"><span class="badge badge-important">6</span><span>Chats</span></span>
+            </div>
+<!--
+
+              <div id="views-right-top" class="views">
+                 <span><img src="img/views.png"><span class="badge badge-important">6</span><span>Views</span></span>
+              </div>
+-->         
+              <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+
+
+        </div>
+        <!--plainwidget-->
+        
+        <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+                 <li class="dropdown"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+                    </ul>
+                </li>
+                 <li class="dropdown active"><a href="#"><span class="iconsweets-day"></span>Trainings</a>
+                           <ul style="display:block">
+                               <li><a href="trainings-list.html">All Trainings</a></li>
+                               <li><a href="create-event.html">Create Traning(s)</a></li>
+                                <li><a href="my-training.html">My Trainings</a></li>
+                             
+                             </ul>
+                        
+                     </li>
+                          <li><a href="online-trainings.html"><span class="icon-time"></span>Track Trainings</a></li>
+
+                    <li><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+<!--                    <li><a href="my-packages.html"><span class="iconsweets-documents"></span>My Packages</a></li>-->
+                    <li><a href="faq.html"><span class="iconsweets-book-large"></span>FAQ's</a></li>
+                 <li><a href="videos.html"><span class="icon-facetime-video"></span>How To Videos</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+<!--
+        	<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/image.png"/>Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my-profile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                          <li><a href="change-password.html"><span class="icon-edit"></span> Change Password</a></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                     
+                        
+                    </ul>
+                </div>
+-->
+                
+                <div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/institute_icon_2.png"/>Nikitha reddy <b class="caret"></b></a>
+                    <ul class="dropdown-menu info_menu">
+                    <li>
+                      <div class="row_1 list_user_info">
+                        <table>
+                          <tbody>
+                              <tr> 
+                                  <td class="profilePic"><img src="img/image.png" class="userProfileImg"></td> 
+                                  <td class="institutePic"><img src="img/positiveedge.jpg" class="userProfileImg"></td>
+                                  <td class="letterPic"><div class="lettericon">
+                                      <h5>G</h5>
+                                      </div>
+                                  </td>
+                               </tr>
+                               <tr> 
+                                    <td class="username"> ABC Training Institute </td> 
+                              </tr>
+                                    <!-- <tr> <td> <button type="button" class="btn btn-primary"> VIEW PROFILE </button> </td> </tr> -->
+                            </tbody>
+                        </table>
+                        </div>
+                        </li>
+                        <!--<li><a href="my-profile.html"><span class="icon-edit"></span> ABCD Training Institute</a></li>-->
+                        <li><a href="my-profile.html">Edit Profile</a></li>
+                        <li><a href="change-password.html">Change Password</a></li>
+                        <li><a href="">Logout</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        	<ul class="skins">
+               <div class="last-login">Last Login: Dec 25, 2012 5:30pm</div>
+            </ul><!--skins-->
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li><a href="forms.html">Events</a> <span class="divider">/</span></li>
+                <li class="active">My Events</li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle MyEventTitle">
+        	<h1>Create Training</h1>
+             <span class="View-profile"><a class="btn btn-info btn-rounded edit-profile-PTI" href="event-list.html">My Training List</a></span>
+                   
+            
+        </div><!--pagetitle-->
+        
+        <div class="maincontent CreateEventWrapper">
+        	<div class="contentinner createevnet-page-content">
+            	<h4 class="widgettitle">Create Training</h4>
+                <div class="widgetcontent">
+                	<form class="stdform CreateEventForm formallign" >
+                        
+                         <div class="widgetcontent">
+                        	<ul class="nav nav-pills">
+                              <li class="active event-Details-nav " id="eventDetailsTab" ><a class="">Training Details</a></li>
+<!--                              <li class="event-Fee-nav" id="eventFeeTab" ><a>Training Fee</a></li>-->
+<!--                              <li class="infrastructure-nav" ><a  id="infrastructureTab">Infrastructure</a></li>-->
+                              <li class="demoevents-nav" ><a  id="demoeventsTab" style="display:none;">Demo Planner</a></li>
+                                 <li class="repeatevent-nav" ><a  id="repeateventTab" style="display:none;">Repeat Training</a></li>
+                              <li class="Preview-nav" ><a  id="PreviewTab" style="display:none;">Preview</a></li>
+                                
+                            </ul>
+                         
+                        </div><!--widgetcontent-->
+                        
+                        
+                        <div class="EventDetailField">
+                         <p>
+                        	<label>Training type :</label>
+                            <span class="formwrapper">
+                            	<input type="radio" name="offline" id="SachetTraining" checked /> Sachet Training &nbsp; &nbsp;
+                                <input type="radio" name="offline" id="fullTraining" /> Full Training &nbsp; &nbsp;
+                            </span>
+                        </p>
+                            
+                            
+                             <p>
+                        	<label>Subject :</label>
+                            <span class="field selctsubjectpanel">
+                            <select name="select" class="uniformselect">
+                            	<option value="">Jquery</option>
+                                <option value="">Javascript</option>
+                                <option value="">HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">Java</option>
+                            </select>
+                            
+                            </span>
+                        </p>
+                            
+                                 
+                    	<p>
+                        	<label>Training Name :</label>
+                            <span class="field"><input type="text" name="EventTitle" class="input-xxlarge"  /></span>
+                            
+                        </p>
+                            
+                         <p>
+                        	<label>About the Training :</label>
+                           <span class="formwrapper selectslotsDiv" data-target="#abouttraining" data-toggle="modal"><i class="iconfa-pencil"></i>Write Description</span>
+                        </p>
+                        
+                            
+                             <p class="assign-trainersection">
+                        	<label>Assign Trainer :</label>
+                            <span class="formwrapper">
+                            	<select data-placeholder="Select Trainer..." style="width:350px;" class="chzn-select" tabindex="2">
+                                  <option value=""></option> 
+                                  <option value="Deepa Mishra"><i class="iconfa-user"></i>Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option>  
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                <option value="Deepa Mishra">Deepa Mishra</option>  
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                   <option value="Deepa Mishra">Deepa Mishra</option> 
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                                   <option value="Deepa Mishra">Deepa Mishra</option>  
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                              <option value="Deepa Mishra">Deepa Mishra</option> 
+                                <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 
+                                </select>
+                            </span>
+                        </p>
+                        
+<!--
+                          <p>
+                        	<label>Trainer Visibilty :</label>
+                            <span class="field">
+                                <div class="address-section-input">
+                                <input type="radio" name="visibleyes" id="visibleyes" /> Yes &nbsp; &nbsp;
+                                	<input type="radio" name="visibleno" id="visibleno" /> No &nbsp; &nbsp;
+                                </div></span>
+                          </p>
+-->
+                            
+                            
+                            <p class="tranerWrapper">
+                        	<label>Trainer :</label>
+                            <span class="field"><img src="img/avatar.png"/><span class="trainer">Trainer Name<span>Trainer Title</span></span></span>
+                            
+                        </p>
+                            
+                            <p style=" float: left;width: 100%;">
+                              <label style="margin-top: 3px;">Training Slots :</label>
+                               <span class="formwrapper selectslotsDiv" data-target="#livevirtualclassroomRadio" data-toggle="modal">Select Slots </span><span class="infoselectslots"><i class="iconfa-info-sign"></i>
+                                 <div class="tooltipoptions" style="display:none;">First slots(Date and Time) will be considered as a training start date and time.</div>
+                                </span>
+                               
+                                
+                            </p>
+                            
+  
+                            <p class="lessonlabel">
+                                    <label> Training List : </label>
+                            </p>
+                            <div class="lessonFileds">
+                                <table>
+                                    <tr> <th> Lesson Name </th> <th> Description </th><th> Book Slot(s) </th> <th> Price </th> <th>Action </th> </tr>
+                                    <tr>
+                                        <td> <input type="text" class="lessonName" placeholder="Enter Lesson Name" /> </td>
+                                        <td> <button class="writeDesbtn"  data-target="#abouttraining" data-toggle="modal"> <i class="iconfa-pencil"></i> Write Description </button> </td>
+                                        <td> 
+                                            <span> <b> 2 </b> Slot(s) </span>
+<!--                                            <button class="slotbookbtn" data-target="#livevirtualclassroomRadio" data-toggle="modal"> Book Slot </button> -->
+                                        </td>
+                                        <td> <input type="text" class="priceTag" placeholder="Enter Price " /> </td>
+                                        <td> <button class="editlessonBtn" > Edit </button>
+                                            <button class="deletelessonBtn" > Delete </button>
+                                             </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <input type="text" class="lessonName" placeholder="Enter Lesson Name" /> </td>
+                                        <td> <button class="writeDesbtn"  data-target="#abouttraining" data-toggle="modal"> <i class="iconfa-pencil"></i> Write Description </button> </td>
+                                        <td> <button class="slotbookbtn" data-target="#livevirtualclassroomRadio" data-toggle="modal"> Book Slot </button> </td>
+                                        <td> <input type="text" class="priceTag" placeholder="Enter Price " /> </td>
+                                        <td> <button class="editlessonBtn" > Edit </button>
+                                            <button class="deletelessonBtn" > Delete </button> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <input type="text" class="lessonName" placeholder="Enter Lesson Name" /> </td>
+                                        <td> <button class="writeDesbtn"  data-target="#abouttraining" data-toggle="modal"> <i class="iconfa-pencil"></i> Write Description </button> </td>
+                                        <td> <button class="slotbookbtn" data-target="#livevirtualclassroomRadio" data-toggle="modal"> Book Slot </button> </td>
+                                        <td> <input type="text" class="priceTag" placeholder="Enter Price " /> </td>
+                                        <td> <button class="savelessonBtn" > Save </button>
+                                        </td>
+                                    </tr>
+                            </table>
+                                 
+                                <button class="addlessonBtn" > Add Lesson </button>
+                                <button class="viewlessonBtn" href="#lessonSummaryList" data-toggle="modal"> View Summary </button>
+                            </div>
+                            
+                            <div class="hostwrapper" style="display:none;">  
+                            
+                      <p>
+                         <label>No of Slots :</label>
+                            <span class="formwrapper"><b class="slotsbooked">4</b> Slots Blocked
+                                <span class="editforslots">
+                                <a href="#livevirtualclassroomRadio" data-toggle="modal" class="btn btn-rounded btn-slot-edit">Edit Slots</a></span>
+                                
+                                </span>
+                          
+                            <div class="timerwrapperboookslots">
+                                   <div class="expire-error">
+                                     <span>Your Blocked slots will expire within...</span>
+                                   </div>
+                
+                                 <div class="timerwrapper"> 
+                                     <span class="blinking" style="display: inline; opacity: 0.870871;">02:00</span>
+                                  </div>
+                                    
+                                 </div>
+                            
+                           </p>
+                            
+                            <div class="wrapperpreviewDetails">
+                            <p>
+                            <label style="margin: 0 0 0 16px !important;color:#666;">Slot Summary :</label>  
+                                <span class="field ">
+                                    </span></p>
+                                <div class="peviewslots previeslotstable">
+                                <ul style="margin:0px !important;" class="table table-bordered tableforslotsummary">
+                              
+                                  <li>
+                                     
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 </li><li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </li>
+                                   
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                      <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                     <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                     <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                     <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                       <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                       <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                       <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                       <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                       <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                       <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                  
+                                    
+                            </ul>
+                                </div>
+                                
+                            </div>
+                            
+                     
+                 </div>  
+                            
+
+                            
+
+                                  
+                        <p  class="panelnoofslots">
+                        	<label>No of Seats :</label>
+                            <span class="field"><input type="text" name="NoOfSeats" class="input-medium"  /><small class="optioanlstartdate">(Maxiumum 24 Participants per Training) </small></span>
+                            
+                        </p>
+
+
+                            
+                      
+                            
+                        <p style="float:left;">
+                        	<label> Level of Training :</label>
+                            <span class="field"  style="float:left; margin-left:0px !important;">
+                            <select name="select" class="uniformselect">
+                            	<option value="">Foundation</option>
+                                <option value="">Advanced</option>
+                                <option value="">Experts</option>
+                               
+                            </select>
+                            
+                            </span>
+                        </p>
+                            
+                            
+                                 
+                            
+                       <p class="coursefeesection">
+                        	<label>Course Fee :</label>
+                            <span class="field popletcurrency">
+<!--
+                                <select name="select" class="uniformselect">
+                                <option value="">Rs</option>
+                            	<option value="">Rs</option>
+                                <option value="">Rs</option>
+                                <option value="">Rs</option>
+                               
+                            </select>
+-->
+                                <input type="text" name="courseFee" placeholder="Enter Course Fee" class="input-small courseFeecreate-event"  /></span>
+                            
+                        </p>
+                                
+                                
+                         
+                        <p class="offerfortraining">
+                        	<label></label>
+                            <span class="formwrapper">
+                            	<input type="checkbox" name="offerForEvent"  />Include Offer for the Training  &nbsp; &nbsp;
+                            </span>
+                        </p>
+                            
+                            
+                        <p class="offeramountsection">
+                        	<label>Offer Amount :</label>
+                            <span class="field"><input type="text" name="OfferFee" placeholder="Enter Offer Amount" class="input-xxlarge"  /></span>
+                            
+                        </p>
+                            
+                               <p>
+                        	<label>Course Fee Details :</label>
+                            <span class="field">
+                                       
+                                
+                                <table class="evt-fee-table createventtable feetableallign">
+                             <tbody>
+                             <tr><td style="padding: 0 0 0 27px;">Course Fee</td>
+                                 <td> Rs. <span> 10000.00 </span></td></tr>
+                           <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Offer Amount </td>
+                               <td style="padding:0 0 0 13px;"><span style="float:;left;color:#ff5c33;margin:0 5px">(-)</span>Rs. <span> 2000.00 </span></td></tr>
+
+
+<!--
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Offer price</td> 
+                               <td style="padding: 0 0 0 14px;"> Rs. <span> 8000.00 </span></td></tr>
+-->
+                                 
+<!--
+                                  <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Service Tax</td> 
+                               <td style="  padding: 0 0 0 13px;"><span style="color:#000;margin:0 5px">(+)</span> Rs. <span> 1200.00 </span> </td></tr>
+-->
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px; font-family: 'Open Sans Semibold',sans-serif;
+    font-weight: normal;">payable Amount</td> 
+                               <td style="padding: 0 0 0 16px;"> Rs. <span> 9200.00 </span></td></tr>
+                                 
+                            </tbody>
+                           </table>
+                                   </span>
+                            
+                        </p>
+                                
+                                
+                                
+<!--
+                                
+                                
+                                <div class="videosection">
+                                    
+                                      <p>
+                        	<label>Demo Video :</label>
+                            <span class="field">
+                                <div class="address-section-input">
+                                <input type="radio" name="offline" id="yesdemovideolist" />Select from existing Videos list &nbsp; &nbsp;
+                                	<input type="radio" name="online" id="nodemovideolist" />Uplaod new Video &nbsp; &nbsp;
+                                </div></span>
+                          </p>
+                                </div>
+-->
+                                
+                               
+                                
+                                <div class="selctvideosection">
+                        <p>
+                        	<label>Select demo Video :</label>
+                                <span class="formwrapper">
+                            	<select data-placeholder="Select a Video..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value=""></option> 
+                                   <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                                 <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option>  
+                                <option value="Deepa Mishra">How to create.mp4</option> 
+                                   <option value="Deepa Mishra">How to create.mp4</option> 
+                                   <option value="Deepa Mishra">How to create.mp4</option> 
+                                <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                                <option value="Deepa Mishra">How to create.mp4</option>  
+                                   <option value="Deepa Mishra">How to create.mp4</option>  
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                              <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                                     <option value="Deepa Mishra">How to create.mp4</option> 
+                             <option value="Deepa Mishra">How to create.mp4</option> 
+                                  <option value="Deepa Mishra">How to create.mp4</option> 
+                               <option value="Deepa Mishra">How to create.mp4</option> 
+                             <option value="Deepa Mishra">How to create.mp4</option> 
+                                <option value="Deepa Mishra">How to create.mp4</option>  
+                                   <option value="Deepa Mishra">How to create.mp4</option> 
+                                 <option value="Deepa Mishra">How to create.mp4</option> 
+                                 
+                                </select>
+                                    
+                                    <span><a class="btn btn-info btn-large viewvideobutton" href="#videomodal" data-toggle="modal">View Video</a></span>
+                            </span>
+                          </p>
+                                     
+                                </div>      
+                                
+                                
+                                
+                                  <div class="addkeywords">
+                            <label class="left-label"> Add Keywords  :<span class="maxkeywords">(Max 5 keywords)</span></label>
+                        
+                        	<div class="right-label">
+                                <ul>
+                                    <li>
+                            <div class="input-append keys">
+                              <input type="text" id="appendedInputButtons" class="span2">
+                                <button type="button" class="btn" data-toggle="modal" data-target="#mykeywords">Add keyword</button>
+                            </div>
+                            </li>
+                            <li>
+                                    <li>
+                            <div class="input-append keys">
+                              <input type="text" id="appendedInputButtons" class="span2">
+                              <button type="button" class="btn">Edit</button>
+                              <button type="button" class="btn">Remove</button>
+                            </div>
+                            </li>
+                            <li>
+                                
+                            <div class="input-append">
+                              <input type="text" id="appendedInputButtons" class="span2">
+                             <button type="button" class="btn">Edit</button>
+                              <button type="button" class="btn">Remove</button>
+                            </div>
+                      
+                              </li>
+                                    <li>
+                            <div class="input-append">
+                              <input type="text" id="appendedInputButtons" class="span2">
+                              <button type="button" class="btn">Edit</button>
+                              <button type="button" class="btn">Remove</button>
+                            </div>
+                                        </li>
+                                </ul>
+                            </div>
+                            </div>
+                            <div class="key">
+                            <div class="input-append">
+                              <input type="text" id="appendedInputButtons" class="span2">
+                              <button type="button" class="btn" data-toggle="modal" data-target="#mykeywords">Add keyword</button>
+                            </div>
+                       </div>
+                                
+                                
+                        <div class="havevideo" style="display:none;">
+                                 <p>
+                        	 <label>Upload new video  :</label>
+                                    
+                            <span class="formwrapper">
+                            
+<!--
+                            	<input type="radio" name="offline" id="yesvideo"  />Yes &nbsp; &nbsp;
+                                <input type="radio" name="online"  id="novideo" /> No &nbsp; &nbsp;
+-->
+                             
+                                    <div class="par sectionforuploadingvideo">
+			                    <div class="fileupload fileupload-new" data-provides="fileupload">
+				                 <div class="input-append">
+				                       <div class="uneditable-input span3">
+				                            <i class="icon-file fileupload-exists"></i>
+				                             <span class="fileupload-preview"></span>
+				                        </div>
+				                    <span class="btn btn-file"><span class="fileupload-new">Upload Video</span>
+				                    <span class="fileupload-exists">Change</span>
+				                     <input type="file" id="uploadvideo" accept="video/mp4,video/avi,video/*" /></span>
+				                    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+				                </div>
+                                    
+                                    <span><a class="btn btn-info btn-large viewvideobutton" href="#videomodal" style="display:none;" data-toggle="modal">View Video</a></span>
+                                    
+			                 </div>
+                        
+			       </div>
+                                <lablel class="maxcharactersforvideo">(Max size upto 50 MB)</lablel>
+                                
+                            </span>
+                           </p>
+                         <div class="progress progress-striped active progressvideosection">
+                              <div style="width: 45%" class="bar"></div>
+                             <label class="progressTexts">10% complete</label>
+                            </div><!--progress-->
+                            
+                       </div>
+                            
+                     
+                            <p class="stdformbutton" style="text-align: center;">
+                    	<button class="btn saveandeditlaterf">SAVE AS DRAFT</button>
+                            <button class="btn btn-primary" style="margin: 0px 0px 0px 20px !important;" href="#eventcreationconfirmation" data-toggle="modal">SUBMIT TRAINING</button>
+                                	<button type="button" class="btn saveandeditlaterf previewtraining" onclick="previewtraining();">PREVIEW </button>
+                        </p>
+                            
+
+                     </div>    
+                       
+                        
+                        
+                        
+                        
+                <!------- Demo planner tab content part --------->
+                
+                
+                <!--Start ONline Demo section-->
+                
+                   <div class="Demoeventstrail DemoTableDiv" style="display:none; margin: 18px 0 0;">
+
+                         <h4 class="Demotitileonlinetable">Online (LVC)</h4>
+                            <table class="multiple-demo-events LvcOnlineTable">
+                            <thead>                               
+                               <th scope="col">Date</th>
+                                <th>Slot Time</th>
+                             </thead>                          
+           
+                                <tr>                               
+                              <td>
+                                    <p>04/11/2016</p>
+                                </td>
+                                     
+                                     <td>   
+                                      <p>5:00 - 06:00</p>                                      
+                                    </td>
+
+                                    
+                                </tr>
+                                
+                                
+                                <tr>                              
+                          
+
+                                <td>
+                                   <p>05/10/2016</p>
+                                </td>
+                                     
+                                  <td>   
+                                     <p>08:00 - 9:00</p>                                   
+                                    </td>
+
+                                </tr>
+                                
+                                                              
+                            
+                            </table>
+                       
+                         
+                 <p class="stdformbutton">
+<!--                        	<button class="btn btn-primary saveandeditlaterf">Save and edit later</button>-->
+                            <button class="btn btn-primary">Save and Next</button>
+                        </p>
+                       
+                       
+                       
+                        </div>   
+                
+              
+                
+                
+                <!--End Online Demo section-->
+                
+                <div class="reapeateventdiv" style="display:none;" >
+                
+                    
+<!--
+                    <div class="titletrainingwrapper">
+                       <div class="titletraining">
+                        <label>Training Start On Monday 22nd APR'2016 </label>
+                        </div>
+                        
+                        <div class="slotsavailable slotsavailableforreapeat">
+                              <h4>Slots Available</h4>
+                             <span class="badge badge-important slotsAvailblesection">6</span>
+                           </div>
+                    
+                    </div>
+-->
+
+                            <div class="main-repeatedWrapper">
+<!--
+                                  <p>
+                        	<label>Repeat Training :</label>
+                            <span class="field">
+                         <div class="weekrepeatedwrapper">
+                                <span class="weekrepeatedmain"><input type="radio" name="offline" id="weekrepeatedevents" /> 
+                                    Same Week Day of every week
+                                      <div style="display:none;" class="weekrepeatedevents">
+                                    <p style="display:inline-block;margin: 0 17px 0 22px !important;"  >
+                  	   <label style="float: left; margin:-10px 0 0 45px;text-align:center;">Repeat Upto</label>
+                            <span class="field" style="margin:0 0 0 15%">
+                            <input type="text" id="datesameweekdayupto"  placeholder="Select Date" style=" 0 0 0 -19%;">
+                            
+                            </span>
+                        </p>
+                                          
+                                    </div>
+                                    </span>
+                                    
+                         <span style="display:block;margin: 20px 0 0 22.3%;font-family:Open Sans regular;font-size:13px;">
+                                	<input type="radio" name="online" id="monthsrepeatedevents" /> 
+                                       Same Day of Every Month 
+                                        <div style="display:none;" class="monthsrepeatedevents" >
+                      <p style="display:inline-block;margin: 0 17px 0 99px !important;">
+                            <label style="float: left; margin:-10px 0 0;text-align:center;">Repeat Upto</label>
+                            <span class="field" style="margin:0 0 0 -5%">
+                            <input type="text" id="datesamedayeverymonthupto"  placeholder="Select Date" style=" 0 0 0 -19%;">
+                            
+                            </span>
+                        </p>
+                                            </div>
+                                        
+                                        </span>
+                            
+                                </div>
+                                      </span>
+                            
+                        </p>
+-->
+                                
+<!--
+                                <div class="mainwrapperforradiorepeat">
+                                   <label>Repeat Training :</label>
+                                    
+                                    
+                                    <div class="radiobuttonsection">
+                                       <span class="weekrepeatedmain"><input type="radio" name="offline" id="weekrepeatedevents" /> 
+                                           Same Week Day of every week</span>
+                                    
+                                      <span class="weekrepeatedmain"><input type="radio" name="online" id="monthsrepeatedevents" /> 
+                                        Same Day of Every Month </span>
+                                    
+                                    </div>
+                                    
+                                    <div class="repeatuptosection">
+                                        
+                                        <div  class="weekrepeatedevents" style="display:none;">
+                                        
+                                          <p  class="inputboxweekrepeat">
+                                            <label style="">Repeat Upto</label>
+                                           <span class="field spanrepaetupto">
+                                             <input type="text" id="datesameweekdayupto"  placeholder="Select Date">
+                                           </span>
+                                          </p> 
+                                            
+                                      </div>
+                                        
+                                        
+                                    <div  class="monthsrepeatedevents" style="display:none;">
+                                        <p>
+                                         <label style="">Repeat Upto</label>
+                                         <span class="field spanrepaetupto" style="margin:0 0 0 -5%">
+                                          <input type="text" id="datesamedayeverymonthupto"  placeholder="Select Date">
+                                        </p>
+                                            
+                                    </div>
+                                 </div>
+                                    
+                                
+                                
+                                
+                                
+                                </div>
+-->
+                              <div class="mainwrapperforradiorepeat">   
+                                
+                            <p>
+                        	<label>Training Start day & Date :</label>
+                            <span class="field formwrapper">Monday &nbsp;&nbsp;22-7-2016</span>
+                                
+                                <div class="slotsavailable slotsavailableforreapeat">
+                              <h4>Slots Available</h4>
+<!--                             <span class="badge badge-important slotsAvailblesection">6</span>-->
+                                    <a><span class="buynowSection">25</span></a>
+                           </div>
+                           </p>
+                                
+                         <p>
+                        	<label>Repeat Training :</label>
+                            <span class="field">
+                                <div class="address-section-input">
+                                <input type="radio" name="offline" id="weekrepeatedevents" />  Same Week Day of every week &nbsp; &nbsp;
+                                	<input type="radio" name="online" id="monthsrepeatedevents" /> Same Day of Every Month &nbsp; &nbsp;
+                                </div></span>
+                          </p>
+                                  
+                                  
+                             <p>
+                        	<label class="addkeywords">Repeat Upto :<span class="maxkeywords" style="font-size:9px !important;">(Max 90 days from the training start Date)</span></label>
+                            <span class="field formwrapper"><input type="text" id="datesameweekdayupto"  class="datesameweekdayupto" placeholder="Select Date"></span>
+                           </p>
+                                  
+                                
+                               <p class="trainingrepeatedsection">
+                        	      <label>Training repeated :</label>
+                                    <span class="field formwrapper"><small class="repeatedcount">12</small> Times</span>
+                               </p>
+                            </div>    
+                    
+                             <p> 
+                                 <label>Repeated Training Summary :</label>
+                        <div class="mainsectionforrepeatevents">
+                            
+                            <div class="mainwrapperreapeatevent">
+                                <h4 class="eventnameforrepeatedevents">Event Name</h4>
+                         <table class="table table-bordered table-invoice repeateventsection">
+                             <thead>
+                              <tr>
+                                   <th class="width20">Training Date</th>
+                                   <th class="width30">Session Timing</th>
+                                   <th class="width20">Slots Status</th>
+                                   <th class="width20">Action</th>
+                                 </tr>
+                             </thead>
+                      <tr>
+                          <td class="width20">22nd APR'16 </td>
+                          <td class="width20">01:00 - 2:00</td>
+                           <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                          <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></a></td>
+                      </tr>
+                      <tr class="alternateoption">
+                          <td>23rd MAY'16</td>
+                          <td>02:00 - 3:00</td>
+                          <td class="width30">Trainer has Training</td>
+                          <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil" ></i>Edit</span></td>
+                      </tr>
+                        <tr>
+                          <td>23rd AUG'16</td>
+                          <td>04:00 - 5:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                           <td class="width20"><a href="#livevirtualclassroomRadio"  data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                        </tr>
+                                     <tr>
+                          <td>23rd JAN'16</td>
+                        <td>06:00 - 7:00</td>
+                         <td class="width30 notvailablerepeatetraining"><img src="img/close-repeat.png"/> Slot Not Available</td>
+                          <td class="width30"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                  </table>
+                                
+                                <div class="confirmafterselecton">
+                                    <button type="button" class="btn btn-success confirmslotsbutton">Confirm</button>
+                                
+                                </div>
+                                
+                                </div>
+                                
+                            <div class="mainwrapperreapeatevent">
+                                <h4 class="eventnameforrepeatedevents">Event Name</h4>
+                         <table class="table table-bordered table-invoice repeateventsection">
+                                <thead>
+                              <tr>
+                                   <th class="width20">Training Date</th>
+                                   <th class="width30">Session Timing</th>
+                                   <th class="width20">Slots Status</th>
+                                   <th class="width20">Action</th>
+                                 
+                                 </tr>
+                             
+                             
+                             </thead>
+                        <tr>
+                          <td class="width20">22nd APR'16 </td>
+                          <td class="width20">01:00 - 2:00</td>
+                           <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                         <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                      <tr class="alternateoption">
+                          <td>23rd MAY'16</td>
+                          <td>02:00 - 3:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                          <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                        <tr>
+                          <td>23rd AUG'16</td>
+                          <td>04:00 - 5:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                          <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                        </tr>
+                                    
+                  </table>
+                                
+                                <div class="confirmafterselecton">
+                                    <label>Training is confirmed and posted successfully</label>
+                                
+                                </div>
+                                
+                                </div>
+                                
+                            
+                           <div class="mainwrapperreapeatevent">
+                                <h4 class="eventnameforrepeatedevents">Event Name</h4>
+                         <table class="table table-bordered table-invoice repeateventsection">
+                                <thead>
+                              <tr>
+                                   <th class="width20">Training Date</th>
+                                   <th class="width30">Session Timing</th>
+                                   <th class="width20">Slots Status</th>
+                                   <th class="width20">Action</th>
+                                 </tr>
+                             </thead>
+                       <tr>
+                          <td class="width20">22nd APR'16 </td>
+                          <td class="width20">01:00 - 2:00</td>
+                           <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                          <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                      <tr class="alternateoption">
+                          <td>23rd MAY'16</td>
+                          <td>02:00 - 3:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                         <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                        <tr>
+                          <td>23rd AUG'16</td>
+                          <td>04:00 - 5:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                            <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></a></td>
+                        </tr>                                   
+                  </table>
+                                
+                                <div class="confirmafterselecton">
+                                    <button class="btn btn-success confirmslotsbutton">Confirm</button>
+                                
+                                </div>
+                                
+                                </div>
+                            
+                        <div class="mainwrapperreapeatevent">
+                                <h4 class="eventnameforrepeatedevents">Event Name</h4>
+                         <table class="table table-bordered table-invoice repeateventsection">
+                                <thead>
+                              <tr>
+                                   <th class="width20">Training Date</th>
+                                   <th class="width30">Session Timing</th>
+                                   <th class="width20">Slots Status</th>
+                                   <th class="width20">Action</th>
+                                 </tr>
+                             
+                             
+                             </thead>
+                       <tr>
+                          <td class="width20">22nd APR'16 </td>
+                          <td class="width20">01:00 - 2:00</td>
+                           <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                        <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                      <tr class="alternateoption">
+                          <td>23rd MAY'16</td>
+                          <td>02:00 - 3:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                          <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                      </tr>
+                        <tr>
+                          <td>23rd AUG'16</td>
+                          <td>04:00 - 5:00</td>
+                          <td class="width30"><img src="img/confirm_icon.png"/> Slots Available</td>
+                         <td class="width20"><a href="#livevirtualclassroomRadio" data-toggle="modal"><span class="editslotrepeat"><i class="iconfa-pencil"></i>Edit</span></td>
+                        </tr>
+                                   
+                  </table>
+                                
+                                <div class="confirmafterselecton">
+                                    <button class="btn btn-success confirmslotsbutton">Confirm</button>
+                                
+                                </div>
+                                
+                                </div>
+                                
+                                
+                                
+                                </div>
+
+                           </p>    
+                
+                <button type="button" class="btn btn-primary donebutton"   href="#donepopup" data-toggle="modal" >Done</button>
+                       
+  
+                            </div>
+                    
+                       
+                
+                
+                </div>
+                
+                <!------- Demo planner tab content part --------->
+                
+                        
+                        <div class="PreviewField" style="display:none;">
+                            
+                     
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>Training Type :</label>
+                            <span class="field ">Full Training    </span>
+                           </p>
+                    </div>            
+                            
+                            
+                    <div class="wrapperpreviewDetails">
+                    	<p>
+                        	<label>Training Name :</label>
+                            <span class="field ">Java Training </span>
+                        </p>                                
+                    </div>
+                            
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>About the Training :</label>
+                            <span class="field descriptionpreview" style="margin-top:-19px;">Hello everyone this is a very nice app . i am satisfied while using this app.</span>
+                           </p>                                
+                    </div>
+                            
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>Subject :</label>
+                            <span class="field ">Object Oriented programming language </span>
+                           </p>                                
+                    </div>
+                       
+                            
+                            
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>No Of Slots :</label>
+                            <span class="field ">5</span>
+                           </p>
+                    </div>
+                            
+                            
+                            
+                            
+                        <div class="wrapperpreviewDetails">
+                            <p>
+                            <label style="margin: 0 0 0 16px !important;">Slot Summary :</label>  
+                                <span  class="field selectslotsDiv" href="#lessonSummaryList" data-toggle="modal">
+<!--
+                                    <div class="peviewslots">
+                                <ul class="table table-bordered tableforslotsummary" style="margin:0px !important;">
+                              
+                                  <li>
+                                     
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 <li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </li>
+                                   
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                    
+                                    
+                                         <li>
+                                     
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 <li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </li>
+                                   
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                    
+                                    
+                                         <li>
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 <li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      </li>
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                         <li>
+                                     
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 <li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </li>
+                                   
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                         <li>
+                                     
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 <li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </li>
+                                   
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                         <li>
+                                     
+                                          <span><b>23nd</b> APR'16</span>
+                                          <span>00:00  -  1:00</span>
+                                      
+                                      
+                                 <li>
+                                     <span><b>1st</b> MAY'16</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </li>
+                                   
+                                  <li>
+                                      <span><b>11th</b> JUL'16</span>
+                                          <span>12:00  -  13:00</span>
+                                         
+                                      </li>
+                                    
+                                    <li>
+                                        <span><b>23rd</b> AUG'16</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </li>
+                                  
+                                    
+                            </ul>
+                                </div>
+-->
+                                    View Slot summary
+                                </span>
+                                
+                            </p>
+                            
+                            
+                            </div>
+
+
+                            
+                            
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>Start Date and End Date :</label>
+                            <span class="field ">20<sup>th</sup>Oct</span>
+                            
+                           </p>
+                                
+                    </div>
+                        
+                   
+                            
+<!--
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>No Of Seats :</label>
+                            <span class="field ">4</span>
+                            
+                           </p>
+                                
+                    </div>
+-->
+                            
+                            
+                    <div class="wrapperpreviewDetails">
+                    	   <p class="tranerWrapper">
+                        	<label>Trainer :</label>
+                            <span class="field"><img src="img/avatar.png"/><span class="trainer prveiewtrainer">Trainer Name<span>Trainer Title</span>
+                            
+                           </p>
+                                
+                    </div>
+                               
+<!--
+                            
+                    <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>Event Category :</label>
+                            <span class="field ">Free</span>
+                            
+                           </p>
+                                
+                    </div>
+-->
+                        
+                          <div class="wrapperpreviewDetails">
+                    	   <p>
+                        	<label>Keywords :</label>
+                            <span class="field ">Java,CSS</span>
+                            
+                           </p>
+                                
+                    </div>
+                       
+                        
+                                <div class="wrapperpreviewDetails cousrefeeanotherDiv">
+                            
+                            <p>
+                        	<label>Course Fee Details :</label>
+                           
+                            <table class="evt-fee-table createventtable">
+                             <tbody>
+                             <tr><td style="padding: 0 0 0 27px;">Course Fee</td>
+                                 <td> Rs. <span> 10000.00 </span></td></tr>
+                           <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Offer Amount </td>
+                               <td style="padding:0 0 0 13px;"><span style="float:;left;color:#ff5c33;margin:0 5px">(-)</span>Rs. <span> 2000.00 </span></td></tr>
+
+
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Payable Amount</td> 
+                               <td style="padding: 0 0 0 14px;"> Rs. <span> 8000.00 </span></td></tr>
+                                 
+<!--
+                                  <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Service Tax&nbsp;(15%)</td> 
+                               <td style="  padding: 0 0 0 13px;"><span style="color:#000;margin:0 5px">(+)</span> Rs. <span> 1200.00 </span> </td></tr>
+-->
+<!--
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Effective Offer price</td> 
+                               <td style="padding: 0 0 0 16px;"> Rs. <span> 9200.00 </span></td></tr>
+-->
+                                 
+                            </tbody>
+                           </table>
+                                  
+                            
+                        </p>
+                        </div>
+                            
+                              <div class="wrapperpreviewDetails">
+                            
+                      <div class="DemoscheduleMainWrapper">
+                               <label>Demo Video :</label>
+                                 <span class="field "><span><a class="btn btn-info btn-large viewvideobutton viewvideobuttonpreview" href="#videomodal"  data-toggle="modal">View Video</a></span></span>
+                         </div>         
+                                  
+                        <div class="wrapperpreviewDetails">
+                            
+                            <div class="lastbuttonsforpreview">
+                            <p class="stdformbutton">
+                              
+                                  <a href="#"><button type="button" class="btn backbutton" onclick="backtrainingdetails();">BACK</button></a>
+<!--                                  <a data-target="#eventcreationconfirmation" data-toggle="modal"><button class="btn btn-primary">Submit Training</button></a>-->
+                                
+                        </p>
+                             </div>
+                        </div>
+                
+                    </form>
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        </div>
+    </div>
+    </div>
+</body>
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy Online Services v1.0</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+
+    
+</div><!--mainwrapper-->
+
+
+<!-- Lesson Summary Popup -->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in lessonSummaryListModal" id="lessonSummaryList">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+           <h3> Lesson Summary </h3>
+            </div>
+            <div class="modal-body">
+              <div class="lessonSummaryTable">
+                    <table>
+                    <tr><th>Sr.No </th><th> Lesson Name </th><th> Description </th> <th> Slot(s) </th> <th> Price </th></tr>
+                        <tr> <td> 1 </td> <td> Basics Of HTML&CSS  </td> <td> Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages  </td> <td> <div class="slotdate_time"> <span> 21<sup>st</sup> AUG'16 </span> <samp> 14.00 : 15.00 </samp> </div> <div class="slotdate_time"> <span> 21<sup>st</sup> AUG'16 </span> <samp> 14.00 : 15.00 </samp> </div>  </td> <td> Rs. 500 </td> </tr>
+                        <tr> <td> 1 </td> <td> Basics Of HTML&CSS  </td> <td> Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages  </td> <td> <div class="slotdate_time"> <span> 21<sup>st</sup> AUG'16 </span> <samp> 14.00 : 15.00 </samp> </div> <div class="slotdate_time"> <span> 21<sup>st</sup> AUG'16 </span> <samp> 14.00 : 15.00 </samp> </div>  </td> <td> Rs. 500 </td> </tr>
+                        <tr> <td> 1 </td> <td> Basics Of HTML&CSS  </td> <td> Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages  </td> <td> <div class="slotdate_time"> <span> 21<sup>st</sup> AUG'16 </span> <samp> 14.00 : 15.00 </samp> </div> <div class="slotdate_time"> <span> 21<sup>st</sup> AUG'16 </span> <samp> 14.00 : 15.00 </samp> </div>  </td> <td> Rs. 500 </td> </tr>
+                  </table>
+                </div>
+            </div>
+    </div>
+
+<!--End  of summary popup-->
+
+
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in lastminuteofferoverwite" id="onlinedemoevents">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+<!--              <h3 id="myModalLabel">Modal Heading</h3>-->
+            </div>
+            <div class="modal-body">
+<!--              <h4>Text in a modal</h4>-->
+<!--              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>-->
+              <div class="lastminuteofferwarning">
+<!--                <p>Last Minute Offer can't be calculated along with Voucher Amount.</p>-->
+                  <p>This Feature is curently not yet implemented, Currently we are live with Classroom Demo's only. </p>
+              </div>
+            </div>
+            <div class="modal-footer">
+<!--
+              <button data-dismiss="modal" class="btn">Yes</button>
+              <button data-dismiss="modal" class="btn btn-primary">No</button>
+-->
+            </div>
+    </div><!--#myModal-->  
+
+<!--Add link pop up-->
+
+<!--Frequently used address-->
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in frequentlyusedaddress" id="frequentlyusedaddress">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Select any Frequently  address</h3>
+            </div>
+            <div class="modal-body">
+                                       <div data-role="page" id="pageone"  class="listviewaddress">
+                       <div data-role="main" class="ui-content">
+                             <ul data-role="listview" data-inset="true">    
+                                       <li><a href="#">Marathalli, Bangalore India</a></li>
+                                       <li><a href="#"></a>Sitabuldi, Nagpur, Maharashtra India </li>
+                                       <li><a href="#"></a>Marathalli, Bangalore India</li>
+                                       <li><a href="#"></a>Sitabuldi, Nagpur, Maharashtra India </li>
+                                      <li><a href="#"></a>Sitabuldi, Nagpur, Maharashtra India </li>   
+                                     
+    </ul>
+  </div>
+</div> 
+            </div>
+          
+    </div><!--#myModal-->  
+
+
+<!--End Frequently used address-->
+    
+    <!--Start popup Enquired views-->
+    
+      <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in enquiredpeopleview demorequestedschedule" id="enequiriespopupviews">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">people List</h3>
+            </div>
+            <div class="modal-body">
+
+     <div class="modal-content">
+      <div class="modal-body">
+          <div class="enquired-people-wrapper">
+            <div class="enpeople-list">
+                <ul class="list-group main-list-group">
+                    <a href="user-profile.html"><li class="list-group-item">
+                        <div class=" person-icon">
+                            <img class="img-responsive img-circle" alt="Scott Stevens" src="http://api.randomuser.me/portraits/men/49.jpg">
+                        </div>
+                        <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                      <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                        <div class="clearfix"></div>
+                        
+                    </li></a>
+                    <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Seth Frazier" src="http://api.randomuser.me/portraits/men/97.jpg">
+                        </div>
+                        
+                     
+                       <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                               <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Jean Myers" src="http://api.randomuser.me/portraits/women/90.jpg">
+                        </div>
+                        
+                        
+                        <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                            <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Todd Shelton" src="http://api.randomuser.me/portraits/men/24.jpg">
+                        </div>
+                        
+                        
+                      <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                            <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Debbie Schmidt" src="http://api.randomuser.me/portraits/women/56.jpg">
+                        </div>
+                        
+                        
+                        <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                         <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                        <div class="clearfix"></div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Glenda Patterson" src="http://api.randomuser.me/portraits/women/76.jpg">
+                        </div>
+                        
+                        
+                       <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                           <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                          
+                        <div class="clearfix"></div>
+                    </li>
+                     <li class="list-group-item">
+                        <div class=" person-icon">
+                            <img class="img-responsive img-circle" alt="Glenda Patterson" src="http://api.randomuser.me/portraits/women/76.jpg">
+                        </div>
+                       
+                        <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                           <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                     
+                        <div class="clearfix"></div>
+                    </li>
+                     <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Glenda Patterson" src="http://api.randomuser.me/portraits/women/76.jpg">
+                        </div>
+                       
+                         <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                         <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                          
+                        <div class="clearfix"></div>
+                    </li>
+                     <li class="list-group-item">
+                        <div class=" person-icon">
+                            <img class="img-responsive img-circle" alt="Glenda Patterson" src="http://api.randomuser.me/portraits/women/76.jpg">
+                        </div>
+                         
+                       <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                               <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                    
+                          
+                        <div class="clearfix"></div>
+                    </li>
+                     <li class="list-group-item">
+                        <div class=" person-icon">
+                            <img class="img-responsive img-circle" alt="Glenda Patterson" src="http://api.randomuser.me/portraits/women/76.jpg">
+                        </div>
+                      
+                        <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                                       <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                      
+                          
+                        <div class="clearfix"></div>
+                    </li>
+                     <li class="list-group-item">
+                        <div class="person-icon">
+                            <img class="img-responsive img-circle" alt="Glenda Patterson" src="http://api.randomuser.me/portraits/women/76.jpg">
+                        </div>
+                       
+                        <div class="person-detail">
+                            <span class="name">Scott Stevens, <small class="professionDetails">Student</small></span>
+                            <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                        </div>
+                    <div class="assignedCheckpanel">
+                        <input type="checkbox" name="radio" id="SelectSubSchLstChkBoxSeven" />
+                     </div>
+                        
+                        <div class="submitAssignDemo">
+                           <button class="btn btn-info btn-rounded confirmsendbutton">Submit</button>
+                        </div>
+                          
+                        <div class="clearfix"></div>
+                    </li>
+                  
+                </ul>
+               
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+                
+                       </div>
+            
+    </div>
+
+
+    <!--End Enquired Views-->
+
+<!--Provide demo link Modal-->
+
+        <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in addlinkdemo" id="addlinkdemo">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Participants Link</h3>
+            </div>
+            <div class="modal-body">
+             <form method="post" class="stdform addcourierform">
+                 
+                             
+                 <h4 class="provide-link">Enter demo Participants Link</h4>
+                        <div>
+                                <input type="text" class="span5" id="addlink" rows="5" cols="80"/>
+                          
+                        </div>
+                   
+                  <p class="stdformbutton">
+                        	<button class="btn btn-danger btn-rounded">Submit</button>
+                    
+                        </p>
+                    
+                  
+                </form>
+            </div>
+           
+    </div>
+
+<!--End provide demo link Modal-->
+
+<!--Start confirmation of Create event Modal-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in lastminuteofferoverwite" id="eventcreationconfirmation">
+            <div class="modal-header">
+<!--              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>-->
+<!--           <h3 id="myModalLabel"></h3>-->
+            </div>
+            <div class="modal-body">
+<!--              <h4>Text in a modal</h4>-->
+<!--              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>-->
+              <div class="lastminuteofferwarning">
+                <p>Your Training is Created and Posted succesfully.</p>
+              </div>
+            </div>
+            <div class="modal-footer" style="text-align:center;">
+<!--              <button data-dismiss="modal" class="btn">Yes</button>-->
+              <button  class="btn btn-primary" style="width: 70px;" onclick="openrepeattrainingpopup()">Ok</button>
+            </div>
+    </div>
+<!--#myModal-->
+
+<!--End confirmation of Create event Modal-->
+
+
+
+<!--Start for asking reapeat event Modal-->
+
+
+
+<!--End for asking reapeat event Modal-->
+
+
+
+
+<!--Start confirmation for Live virtual classroom-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in livevirtualclassroom" id="livevirtualclassroomRadio">
+            <div class="modal-header">
+              <button aria-hidden="true" class="close" type="button" onclick="closetimeslotspopup()" data-dismiss="modal">×</button>
+            <h4 class="modal-title header-title">Time Slots Booking</h4>
+            </div>
+            <div class="modal-body">
+                <div class="contentinner createevnet-page-content">
+                <div class="widgetcontent">
+                    <div class="maindivforslots">
+                	<form class="stdform CreateEventForm"  method="post">     
+        <div class="Demoeventstrail DemoDisplyDiv">
+                      
+                       <p>
+                           <label>No.of Slots:</label>
+                            <span class="formwrapper editlabel ">
+                            	<input type="text" placeholder="Enter slots" id="enterSlotsNumber">
+                                 <button class="btn btn-rounded" data-toggle="modal" data-target="#slotsavilability" >Submit</button>
+                            </span> 
+                       </p>
+                      <p>
+                        	<label>Select Slots Date :</label>
+                            <span class="formwrapper">
+                                
+                           	<input type="text" id="dateshow12"  placeholder="05/20/2016">
+                                     <div id="dateshow1"></div>
+                            </span>
+                                   
+                        </p>
+                        <p>
+<!--                        	<label style="margin-top: 16px;width: 74px !important;"> Time Slots:</label>-->
+                           
+                        </p>
+                        
+                        
+                       
+                       <div>
+                        <span class="formwrapper timeslotes">
+                            <table class="table table-bordered tablefortimeslot">
+                                <thead>
+                                    <tr>
+                                         <th colspan="4">Schedule Your Slots Here </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                      <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(7 Slots Left)</span>
+                                          <span>00:00  -  1:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                   <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </td>
+                                    </a>
+                                   <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(2 Slots Left)</span>
+                                          <span>12:00  -  13:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                     <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </td>
+                                    </a>
+                                    </tr>
+                                    <tr>
+                                    <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>1:00 - 2:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                      <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>7:00 - 8:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a>
+                                    <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>13:00 - 14:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                  <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>19:00  -  20:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                    </tr>
+                                    <tr>
+                                   <a href="#">
+                                       <td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>2:00 - 3:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td>
+                                        </a>
+                                     <a href="#">
+                                         <td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>8:00  -  9:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                   <a href="#">
+                                       <td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>14:00 - 15:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td>
+                                        </a> 
+                                      <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>20:00 - 21:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                    </tr>
+                                    <tr>
+                                     <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>3:00  -  4:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                     <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>9:00 - 10:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                    <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>15:00  -  16:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                   <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>21:00 - 22:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                    </tr>
+                                    <tr>
+                                   <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>4:00 - 5:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                    <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>10:00  -  11:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                  <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>16:00 - 17:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>
+                                          </td></a> 
+                                    <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>22:00  -  23:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                    </tr>
+                                    <tr>
+                                    <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>5:00 - 6:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>
+                                     <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>11:00 - 12:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                   <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>17:00  -  18:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                        
+                                    <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>23:00 - 24:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                    </tr>
+                                         
+                                </tbody>
+                            </table>
+                        </span>
+                
+                        </div>
+                    
+                        <p class="stdformbutton slotsubmitButton" style="margin: 0 0 0 46% !important;">                         
+                            <button type="button" data-dismiss="modal" class="myButton1" id="confirmedforslots" onclick="closetimeslotspopup()">Block Slots</button>
+                        </p>
+                    
+                    
+                    <div class="NoteForSelectedSlots">
+                     
+<!--                    <label><img src="img/lamp.png"/></label>-->
+                        <label>Note :</label>
+                        <span class="formwrapper NoteText">
+                            Selected slots will be blocked for 30 mins, Within 30 mins create training process should be complete. Once the training is submitted, then you can't edit or delete the booked slots.
+                        </span>
+                    
+                    </div>
+
+                     </div>
+                    
+                    </form>
+                    </div>
+            </div>
+            <div class="slotsummary">
+                <div class="slotsavailable">
+                   <h4>Slots Available</h4>
+                   <span class="badge badge-important slotsAvailblesection">6</span>
+<!--                    <a href="my-packages.html" target="_blank"><span class="buynowSection">Buy Now</span></a>-->
+                
+                </div>
+                
+                 <h3>Slot Summary</h3>
+           
+            <div class="mainwrapperforslotsummary">
+                
+            <div class="bottomforslotdate">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot">22<sup>nd</sup> <span class="slotsummary-month">APR'16</span><label class="slotselectedsummary">00:00 - 1:00</label><span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr>
+                </table>
+               
+            </div>
+                <div class="bottomforslotdate">
+            <table class="slotsummarytable1">
+                    <tr>
+                        <td class="dateforslot">25<sup>th</sup> <span class="slotsummary-month">JUN'16</span><label class="slotselectedsummary">01:00 - 2:00</label><span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr></table>
+              
+                    </div>
+                <div class="bottomforslotdate bottomforslotdate20">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot multilpleslots">3<sup>rd</sup> <span class="slotsummary-month">JUL'16</span>
+                        <ul>
+                            <li><label class="slotselectedsummary-multiple">3:00 - 4:00</label><span><img src="img/remove.png"/></span></li>
+                            <li><label class="slotselectedsummary-multiple">4:00 - 5:00</label><span><img src="img/remove.png"/></span></li>
+                            <li><label class="slotselectedsummary-multiple">5:00 - 6:00</label><span><img src="img/remove.png"/></span></li>
+                            <li><label class="slotselectedsummary-multiple">6:00 - 7:00</label><span><img src="img/remove.png"/></span></li>
+                        </ul>
+                        
+                        </td>
+                </tr>
+                    </table>
+                    </div>
+                  <div class="bottomforslotdate">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot">22<sup>nd</sup> <span class="slotsummary-month">MAY'16</span><label class="slotselectedsummary">00:00 - 1:00</label> <span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr>
+                </table>
+                
+            </div>
+                   <div class="bottomforslotdate">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot">22<sup>nd</sup> <span class="slotsummary-month">AUG'16</span><label class="slotselectedsummary">00:00 - 1:00</label> <span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr>
+                </table>
+               
+            </div>
+                  <div class="bottomforslotdate">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot">22<sup>nd</sup> <span class="slotsummary-month">SEP'16</span><label class="slotselectedsummary">00:00 - 1:00</label> <span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr>
+                </table>
+               
+            </div>
+                   <div class="bottomforslotdate">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot">22<sup>nd</sup> <span class="slotsummary-month">NOV'16</span> <span class="slotsummary-year">16</span> <label class="slotselectedsummary">00:00 - 1:00</label> <span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr>
+                </table>
+               
+            </div>
+                  <div class="bottomforslotdate">
+            <table class="slotsummarytable">
+                    <tr>
+                        <td class="dateforslot">22<sup>nd</sup> <span class="slotsummary-month">APR'16</span><label class="slotselectedsummary">00:00 - 1:00</label><span class="removepackage-selected"><img src="img/remove.png" width="18"></span></td></tr>
+                </table>
+                
+            </div>
+                
+            </div>
+            </div>
+<!--
+                  <div class="expire-error">
+                       <span>Your Session will Expire within...</span>
+                </div>
+                     <div class="timerwrapper"> 
+                        <span class="blinking">02:00</span>
+                </div>
+-->
+            </div>
+
+            </div>
+    </div>
+<!--#myModal-->
+
+<!--End confirmation for Live virtual classroom-->
+
+
+<!--Start modal about write something-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in abouttrainingmodal" id="abouttraining">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Write About the training</h3>
+            </div>
+            <div class="modal-body">
+                <textarea></textarea>
+                  <button class="btn btn-primary submitdescriptions">Submit</button>
+
+            </div>
+    </div>
+<!--End modal about write something-->
+
+
+    
+<!--Start video modal-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in videomodal" id="videomodal">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Demo Video</h3>
+            </div>
+            <div class="modal-body">
+               <iframe  src="https://www.youtube.com/embed/kDyJN7qQETA" frameborder="0" allowfullscreen></iframe>
+            </div>
+    </div>
+
+<!--End video modal-->
+
+
+   <!--Start confirmation pop up for repeat event-->
+    
+   
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in lastminuteofferoverwite requesttocallbackconfirmation packageactiavtionModal addonpackageactivationModal" id="modalreapeattraining">
+            <div class="modal-header" style="padding:0px !important;">
+<!--              <button aria-hidden="true" data-dismiss="modal" class="close" style="margin:6px 10px 0px 0px;" type="button">×</button>-->
+           <h3 id="myModalLabel" style="border-bottom:1px solid #ccc; padding: 4px 15px;text-align:left !important">Confirmation for Repeat training ?</h3>
+            </div>
+            <div class="modal-body">
+              <div class="lastminuteofferwarning">
+                  <p><label class="confirmationSurity">Would you like to repeat this training for next 3 months ?</label></p>
+<!--                  <p>Marketive Executive will get back to you soon.</p>-->
+              </div>
+            </div>
+
+            <div class="modal-footer" style=" text-align: center;">
+                <a onclick="reapeattrainingyes()" target="_blank"><button class="styled-button-3">Yes</button></a>
+              <button class="styled-button-4 callbackrequestmodalhide" data-dismiss="modal">No</button>
+             
+            </div>
+
+    </div>
+    
+    
+<!--End confirmation pop up for repeat event-->
+
+
+
+
+ <!--Start Done pop up for repeat event-->
+    
+   
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in lastminuteofferoverwite requesttocallbackconfirmation packageactiavtionModal addonpackageactivationModal" id="donepopup">
+            <div class="modal-header" style="padding:0px !important;">
+<!--              <button aria-hidden="true" data-dismiss="modal" class="close" style="margin:6px 10px 0px 0px;" type="button">×</button>-->
+           <h3 id="myModalLabel" style="border-bottom:1px solid #ccc; padding: 4px 15px;text-align:left !important">Confirmation</h3>
+            </div>
+            <div class="modal-body">
+              <div class="lastminuteofferwarning">
+                  <p><label class="confirmationSurity">There are some unconfirmed trainings, Do you want to proceed ?</label></p>
+<!--                  <p>Marketive Executive will get back to you soon.</p>-->
+              </div>
+            </div>
+
+            <div class="modal-footer" style=" text-align: center;">
+                <a  ><button class="styled-button-3" data-dismiss="modal">Cancel</button></a>
+             <a href="trainings.html"> <button class="styled-button-4 callbackrequestmodalhide" >Proceed</button></a>
+             
+            </div>
+
+    </div>
+    
+    
+<!--End Done pop up for repeat event-->
+    
+
+<script type="text/javascript">
+     (function($){
+          $( "#datepicker" ).datepicker();
+          $( "#datepicker123" ).datepicker();
+         $( "#DemoDatePicker" ).datepicker();
+         $( "#datedemoplannerlvc" ).datepicker();
+         $("#datesameweekdayupto").datepicker();
+         $("#datesamedayeverymonthupto").datepicker();
+
+})(jQuery);
+</script>
+
+    <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#eventDetailsTab").click(function(){
+                                            
+                                           $(".InfrastructureField").hide();
+                                            $(".EventDetailField").show();
+                                            $(".PreviewField").hide();
+//                                            $(".Demoeventstrail").hide();
+                                            $(".reapeateventdiv").hide();
+                                        });
+                                       $("#eventFeeTab").click(function()
+                                         {                                           
+                                            $(".EventDetailField").hide();
+                                            $(".PreviewField").hide();
+                                           $(".InfrastructureField").hide();
+//                                           $(".Demoeventstrail").hide();
+                                              $(".reapeateventdiv").hide();
+                                        });
+
+                                         $("#demoeventsTab").click(function()
+                                         {                                           
+                                            $(".EventDetailField").hide();
+                                            $(".PreviewField").hide();
+//                                           $(".Demoeventstrail").show();
+                                            $(".InfrastructureField").hide();
+                                                $(".reapeateventdiv").hide();
+                                        });
+                                       $("#PreviewTab").click(function()
+                                         {                                           
+                                           $(".EventDetailField").hide();
+                                           $(".PreviewField").show();
+                                           $(".InfrastructureField").hide();
+//                                            $(".Demoeventstrail").hide();
+                                               $(".reapeateventdiv").hide();
+                                        });
+                                        $("#repeateventTab").click(function()
+                                         {                                           
+                                           $(".EventDetailField").hide();
+                                           $(".reapeateventdiv").show();
+//                                            $(".Demoeventstrail").hide();
+                                             $(".PreviewField").hide();
+                                        });
+                                      
+                                     
+                                       } ) ( jQuery );
+                                  </script>
+    
+
+<script type="text/javascript">
+       ( function($) {
+    $('#eventDetailsTab').click(function () {
+        $( ".event-Details-nav" ).addClass("active");
+            $( ".event-Fee-nav" ).removeClass("active");
+            $( ".Preview-nav" ).removeClass("active");
+         $(".infrastructure-nav").removeClass("active");
+         $(".demoevents-nav").removeClass("active");
+         $(".repeatevent-nav").removeClass("active");
+            
+    });
+           
+     $('#eventFeeTab').click(function () {
+              $( ".event-Fee-nav" ).addClass("active");
+            $( ".event-Details-nav" ).removeClass("active");
+          $(".repeatevent-nav").removeClass("active");
+         $(".demoevents-nav ").removeClass("active");
+            
+    });
+     $('#PreviewTab').click(function () {
+         $( ".Preview-nav" ).addClass("active");
+          $( ".event-Fee-nav" ).removeClass("active");
+          $( ".event-Details-nav" ).removeClass("active");
+          $(".infrastructure-nav").removeClass("active");
+          $(".demoevents-nav").removeClass("active");
+          $(".repeatevent-nav").removeClass("active");
+            
+    });
+
+      $('#demoeventsTab').click(function () {
+          $( ".Preview-nav" ).removeClass("active");
+            $( ".event-Fee-nav" ).removeClass("active");
+           $( ".event-Details-nav" ).removeClass("active");
+               $(".infrastructure-nav").removeClass("active");
+             $(".demoevents-nav").addClass("active");
+           $(".repeatevent-nav").removeClass("active");
+            
+    });
+        $('#repeateventTab').click(function () {
+          $( ".Preview-nav" ).removeClass("active");
+          $( ".event-Fee-nav" ).removeClass("active");
+           $( ".event-Details-nav" ).removeClass("active");
+            $(".repeatevent-nav").addClass("active");
+             $(".demoevents-nav").removeClass("active");
+            
+    });
+ } ) ( jQuery );
+    
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+   jQuery("#enter-manually").click(function() {
+         jQuery(".anyotheraddress").show();
+        jQuery(".registered-address-div").hide();
+
+    });
+    jQuery("#registered").click(function() {
+         jQuery(".registered-address-div").show();
+        jQuery(".anyotheraddress").hide();
+    });
+    jQuery("#communication").click(function() {
+         jQuery(".registered-address-div").show();
+         jQuery(".anyotheraddress").hide();
+    });
+      jQuery("#frequently-using-address").click(function() {
+         jQuery(".listviewaddress").show();
+           jQuery(".registered-address-div").hide();
+                                                            
+    });
+}); 
+</script>
+
+<script type="text/javascript">
+                                
+    ( function($) {
+	       $("#chats-right-top").click(function(){
+            $(".chatiframesection").show();
+                                          
+            });
+        } ) ( jQuery );
+</script>
+
+<script type="text/javascript">
+    ( function($) {
+	       $("#addanothernewdemo").click(function(){
+            $(".add-another-new-demo").show();
+                                          
+              });
+        $("#yesvideo").click(function(){
+            $(".sectionforuploadingvideo").show();
+            $("#demoeventsTab").hide();
+                                          
+            });
+        $("#novideo").click(function(){
+            $(".sectionforuploadingvideo").hide();
+            $("#demoeventsTab").show();
+                                          
+            });
+      $("#uploadvideo").click(function(){
+            $(".viewvideobutton").show();
+                                          
+            });
+        } ) ( jQuery );
+</script>
+
+
+<!--For Hiding and showing Event location at-->
+
+<script type="text/javascript">
+    ( function($) {
+	       $("#onlineelearning").click(function(){
+            $(".event-locationIsAt").hide();
+                $(".optioanlstartdate").show();
+               $(".optioanlstarttiming").show();
+                $(".noofdaysforonlineTraining").show();
+               $(".provideurl").show();
+            });
+         $("#classroomtraining").click(function(){
+            $(".event-locationIsAt").show();
+             $(".optioanlstartdate").hide();
+              $(".optioanlstarttiming").hide();
+             $(".noofdaysforonlineTraining").hide();
+              $(".provideurl").hide();
+            });
+         $("#livevirtualclassroom").click(function(){
+            $(".event-locationIsAt").hide();
+             $(".optioanlstartdate").hide();
+              $(".optioanlstarttiming").hide();
+             $(".noofdaysforonlineTraining").hide();
+              $(".provideurl").hide();
+                                          
+            });
+         $("#openevent").click(function(){
+            $(".requiredstudentpanel").show();
+            
+            });
+        } ) ( jQuery );
+</script>
+
+<!--For optional Start date and End time-->
+
+    
+<script type="text/javascript">
+     (function($){
+    $( "#datepicker456" ).datepicker();
+          $( "#datepicker789" ).datepicker();
+         $( "#datepicker1011" ).datepicker();
+         $("#dateshow12").datepicker();
+         jQuery('#calendar').datepicker();
+
+})(jQuery);
+</script>
+
+ <script type="text/javascript">
+         ( function($) {
+	               $("#imageallgallary").click(function(){
+                  $("#gallary-images-wrapper").show();
+                                          
+                     });
+               $("#closebigorgimage").click(function(){
+                  $("#gallary-images-wrapper").hide();
+                                          
+                     });
+             $("#yesdemovideolist").click(function(){
+                  $(".selctvideosection").show();
+                 $(".havevideo").hide();
+                                          
+                     });
+              $("#nodemovideolist").click(function(){
+                  $(".havevideo").show();
+                   $(".selctvideosection").hide();
+                                          
+                     });
+             
+             
+                } ) ( jQuery );
+</script>
+
+<!--Start repeated events-->
+ <script type="text/javascript">
+         ( function($) {
+	               $("#reapeatedeventsyes").click(function(){
+                  $(".main-repeatedWrapper").show();
+                                          
+                     });
+               $("#reapeatedeventsno").click(function(){
+                  $(".main-repeatedWrapper").hide();
+                                          
+                     });
+             $("#weekrepeatedevents").click(function(){
+                  $(".weekrepeatedevents").show();
+                                          
+                     });
+             $("#monthsrepeatedevents").click(function(){
+                  $(".monthsrepeatedevents").show();
+                                          
+                     });
+             
+                } ) ( jQuery );
+</script>
+<!--End repeated events-->
+
+
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+        jQuery('.alertboxbuttonremove').click(function(){
+   jAlert('Are you sure you want to Remove this Demo event ?');
+});
+});
+</script>
+
+<script type="text/javascript">
+    ( function($) {
+	       $("#closechat").click(function(){
+           $("#idofiframe", top.document).hide();
+            });
+        } ) ( jQuery );
+</script>
+
+
+
+<script type="text/javascript">
+     (function($){
+         $("#confirmedforslots").click(function() {
+           $(".hostwrapper").show();
+        });
+//    $( "#dateshow1" ).datepicker({dateFormat: 'dd-mm-yy',      
+//          onSelect: function( selectedDate ) {
+//              $("#dateshow12").val(selectedDate);
+//            //alert(selectedDate );
+//          });
+//      });
+
+})(jQuery);
+</script>
+
+<script>
+    (function($){
+        jQuery("#displayweekdays").click(function(){
+            jQuery(".main-weekdays").show();
+        });
+    })(jQuery);
+</script>
+
+<script>
+function blinker() {
+	jQuery('.blinking').fadeOut(500);
+	jQuery('.blinking').fadeIn(500);
+}
+setInterval(blinker, 1000);
+</script>
+
+
+<!--
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+        jQuery('.selectslotsDiv').click(function(){
+      jQuery("body").addClass("modal-open");
+});
+});
+    
+    function closetimeslotspopup(){
+         jQuery("body").removeClass("modal-open");
+        jQuery("#livevirtualclassroomRadio").modal("hide");
+    }
+</script>
+-->
+
+
+
+<script type="text/javascript">
+    jQuery(".infoselectslots").mouseover(function(){
+     jQuery(".tooltipoptions").show();
+});
+    
+        jQuery(".infoselectslots").mouseout(function(){
+     jQuery(".tooltipoptions").hide();
+});
+    
+</script>
+
+   <!--for iframe section-->
+    
+         <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#allchat-eventlist").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#enquirieschat").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#chatnowforparticularuser").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                     $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                      $("#views-right-top").click(function(){
+                                            $(".chatviewframesection").show();
+                                          
+                                        });
+                                     $("#demonotifiaction").click(function(){
+                                            $(".demoframesection").show();
+                                          
+                                        });
+                                       $(".registration").click(function(){
+                                            $(".registerframesection").show();
+                                          
+                                        });
+                                     
+                                       } ) ( jQuery );
+                                  </script>
+     <!--End for iframe section-->
+   
+      <script src='http://cdn.tinymce.com/4/tinymce.min.js'></script>
+
+       <script src="js/index.js"></script>
+      <script type="text/javascript">
+      tinymce.init({
+  selector: 'textarea',
+  height: 500,
+  theme: 'modern',
+  plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools'
+  ],
+  toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons',
+  image_advtab: true,
+  templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+  ],
+  content_css: [
+    '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+    '//www.tinymce.com/css/codepen.min.css'
+  ]
+ });
+      </script>
+<script>
+function openrepeattrainingpopup(){
+    jQuery("#eventcreationconfirmation").modal("hide");
+     jQuery("#modalreapeattraining").modal("show");
+}
+    function lessionsummaryclose() {
+        jQuery("#lessonSummaryList").modal("hide");
+    }
+    
+    
+    function reapeattrainingyes(){
+        jQuery("#modalreapeattraining").modal("hide");
+         jQuery("#repeateventTab").show();
+        jQuery("#repeateventTab").trigger("click");
+    }
+    function previewtraining(){
+         jQuery("#PreviewTab").show();
+        jQuery("#PreviewTab").trigger("click");
+    }
+    function backtrainingdetails(){
+         jQuery("#eventDetailsTab").trigger("click");
+    }
+</script>
+
+
+<!--
+<script type="text/javascript">
+   jQuery("#gototraining").click(function(){
+        location.href = "trainings.html";
+    });
+</script>
+-->
+
+</body>
+</html>

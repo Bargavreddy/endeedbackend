@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+ <style>
+      body {
+  background: transparent !important;
+ 
+}
+.userInformation{
+         float: left;
+         width: 65%;
+     }
+.Registration{
+    float: right;
+    width: 35%;
+}
+.event-date{
+    display: block;
+}
+    .chatviewglobalwrapper1{
+         width: 950px !important;
+     }
+    .modal-header{
+         width: 920px;
+     }
+    .modal-body{
+         width: 950px !important;
+     }
+    .slothours{
+         font-weight: 500px;
+         font-size: 15px;
+     }
+     
+    .coursefee {
+    color: #999;
+    float: right;
+    font-size: 11px;
+    }
+     
+    .coursefee  label {
+    color: #0778aa;
+    display: inline;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+   }
+   .registration-popup{
+         width: 450px !important;
+     }
+    
+    </style>
+</head>
+
+<body>
+
+<div class="mainwrapper Allchatwrapper chatviewglobalwrapper1">
+	
+    <!-- START OF LEFT PANEL -->
+    <div class="leftpanel mainLogo-wrapper">
+ 
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel rightpanelchat">
+    	<div class="headerpanel headerpanelchat">
+
+            
+    	</div><!--headerpanel-->
+
+        
+        <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="enequiriespopup enequiriespopupchat chatviewGlobal registrationglobal" id="enquiries">
+            <div class="modal-header">
+              <i class="icon-remove closebuttonchat" id="closechat"></i>
+              <div class="col-lg-offset-3 titleViewedEvents"><h3 id="myModalLabel">Registration Details</h3></div>
+            </div>
+            <div class="modal-body">
+               <div class="maincontent chatviewmaincontent ">
+                   <div class="enpeople-list enpeople-list-chat" style="width:475px !important;">
+                <span class="subenpeople">Training List</span>
+                       
+
+                          <div class="serachEventsForViews" style="width:475px;">
+                        <span><i class="icon-search"></i>
+                            
+                             <div class="btn-group serachBy searchbyForevnetsView">
+                                            <!--<button class="btn dropdown-toggle" data-toggle="dropdown">Search By <span class="caret"></span></button>-->
+                                            <ul class="dropdown-menu">
+                                              <li><a href="#"><i class="iconfa-search"></i> &nbsp;Event Id</a></li>
+                                              <li><a href="#"><i class="iconfa-search"></i> &nbsp;Event Name</a></li>
+                                            </ul>
+                                        </div>
+                            
+                            <input type="text" name="input5" class="input-xxlarge" placeholder="Search Trainings"><i class="iconfa-remove-sign"></i></span>
+                       </div>
+
+                  <!--btn-group-->
+                <ul style="margin-top:50px;">
+                      
+                   <a href="#">
+                       <li class="enpeoplelist-row enpeoplelist-row-chat active">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                                <label class="membercountingforregistrations">10 Members</label>
+                          
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+<!--                               <span class=""><label class="badge">20</label></span>-->
+                              
+                           </div>
+                      </li>
+                    </a>
+                    
+                   <a href="#">
+                     <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                           <span class="slothours">5 </span>Hours
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                         <a href="#">
+                       <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+<!--                           <span class="slothours">10 </span>Hours-->
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                        <a href="#">
+                       <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                        
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                      <a href="#">
+                      <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                          
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                     <a href="#">
+                      <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                        
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                     <a href="#">
+                      <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                         
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                     <a href="#">
+                      <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                     <a href="#">
+                      <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                   
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                      <a href="#">
+                       <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                         
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                    
+                       <a href="#">
+                       <li class="enpeoplelist-row enpeoplelist-row-chat ">
+                           <div class="left-section-eventinfo">
+                               <span class="eventdateviewers">Event Id</span>
+                           <span class="eventname">Event Name</span>
+                           <span class="event-date">25<label>Jan</label><label>2016</label></span>
+                        
+                          </div>
+                           <div class="right-section-eventinfo">
+                                <span class="classroom-training">Classroom Training</span>
+                               <span class=""><label class="badge">20</label></span>
+                           </div>
+                      </li>
+                    </a>
+                       
+                    </ul>
+              
+              </div>
+                   <div class="enpeople-list enpeople-list-chat viewchatpeoplelist" style="width:475px !important;">
+                <span class="subenpeople-people-list"> People List</span>
+                       <div class="serachEventsForViews searchviewsforpeoplelist" style="width:475px;">
+                        <span><i class="icon-search"></i><input type="text" name="input5" class="input-xxlarge" placeholder="Search People"><i class="iconfa-remove-sign"></i></span>
+                       </div>
+                <ul class="vieweduserWrapperUl" style="margin-top:50px;">
+                  
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><spam>Course Fee :</spam><label>Rs.12000</label></span>
+                                        <span class="coursefee"> <a href="#demo" class="examdetailcollapse" data-toggle="collapse"><spam>Exam Fee :</spam><label>Rs.200</label></a></span>
+<!--                                        <span class="coursefee"><spam>Exam Fee :</spam><label>Rs.200</label></span>-->
+<!--                                      <span><label class="registeredperson">Registered</label></span>-->
+                      </span>
+                                
+                                </div>
+                                
+                            </div>
+                                   
+                                    <div id="demo" class="collapse examdetailsectionregistrationpopup">
+                             <ul>
+                                    <li><span>HTML Basic Training</span><label>Rs 200</label></li>
+                             <li><span>HTML Basic Training</span><label>Rs 200</label></li>
+                             <li><span>HTML Basic Training</span><label>Rs 200</label></li>
+                             <li><span>HTML Basic Training</span><label>Rs 200</label></li>
+                             <li><span>HTML Basic Training</span><label>Rs 200</label></li>
+                             
+                             </ul>
+                        
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                       <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+<!--                                        <span class="coursefee"><label>Rs.12000</label></span>-->
+                                      <!--<span><label class="registeredperson" style="float:right;">Registered</label></span>-->
+                                         <span class="coursefee"><spam>Exam Fee :</spam><label>Rs.200</label></span>
+                                    </span>
+                                
+                                </div>
+                            
+                            </div>
+                        </div>
+                   
+                       </li>
+                    </a>
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+<!--                                      <span><label class="registeredperson">Registered</label></span>-->
+                      </span>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+<!--                                      <span><label class="registeredperson">Registered</label></span>-->
+                                      </span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+<!--                                      <span><label class="registeredperson">Registered</label></span>-->
+                                      </span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+<!--                                      <span><label class="registeredperson">Registered</label></span>-->
+                                     </span>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div> 
+                           </div>
+                                    
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+<!--                                      <span><label class="registeredperson">Registered</label></span>-->
+                                   </span>
+                                
+                                </div>
+                                
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+                                      <!--<span><label class="registeredperson">Registered</label></span>-->
+                                  </span>
+                                
+                                </div>
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                        </div>
+                                <div class="Registration">
+                                    <span class="pull-right registeredtime">
+                                       <label>20th-May 2016 10:00am</label>
+                                        <span class="coursefee"><label>Rs.12000</label></span>
+                                      <!--<span><label class="registeredperson">Registered</label></span>-->
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                    </a>
+                    
+                    </ul>
+              
+              </div>
+                     
+        </div><!--maincontent-->   
+    </div>
+    </div>
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+</div><!--mainwrapper-->
+    <!--#myModal-->
+    
+
+<script type="text/javascript">
+      ( function($) {
+	       $("#closechat").click(function(){
+           $(".registerframesection").hide();
+                                          
+        });
+} ) ( jQuery );
+ </script>
+    
+    <script type="text/javascript">
+    ( function($) {
+	       $("#closechat").click(function(){
+           $("#allregisteriframediv", top.document).hide();
+            });
+        } ) ( jQuery );
+    </script>
+    <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#addnew-voucher").click(function(){
+                                            
+                                           $(".voucher-middlepart").hide();
+                                           $(".voucher-right-part").hide();
+                                            $(".addnew-vochermain").show();
+                                            $(".vouchersharetopeple").show();
+                                          
+                                           
+                                          
+                                        });
+                                    
+                                       } ) ( jQuery );
+    </script>
+
+</body>
+</html>

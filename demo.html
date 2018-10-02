@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Provider Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap-fileupload.min.css" type="text/css" />
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/forms.js"></script>
+
+ <style>
+      body {
+  background: transparent !important;
+}
+</style>
+</head>
+
+<body>
+
+<div class="mainwrapper Allchatwrapper chatviewglobalwrapper demoglobalwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+    <div class="leftpanel mainLogo-wrapper">
+ 
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel rightpanelchat">
+    	<div class="headerpanel headerpanelchat">
+
+            
+    	</div><!--headerpanel-->
+
+        
+        <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="enequiriespopup enequiriespopupchat chatviewGlobal demoglobaliframesection" id="enquiries">
+            <div class="modal-header">
+              <i class="icon-remove closebuttonchat" id="closechat" onclick="closetimeslotspopup()"></i>
+              <div class="titleViewedEvents"><h3 id="myModalLabel">Demos  <div class="newdemoglobalbutton" ><a class="myButtonrequestfordemo" href="#newdemorequestforiframe" data-toggle="modal" >New Demo Request<span class="badge badge-important">6</span></a></div></h3>
+                  <h4 class="event-namefordemos">Event Name</h4>
+               
+                
+                </div>
+            </div>
+            <div class="modal-body">
+               <div class="maincontent chatviewmaincontent demoglobalcontentwrapper">
+                   
+                   
+                  <div class="enpeople-list enpeople-list-chat">
+                <span class="subenpeople1">Demo's List</span>
+                      
+                    <div id="tabs">
+                                 <ul>
+<!--                                <li><a href="#tabs-1">Classroom</a></li>-->
+                                 <li><a href="#tabs-3">Online Training (LVC)</a></li>
+                               
+                               
+                                </ul>
+<!--
+                <div id="tabs-1" class="demoglobalinnercontent ">
+                        
+                    <ul> 
+                       <li class="enpeoplelist-row enpeoplelist-row-chat active classroomdemowrapper" >
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">15<label class="monthdemolist">FEB'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                           <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">APR'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                           <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                         <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                   
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                          <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                          <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                   
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                           <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                           <label class="countofdemosattendees"><sapn class="countofmembers">15</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                   
+                      
+                    </ul>
+                        
+                        </div>
+-->
+                        
+                 
+                        
+                        <!--Start LVC-->
+                        
+                        <div id="tabs-3" class="demoglobalinnercontent">
+                        
+                           <ul> 
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat active classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                          <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                       <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">15</sapn>Members</label>
+                          </div>
+                          <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper ">
+                           <div class="left-section-eventinfo">
+                        <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">5</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                   
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                          <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">50</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                   
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                            <a href="#">www.getbuddy.com</a>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">10</sapn>Members</label>
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                   
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrapper">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am- 11:00am</small>
+                               <label class="countofdemosattendees"><sapn class="countofmembers">20</sapn>Members</label>
+                          </div>
+                          <div class="right-section-eventinfo">
+                               <span class=""><img src="img/voucher-count.png"/></span>
+                           </div>
+                      </li>
+                    
+                    </ul>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                      
+                        
+                        
+                             
+                      </div>
+
+
+              </div> 
+                   
+                   
+                   <div class="enpeople-list enpeople-list-chat viewchatpeoplelist">
+                <span class="subenpeople-people-list">Demo attendes</span>
+                       <!--<div class="serachEventsForViews searchviewsforpeoplelist">
+                        <span><i class="icon-search"></i><input type="text" name="input5" class="input-xxlarge" placeholder="Search Events"><i class="iconfa-remove-sign"></i></span>
+                       </div>-->
+                <ul class="vieweduserWrapperUl" style="margin-top:0px !important;">
+                  
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                              <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">1 day Ago</label></span>
+                            <div class="pendingStatusDemoconfirmation">
+                                 <label>Pending</label> 
+                         </div>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                       <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">1 min Ago</label></span>
+                                        <div class="declineStatusDemoconfirmation">
+                            <label>decline</label> 
+                         </div>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                             <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">1 day Ago</label></span>
+                                        <div class="acceptStatusDemoconfirmation">
+                            <label>Accept</label> 
+                         </div>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                              <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">2 days Ago</label></span>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">5 mins Ago</label></span>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                                <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">10 mins Ago</label></span>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div> 
+                           </div>
+                                    
+                                </div>
+                                 <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">10 days Ago</label></span>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                                </div>
+                               <div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                              <span><label class="registeredperson">1 Min Ago</label></span>
+                      </span>
+                                
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    <a href="#">
+                        <li class="enpeoplelist-row demoattendeessection">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                               <span class="emailId">mishradeepa77@gmail.com</span>
+                               <label>9800405060</label>
+                           </div>                           
+                           
+                           </div>
+                        </div>
+                                <!--<div class="timingOfRegistration">
+                                    <span class="pull-right registeredtime">
+                                       <label>10 mins</label>
+                                      <span><label class="registeredperson">Registered</label></span>
+                      </span>
+                                
+                                </div>-->
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+         
+                    </ul>
+              
+              </div>
+                      
+<!--
+                	<ul>
+                    	
+                    	<li><a href="#chat">Chat</a></li>
+					</ul>
+-->
+                	
+                    
+             
+                
+            </div><!--contentinner-->
+        	        
+        </div><!--maincontent-->    
+            
+                
+            </div>
+           
+    </div>
+   
+        
+        
+        
+    </div>
+        
+        <!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+
+    
+</div><!--mainwrapper-->
+    
+
+    <!--#myModal-->
+    
+    <!--Start new demo request For Demo iframe-->
+
+
+<div class="modal hide fade in  newdemorequestiframemodal enequiriespopup enequiriespopupchat chatviewGlobal demoglobaliframesection" id="newdemorequestforiframe" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3>New Demo Request</h3>
+        </div>
+        <div class="modal-body">
+               <div class="maincontent chatviewmaincontent demoglobalcontentwrapper">
+                   
+                   
+                    <div class="enpeople-list enpeople-list-chat viewchatpeoplelist">
+                <span class="subenpeople-people-list">List Of New demo request</span>
+                       <!--<div class="serachEventsForViews searchviewsforpeoplelist">
+                        <span><i class="icon-search"></i><input type="text" name="input5" class="input-xxlarge" placeholder="Search Events"><i class="iconfa-remove-sign"></i></span>
+                       </div>-->
+                        
+                        <div id="tabs">
+                                <ul>
+<!--                                <li><a href="#tabs-1">Classroom</a></li>-->
+                                 <li><a href="#tabs-3">Online (LVC)</a></li>
+                                 <li><a href="#tabs-2" onclick="demovideouploadingpanel()">Demo Video</a></li>
+                                </ul>
+                        
+<!--
+                        <div id="tabs-1" class="demoglobalinnercontent newdemorequestinnercontent">
+                            
+                            <ul class="vieweduserWrapperUl">
+                  
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                                
+                                <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                            <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo" id="accordingtotypeassigneddemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                                      <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 
+                            <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">2 days Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                                
+                    
+                   
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 min Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+ 
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                      <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">3 days Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                     <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">2 days Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                    </ul>
+                            
+                            
+                            </div>
+-->
+                            
+                            
+                    
+                            
+                            <div id="tabs-3" class="demoglobalinnercontent newdemorequestinnercontent">
+                            
+                                  <ul class="vieweduserWrapperUl">
+                  
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 
+                                 <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                                
+                                <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                                  
+                                <p>
+                                 <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo" id="accordingtotypeassigneddemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                                      <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 
+                                 <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">2 days Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                                
+                    
+                   
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 
+                            <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                                
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                      <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                                 <p class="comment"><span>Message :</span><label>Hello Miss Deepa Mishra How are you ? I am ok How are you ?I am good Whatsup ??</label></p>
+                                 
+                                 
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                     <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                                  
+                                        <p>
+                                             <a class="createandassigndemo" id="createandassignbuttonfordemos">Create and assign demo &raquo;</button>
+                                  <a class="assignedemobuttonNewdemo">Assign Existing demo &raquo;</a>
+                                 </p>
+                                    
+                            
+                                
+                               
+                             
+                            
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                    </ul>
+                            
+                            </div>
+                            
+                            
+                            <div id="tabs-2" class="demoglobalinnercontent newdemorequestinnercontent">
+                            
+                                  <ul class="vieweduserWrapperUl">
+                  
+                    <a href="#" onclick="demovideouploadingpanel()">
+                        <li class="enpeoplelist-row" onclick="demovideouploadingpanel()">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                            <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                </div>
+                                
+                                <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                    </a>
+                                
+                                
+                                      <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">2 days Ago</label>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                
+                                
+                    
+                   
+                    <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                       
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                                
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                            </div>
+                        </div>
+                       </li>
+                    </a>
+                    
+                      <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                                 
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                    
+                     <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>
+                                
+                                      
+                             <a href="#">
+                        <li class="enpeoplelist-row">
+                               <div class="mainwrapperOfviewedperson">
+                         <div class="user-imagePanel">
+                            <span><img src="img/person-image.gif"></span>
+                            </div>
+                         <div class="detailsOfviwedPerson">
+                                <div class="userFullInformation"><label class="enname">Deepa Mishra, <span class="encat">Student</span></label>
+                                
+                                 <div class="contactDetailsWrapper">
+                             <div class="contactDetails">
+                              <p class="RequestedDateTime"><span>Requested Date and Time: </span><label>31<sup>st</sup>Oct - </label> <small>10:00 AM</small></p>
+                               
+                           </div>  
+                                     
+                           </div>
+                                  
+                                    
+                                </div>
+                             
+                             <div class="whentheyrequested">
+                                    <label class="registeredperson">1 day Ago</label>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+                   
+                    
+                       </li>
+                    </a>             
+                                      
+                                      
+                                
+                    </ul>
+                            
+                            </div>
+                            
+                            
+                        
+                        </div>
+                        
+                        
+                        
+                
+              
+              </div>
+                   
+        <div class="enpeople-list enpeople-list-chat demolistsection demolistsection-newdemo">
+                <span class="subenpeople1">Demo's List</span>
+              
+                           <ul style="margin-top:0px !important;"> 
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat active classroomdemowrappertoassign">
+                           <div class="left-section-eventinfo">
+                         <span class="event-date">25<label class="monthdemolist">JAN'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                              
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class="select-demos"><img src="img/select-package.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrappertoassign">
+                           <div class="left-section-eventinfo">
+                          <span class="event-date">25<label class="monthdemolist">FEB'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                          
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class="select-demos"><img src="img/accepted-icon.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                        <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrappertoassign">
+                           <div class="left-section-eventinfo">
+                            <span class="event-date">25<label class="monthdemolist">APR'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                              
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class="select-demos"><img src="img/select-package.png"/></span>
+                           </div>
+                      </li>
+                    
+                   
+                    
+                       <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrappertoassign">
+                           <div class="left-section-eventinfo">
+                            <span class="event-date">25<label class="monthdemolist">MAR'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                              
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class="select-demos"><img src="img/select-package.png"/></span>
+                           </div>
+                      </li>
+                    
+                   
+                    
+                        <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrappertoassign">
+                           <div class="left-section-eventinfo">
+                            <span class="event-date">25<label class="monthdemolist">AUG'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class="select-demos"><img src="img/select-package.png"/></span>
+                           </div>
+                      </li>
+                    
+                    
+                    
+                        <li class="enpeoplelist-row enpeoplelist-row-chat classroomdemowrappertoassign">
+                           <div class="left-section-eventinfo">
+                           <span class="event-date">25<label class="monthdemolist">NOV'</label><label>16</label></span>
+                           <small>10:00 am - 11:00am</small>
+                               
+                          </div>
+                           <div class="right-section-eventinfo">
+                               <span class="select-demos"><img src="img/select-package.png"/></span>
+                           </div>
+                      </li>
+                               
+                               
+                               <div class="submitbuttondemos">
+                                  <a class="btn btn-primary btn-rounded" href="">Submit</a>
+                               
+                               </div>
+                   
+                    
+                    </ul>
+                        
+                        
+                        <label class="no-demos" style="display:none;">There is no new demo request.</label>
+                             
+                     
+
+
+              </div> 
+                   
+                   
+                   
+                   <div class="enpeople-list enpeople-list-chat  upload-demosection">
+                <span class="subenpeople1">Upload Demo Video</span>
+              
+                                 <div class="havevideo">
+                                 <p>
+                        	 <label>Upload video for this training :</label>
+                                    
+                            <span class="formwrapper">
+                            
+<!--
+                            	<input type="radio" name="offline" id="yesvideo"  />Yes &nbsp; &nbsp;
+                                <input type="radio" name="online"  id="novideo" /> No &nbsp; &nbsp;
+-->
+                             
+                                    <div class="par sectionforuploadingvideo">
+			                    <div class="fileupload fileupload-new" data-provides="fileupload">
+				                 <div class="input-append">
+				                       <div class="uneditable-input span3">
+				                            <i class="icon-file fileupload-exists"></i>
+				                             <span class="fileupload-preview"></span>
+				                        </div>
+				                    <span class="btn btn-file"><span class="fileupload-new">Upload Video</span>
+				                    <span class="fileupload-exists">Change</span>
+				                     <input type="file" id="uploadvideo" accept="video/mp4,video/avi,video/*" /></span>
+				                    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+				                </div>
+                                    
+                                    <span><a class="btn btn-info btn-large viewvideobutton" href="#videomodal" style="display:none;" data-toggle="modal">View Video</a></span>
+                                    
+			                 </div>
+                        
+			       </div>
+                                <lablel class="maxcharactersforvideo">(Max size upto 50 MB)</lablel>
+                                
+                            </span>
+                           </p>
+                         <div class="progress progress-striped active progressvideosection">
+                              <div style="width: 45%" class="bar"></div>
+                             <label class="progressTexts">10% complete</label>
+                            </div><!--progress-->
+                            
+                       </div>
+                        
+                        
+                        <label class="no-demos" style="display:none;">There is no new demo request.</label>
+                             
+                     
+
+
+              </div> 
+                   
+                   
+                   <div class="newdemocreateandassignsection" >
+                       <span class="subenpeople1">Create and assign Demo</span>
+                       <div class="Demoeventstrail DemoDisplyDiv fieldsfornewdemotypes">
+                           
+<!--
+                              <p>
+                        	<label>Demo Type :</label>
+                            <span class="field">
+                            <select name="select" class="uniformselect">
+                            	<option value="">ClassRoom</option>
+                                <option value="">Online (LVC)</option>
+                            </select>
+                            
+                            </span>
+                        </p>
+-->
+                           
+                           
+                             <p style="margin: 10px 0 0;">
+                        	<label>Select Date :</label>
+                            <span class="formwrapper">
+                                
+                            	<input type="text" id="datedemonewrequest" >
+
+                            </span>
+                                   
+                        </p>
+                           
+                      
+                     <p>
+                           <label> No.of Slots:</label>
+                            <span class="formwrapper editlabel ">
+                            	<input type="text" placeholder="Enter slots">
+                                 <button class="btn btn-rounded" data-toggle="modal" data-target="#slotsavilability" >Submit</button>
+                            </span> 
+                       </p>
+            
+                    
+                       
+                       
+                       <div class="maintimeslotswrapper">
+                        <span class="formwrapper timeslotes">
+                            <table class="table table-bordered tablefortimeslot">
+                                <thead>
+                                    <tr>
+                                         <th colspan="4">Schedule Your Slots Here </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                      <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(7 Slots Left)</span>
+                                          <span>00:00  -  1:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                   <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>6:00 -  7:00 </span>
+                                      
+                                      </td>
+                                    </a>
+                                   <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(2 Slots Left)</span>
+                                          <span>12:00  -  13:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                     <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>18:00 -  19:00 </span>
+                                      
+                                      </td>
+                                    </a>
+                                    </tr>
+                                    <tr>
+                                    <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>1:00 - 2:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                      <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>7:00 - 8:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a>
+                                    <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>13:00 - 14:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                  <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>19:00  -  20:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                    </tr>
+                                    <tr>
+                                   <a href="#">
+                                       <td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>2:00 - 3:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td>
+                                        </a>
+                                     <a href="#">
+                                         <td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>8:00  -  9:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                   <a href="#">
+                                       <td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>14:00 - 15:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td>
+                                        </a> 
+                                      <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>20:00 - 21:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                    </tr>
+                                    <tr>
+                                     <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>3:00  -  4:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                     <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>9:00 - 10:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>  
+                                    <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>15:00  -  16:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                   <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>21:00 - 22:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                    </tr>
+                                    <tr>
+                                   <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>4:00 - 5:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                    <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>10:00  -  11:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                  <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>16:00 - 17:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>
+                                          </td></a> 
+                                    <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>22:00  -  23:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                    </tr>
+                                    <tr>
+                                    <a href="#"><td class="noslotsavailable">
+                                        <span class="notavilable">(No Slots Left)</span>
+                                        <span>5:00 - 6:00</span>
+                                         <span style="display:none;"><img src="img/select-package.png"/></span>
+                                        </td>
+                                      </a>
+                                     <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>11:00 - 12:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                   <a href="#"><td class="slotavailable">
+                                          <span class="avilableslots">(10 Slots Left)</span>
+                                          <span>17:00  -  18:00</span>
+                                          <span><img src="img/select-package.png"/></span>
+                                      </td>
+                                      </a>
+                                        
+                                    <a href="#"><td class="selected">
+                                         <span class="avilableslots">(5 Slots Left)</span>
+                                        <span>23:00 - 24:00</span>
+                                          <span><img src="img/accepted-icon.png"/></span>
+                                        </td></a> 
+                                    </tr>
+                                         
+                                </tbody>
+                            </table>
+                        </span>
+                
+                        </div>
+                    
+                  
+                    
+                    
+                    
+                       <p class="stdformbutton slotsubmitButton">                         
+                            <button type="button" data-dismiss="modal" class="btn btn-rounded">Book Slots</button>
+                        </p>
+            
+            <div class="NoteForSelectedSlots">
+                     
+                    <label><img src="img/lamp.png"></label>
+                        <span class="formwrapper NoteText">
+                         Once you click the Book slots, Then only your slots will be booked, After that you can't Edit and delete the booked slots.
+                        </span>
+                    
+                    </div>
+                    
+            
+            
+                    <div class="submitbuttondemos">
+                                  <a href="" class="btn btn-primary btn-rounded">Submit</a>
+                               
+                               </div>
+                          
+                     </div>
+                       
+                   
+
+                     </div>
+                   
+                   
+<!--
+                	<ul>
+                    	
+                    	<li><a href="#chat">Chat</a></li>
+					</ul>
+-->
+                	
+                    
+             
+                
+            </div><!--contentinner-->
+        	        
+        </div><!--maincontent-->    
+            
+                
+            </div>
+           
+    </div>
+         
+        </div>
+
+      </div>
+      
+    </div>
+
+    
+    <!--End new demo request for demo ifrane-->
+    
+
+
+ <script type="text/javascript">
+      ( function($) {
+	       $("#closechat").click(function(){
+           $(".demoframesection").hide();
+                                          
+        });
+} ) ( jQuery );
+ </script>
+    
+    <script type="text/javascript">
+    ( function($) {
+	       $("#closechat").click(function(){
+           $("#alldemosiframediv", top.document).hide();
+            });
+        } ) ( jQuery );
+    </script>
+    <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#addnew-voucher").click(function(){
+                                            
+                                           $(".voucher-middlepart").hide();
+                                           $(".voucher-right-part").hide();
+                                            $(".addnew-vochermain").show();
+                                            $(".vouchersharetopeple").show();
+                                          
+                                    });
+                                     
+                                     
+                                        $("#createandassignbuttonfordemos").click(function(){
+                                            
+                                           $(".demolistsection-newdemo").hide();
+                                           $(".newdemocreateandassignsection").show();
+                                           
+                                          
+                                    });
+                                     
+                                     
+                                     $("#accordingtotypeassigneddemo").click(function(){
+                                            
+                                           $(".newdemocreateandassignsection").hide();
+                                           $(".demolistsection-newdemo").show();
+                                           
+                                          
+                                    });
+                                    
+                                       } ) ( jQuery );
+    </script>
+<script type="text/javascript">
+    jQuery("#datedemonewrequest").datepicker();
+</script>
+
+ <script type="text/javascript">
+        function demovideouploadingpanel(){
+            jQuery(".upload-demosection").show();
+            jQuery(".demolistsection-newdemo").hide();
+        };
+</script>
+
+</body>
+</html>

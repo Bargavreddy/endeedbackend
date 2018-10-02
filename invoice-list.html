@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Edneed</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>-->
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+ <script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/fixedcolumns/3.2.0/js/dataTables.fixedColumns.min.js"></script>
+<style>
+/*
+.dataTables_length, .dataTables_info {
+  background: #eee none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  font-size: 11px;
+  margin: 5px;
+  padding: 10px;
+  width: 98%;
+}
+    .dataTables_scrollBody {
+  height: auto !important;
+  max-height: 300px !important;
+  min-height: auto !important;
+}
+    .dataTables_processing {
+    display: none;
+}
+*/
+</style>
+</head>
+
+<body>
+<iframe id="allregisteriframediv" src="registration_global.html" class="registerframesection" style="display:none;"></iframe>
+    </iframe>
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+    <div class="leftpanel mainLogo-wrapper">
+    	
+        <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form action="results.html" method="post">
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+           <div class="plainwidget animate3 fadeInUp">
+          <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+
+
+        </div>
+        <!--plainwidget-->
+        
+        <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+<!--                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>-->
+                 <li class="dropdown"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+
+                    </ul>
+                </li>
+               <li class="dropdown"><a href="#"><span class="iconsweets-day"></span>Trainings</a>
+                           <ul>
+                               <li class=""><a href="trainings-list.html">All Trainings</a></li>
+                               <li><a href="create-event.html">Create Traning(s)</a></li>
+                               <li><a href="host-training.html">Host Trainings</a></li>
+                             </ul>
+               </li>
+                        
+                    <li><a href="online-trainings.html"><span class="icon-time"></span>Track Trainings</a></li>
+                    <li class="active"><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+                  
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+            	<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/image.png"/>Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my-profile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                     
+                        
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+            <ul class="skins">
+                <div class="last-login">Last Login: Dec 25, 2012 5:30pm</div>
+            </ul>
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+<!--                <li><a href="table-static.html">Tables</a> <span class="divider">/</span></li>-->
+                <li class="active">Training Invoice Detail</li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>Training Invoice Detail</h1> 
+        </div><!--pagetitle-->
+        
+        <div class="maincontent">
+        	<div class="contentinner">
+            
+            	<h4 class="widgettitle">Training Invoice Detail</h4>
+            	<table class="table table-bordered invoice-list-table" id="dyntable">
+<!--
+                    <colgroup>
+                        <col class="con0" style="align: center; width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+-->
+                    <thead>
+                        <tr>
+                          	<th class="head0 nosort">
+                            Sr no.</th>
+                            <th>Training Id</th>
+                              <th class="head1">Training Name</th>
+                            <th class="head0">Start Date</th>
+                            <th class="head0">Invoice Number</th>
+                             <th class="head0">Confirm Invoice</th>
+                             <th class="head0">Invoice Status</th>
+                             <th>Approved Date & Time</th>
+                             <th class="head0">Invoice Hardcopy</th>
+                             <th class="head0">Payment Status</th>
+<!--                              <th>Download</th>-->
+                             
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+<!--                            <td class="center"><a href="#"><i class="iconsweets-pdf2"></i></a></td>-->
+                           
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+                           
+                           
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+                           
+                           
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+                         
+                           
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+                          
+                           
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+                          
+                           
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter">1</td>
+                            <td>234565678789</td>
+                            <td>test1001</td>
+                            <td>05-2-99</td>
+                            <td class="center"><a href="invoice.html">1234</a></td>
+                            <td class="center">Done</td>
+                             <td class="center">Pending</td>
+                             <td>05-2-99</td>
+                             <td class="center">In-process</td>
+                             <td>Done</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+                <div class="divider15"></div>
+                
+    
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy Online Services</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+    
+</div><!--mainwrapper-->
+    
+<!--
+ <script type="text/javascript">
+    jQuery('#example').dataTable({
+       scrollY:        "300px",
+        scrollX:        true,
+        scrollCollapse: true,
+        fixedColumns:   {
+            leftColumns: 2
+        }
+ });
+
+</script>
+-->
+    
+     https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js
+https://cdn.datatables.net/fixedcolumns/3.2.2/js/dataTables.fixedColumns.min.js 
+    
+    <script type="text/javascript">
+       $(document).ready(function() {
+    var table = $('#example').DataTable( {
+        scrollY:        "300px",
+        scrollX:        true,
+        scrollCollapse: true,
+        paging:         false,
+        fixedColumns:   {
+            leftColumns: 1
+           
+        }
+    } );
+} );
+    
+    </script>
+<script type="text/javascript">
+                                 ( function($) {
+	                                  $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       } ) ( jQuery );
+                                  </script>
+
+    
+     <!--for iframe section-->
+    
+         <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#allchat-eventlist").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#enquirieschat").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#chatnowforparticularuser").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                     $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                      $("#views-right-top").click(function(){
+                                            $(".chatviewframesection").show();
+                                          
+                                        });
+                                     $("#demonotifiaction").click(function(){
+                                            $(".demoframesection").show();
+                                          
+                                        });
+                                       $(".registration").click(function(){
+                                            $(".registerframesection").show();
+                                          
+                                        });
+                                     
+                                       } ) ( jQuery );
+                                  </script>
+     <!--End for iframe section-->
+    
+</body>
+</html>

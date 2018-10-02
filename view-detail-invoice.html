@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Edneed</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/custom_style_2.css" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+<iframe id="allchatiframediv" src="allchats.html" class="chatiframesection" style="display:none;"></iframe>
+<iframe id="allregisteriframediv" src="registration_global.html" class="registerframesection" style="display:none;"></iframe>
+<!--    <iframe class="closechat"> <i class="icon-remove closebuttonchat" id="closechat"></i></iframe>-->
+    
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+     <div class="leftpanel mainLogo-wrapper">
+         <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/></a></h1>
+         </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form action="results.html" method="post">
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+            <div class="plainwidget animate3 fadeInUp">
+<!--
+               <div id="chats-right-top" class="enquiries">
+                  <span><img src="img/chat.png"><span class="badge badge-important">6</span><span>Chats</span></span>
+            </div>
+-->
+<!--
+
+              <div id="views-right-top" class="views">
+                 <span><img src="img/views.png"><span class="badge badge-important">6</span><span>Views</span></span>
+              </div>
+-->         
+              <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+
+
+        </div>
+        <!--plainwidget-->
+        
+        <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+<!--                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>-->
+                 <li class="dropdown"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span class="iconsweets-day"></span>Trainings</a>
+                         
+                        
+                           <ul>
+                               <li class=""><a href="trainings-list.html">All Trainings</a></li>
+                               <li><a href="create-event.html">Create Traning(s)</a></li>
+                             
+                             </ul>
+                        
+                 </li>
+                    <li><a href="online-trainings.html"><span class="icon-time"></span>Track Trainings</a></li>
+                    <li class="active"><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+<!--                    <li><a href="my-packages.html"><span class="iconsweets-documents"></span>My Packages</a>-->
+                   </li>
+                    <li><a href="faq.html"><span class="iconsweets-book-large"></span>FAQ's</a></li>
+                  <li><a href="videos.html"><span class="icon-facetime-video"></span>How To Videos</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+
+              <div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/institute_icon_2.png"/>Deepa Mishra <b class="caret"></b></a>
+                    <ul class="dropdown-menu info_menu">
+                    <li>
+                      <div class="row_1 list_user_info">
+                        <table>
+                          <tbody>
+                              <tr> 
+                                  <td class="profilePic"><img src="img/image.png" class="userProfileImg"></td> 
+                                  <td class="institutePic"><img src="img/positiveedge.jpg" class="userProfileImg"></td>
+                                  <td class="letterPic"><div class="lettericon">
+                                      <h5>G</h5>
+                                      </div>
+                                  </td>
+                               </tr>
+                               <tr> 
+                                    <td class="username"> ABC Training Institute </td> 
+                              </tr>
+                                    <!-- <tr> <td> <button type="button" class="btn btn-primary"> VIEW PROFILE </button> </td> </tr> -->
+                            </tbody>
+                        </table>
+                        </div>
+                        </li>
+                        <!--<li><a href="my-profile.html"><span class="icon-edit"></span> ABCD Training Institute</a></li>-->
+                        <li><a href="my-profile.html">Edit Profile</a></li>
+                        <li><a href="change-password.html">Change Password</a></li>
+                        <li><a href="">Logout</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+           <ul class="skins">
+                <div class="last-login">Last Login: Dec 25, 2012 5:30pm</div>
+            </ul>
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li><a href="table-static.html">Invoice</a> <span class="divider">/</span></li>
+                <li class="active">View Detailed Invoice</li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>Invoice Detailed  View </h1> 
+            <span class="back-invoice-summary"><a href="invoice.html" class="btn btn-info btn-rounded edit-profile-PTI">Back</a></span>
+        </div><!--pagetitle-->
+        
+        <div class="maincontent">
+        	<div class="contentinner">
+                <div class="main-header-panelth">
+
+                <div class="title-option-forth-left">
+
+                <table class="table table-bordered table-invoice">
+                      <tbody><tr>
+                          <td class="width30">Invoice No</td>
+                          <td class="width70"><strong>12345678989</strong></td>
+                      </tr>
+                      <tr>
+                        <td>Issue Date</td>
+                        <td><strong>22nd - JAN - 2016</strong></td>
+                    </tr>
+                        <tr>
+                          <td>Payment Due Date</td>
+                          <td><strong>22nd - JAN - 2016</strong></td>
+                      </tr>
+                           <tr>
+                          <td  style="font-size: 15px;">Invoice Amount&nbsp;&nbsp;(Rs)</td>
+                          <td style="font-size: 18px;"><strong>12000.00</strong></td>
+                      </tr>
+                  </tbody></table>
+                </div>
+                
+                    <div class="title-option-forth-right">
+                <table class="table table-bordered table-invoice">
+                      <tbody><tr>
+                          <td class="width30">Training-ID and Name:</td>
+                          <td class="width70"><strong>GB5678789<span class="trainingname">Java Training</strong></span></td>
+                      </tr>
+                    <tr>
+                        <td>Subject</td>
+                        <td><strong>HTML5</strong></td>
+                    </tr>
+                    <tr>
+                          <td>Training Period</td>
+                          <td><strong>22nd - JAN - 2016 to - 22nd - JAN - 2016</strong></td>
+                      </tr>
+                      <tr>
+                          <td class="width30">No of Slots Booked</td>
+                          <td class="width70"><strong>10</strong></td>
+                      </tr>
+                        <tr>
+                          <td>No of Students</td>
+                          <td><strong>20</strong></td>
+                      </tr>
+                      
+                  </tbody></table>
+                
+                </div>
+                    
+                    </div>
+                
+                
+                <!--Start Dynamic table for statistics of amount-->
+                
+                 <div class="main-div-course-fee">
+                     
+            	<h4 class="widgettitle">Registered People List</h4>
+            	<table class="table table-bordered detailedinvoicelist" id="dyntable">
+                    <colgroup>
+                        <col class="con0" style="align: center; width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                          	<th class="head0 nosort">Sr No</th>
+                            <th class="head0">Registered Date</th>
+                            <th class="head0">Student Name</th>
+                            <th class="head1">Training Fee</th>
+<!--                            <th class="head0">Discount</th>-->
+<!--                            <th class="head1">Course Amount</th>-->
+                             <th class="head1">Exam Fee</th>
+                            <th class="head0">Paid Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           1
+                          </span></td>
+                              <td>22nd - APR - 2016</td>
+                            <td>Deepa Mishra</td>
+                            <td>Rs 2000</td>
+<!--                            <td>200 ( 10% off)</td>-->
+<!--                            <td class="center">Rs 1800</td>  -->
+                            <td class="center examdetailpopupanchor"><a href="#examdetailspopup" data-toggle="modal">Rs 200.00</a></td>
+                             <td class="center">Rs 2000</td>  
+                        </tr>
+                         <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           2
+                          </span></td>
+                               <td>22nd - APR - 2016</td>
+                            <td>Bhargav Reddy</td>
+                            <td>Rs 2000</td>
+<!--                             <td>200 ( 10% off)</td>-->
+<!--                             <td class="center">Rs 1600</td>  -->
+                            <td class="center">Rs 200.00</td>
+                             <td class="center">Rs 1800</td>
+                        </tr>
+                 
+                      <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           4
+                          </span></td>
+                            <td>22nd - APR - 2016</td>
+                             <td>Deepa Mishra</td>
+                             <td>Rs 2000</td>
+<!--                           <td>200 ( 10% off)</td>-->
+<!--                             <td class="center">Rs 1000</td>  -->
+                            <td class="center">Rs 200.00</td>
+                             <td class="center">Rs 1200</td>
+                        </tr>
+                       <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           5
+                          </span></td>
+                              <td>22nd - APR - 2016</td>
+                            <td>Deepa Mishra</td>
+                            <td>Rs 2000</td>
+<!--                             <td>200 ( 10% off)</td>-->
+<!--                            <td class="center">Rs 2000</td>  -->
+                            <td class="center">rs 200.00</td>
+                             <td class="center">Rs 2200</td>
+                        </tr>
+                         <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           6
+                          </span></td>
+                                 <td>22nd - APR - 2016</td>
+                            <td>Deepa Mishra</td>
+                            <td>Rs 2000</td>
+<!--                                 <td>200 ( 10% off)</td>-->
+<!--                             <td class="center">Rs 1200</td>  -->
+                            <td class="center">Rs 200</td>
+                             <td class="center">Rs 1400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+        <!--End Dynamic table for statistics of amount-->
+                
+                
+                <!--Exam fee deatil table-->
+<!--                   <h4 class="widgettitle examfeedetailtitle">Exam Fee Detail</h4>-->
+                
+<!--
+                <table class="table table-bordered detailedinvoicelist" id="dyntable1">
+                    <colgroup>
+                        <col class="con0" style="align: center; width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                          	<th class="head0 nosort">Sr No</th>
+                            <th class="head0">Registered Date</th>
+                            <th class="head0">Student Name</th>
+                            <th class="head1">Exam Name</th>
+                            <th class="head0">Exam Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           1
+                          </span></td>
+                            <td>22nd - APR - 2016</td>
+                            <td>Deepa Tiwari</td>
+                            <td>CSS Language</td>
+                            <td>Rs 2000</td>
+                        </tr>
+                         <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           2
+                          </span></td>
+                               <td>22nd - APR - 2016</td>
+                            <td>Bhargav Reddy</td>
+                            <td>HTML basic Language</td>
+                            <td>Rs 2000</td>
+                        </tr>
+                 
+                      <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           4
+                          </span></td>
+                            <td>22nd - APR - 2016</td>
+                             <td>Loganathan Ganeshan</td>
+                            <td>Jquery</td>
+                            <td>Rs 2000</td>
+                        </tr>
+                       <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           5
+                          </span></td>
+                              <td>22nd - APR - 2016</td>
+                            <td>Preeti Kumari</td>
+                           <td>Javascript</td>
+                            <td>Rs 2000</td>
+                        </tr>
+                         <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           6
+                          </span></td>
+                             <td>22nd - APR - 2016</td>
+                             <td>Deepa Mishra</td>
+                             <td>Object oriented programming Language</td>
+                             <td>Rs 2000</td>
+                        </tr>
+                    </tbody>
+                </table>
+-->
+                
+                <!--end eam fee detail tavle-->
+                
+                
+        
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy Online Services</div>
+    </div><!--footer-->
+    
+</div><!--mainwrapper-->
+
+<!--Start pop up for exams details-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in Listofdealoftheday listofoffermodal popupforonlinetraining examdetailspopup" id="examdetailspopup">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                            <h3 id="myModalLabel">Exam Details</h3>
+            </div>
+            <div class="modal-body">
+                
+                <div class="mainexamwrapperexamsdetails">
+                    <div class="innercontentwrapperexamsdetails">
+                        <div class="examdetailsection">
+                             <label class="foundation">Foundation Level</label>
+                           <p>Exam Name</p>
+                            <span class="countofquestions"><spam>20</spam><label>Questions</label></span>
+                        </div>
+                        
+                        <div class="priceexams">
+                           <span>Rs 200</span>
+                        </div>
+                      
+                    </div>
+                    
+                    
+                       <div class="innercontentwrapperexamsdetails">
+                        <div class="examdetailsection">
+                             <label class="expert">Expert Level</label>
+                           <p>Exam Name</p>
+                            <span class="countofquestions"><spam>20</spam><label>Questions</label></span>
+                        </div>
+                        
+                        <div class="priceexams">
+                           <span>Rs 200</span>
+                        </div>
+                      
+                    </div>
+                    
+               
+                    
+                    <div class="innercontentwrapperexamsdetails">
+                        <div class="examdetailsection">
+                             <label class="advanced">Advanced Level</label>
+                           <p>Exam Name</p>
+                            <span class="countofquestions"><spam>20</spam><label>Questions</label></span>
+                        </div>
+                        
+                        <div class="priceexams">
+                           <span>Rs 200</span>
+                        </div>
+                      
+                    </div>
+                    
+                    
+                    <div class="innercontentwrapperexamsdetails">
+                        <div class="examdetailsection">
+                             <label class="expert">Expert Level</label>
+                           <p>Exam Name</p>
+                            <span class="countofquestions"><spam>20</spam><label>Questions</label></span>
+                        </div>
+                        
+                        <div class="priceexams">
+                           <span>Rs 200</span>
+                        </div>
+                      
+                    </div>
+                    
+                       <div class="innercontentwrapperexamsdetails">
+                        <div class="examdetailsection">
+                             <label class="advanced">Advanced Level</label>
+                           <p>Exam Name</p>
+                            <span class="countofquestions"><spam>20</spam><label>Questions</label></span>
+                        </div>
+                        
+                        <div class="priceexams">
+                           <span>Rs 200</span>
+                        </div>
+                      
+                    </div>
+                    
+                 
+                
+                
+                </div>
+          
+                
+            </div>
+    
+        </div>
+    
+
+
+<!--End pop up for exams deatils-->
+
+<script type="text/javascript">
+                                 ( function($) {
+	                                  $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       } ) ( jQuery );
+                                  </script>
+
+ <!--for iframe section-->
+    
+         <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#allchat-eventlist").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#enquirieschat").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#chatnowforparticularuser").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                     $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                      $("#views-right-top").click(function(){
+                                            $(".chatviewframesection").show();
+                                          
+                                        });
+                                     $("#demonotifiaction").click(function(){
+                                            $(".demoframesection").show();
+                                          
+                                        });
+                                       $(".registration").click(function(){
+                                            $(".registerframesection").show();
+                                          
+                                        });
+                                     
+                                       } ) ( jQuery );
+                                  </script>
+     <!--End for iframe section-->
+
+<script type="text/javascript">
+    // dynamic table
+    jQuery('#dyntable1').dataTable({
+       "sPaginationType": "full_numbers",
+       "aaSortingFixed": [[0,'asc']],
+       "fnDrawCallback": function(oSettings) {
+          jQuery.uniform.update();
+       }
+    });
+
+</script>
+</body>
+</html>

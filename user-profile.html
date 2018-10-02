@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<style>
+.subjectsleft .profilethumb {
+  margin-bottom: 8px !important;
+}
+    .userprofilemainDiv .profile-left h4, .editprofileform h4 {
+  margin: 20px 0;
+}
+</style>
+<body>
+
+<div class="mainwrapper ">
+	
+  <!-- START OF LEFT PANEL -->
+     <div class="leftpanel mainLogo-wrapper">
+    	
+        <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/><span>v1.0</span></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form>
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+          <div class="plainwidget animate3 fadeInUp">
+            <div id="chats-right-top" class="enquiries">
+             <span><img src="img/chat.png"><span class="badge badge-important">6</span><span>Chats</span></span>
+            </div>
+<!--
+
+              <div id="views-right-top" class="views">
+                 <span><img src="img/views.png"><span class="badge badge-important">6</span><span>Views</span></span>
+              </div>
+-->         
+              <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+
+
+        </div>
+        <!--plainwidget-->
+        
+        <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+<!--                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>-->
+                 <li class="dropdown active"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+
+                    </ul>
+                </li>
+                 <li class="dropdown"><a href="#"><span class="iconsweets-day"></span>Trainings</a>
+                           <ul>
+                               <li class=""><a href="trainings-list.html">All Trainings</a></li>
+                               <li><a href="create-event.html">Create Traning(s)</a></li>
+                             
+                             </ul>
+                        
+                     </li>
+                          <li><a href="online-trainings.html"><span class="icon-time"></span>Track Trainings</a></li>
+
+                    <li><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+<!--                    <li><a href="my-packages.html"><span class="iconsweets-documents"></span>My Packages</a></li>-->
+                    <li><a href="faq.html"><span class="iconsweets-book-large"></span>FAQ's</a></li>
+                 <li><a href="videos.html"><span class="icon-facetime-video"></span>How To Videos</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+    	  <div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/profile_white_icon.png"/>Deepa Mishra <b class="caret"></b></a>
+                    <ul class="dropdown-menu info_menu">
+                    <li>
+                      <div class="row_1 list_user_info">
+                        <table>
+                          <tbody>
+                              <tr> 
+                                  <td class="profilePic"><img src="img/image.png" class="userProfileImg"></td> 
+                                  <td class="institutePic"><img src="img/positiveedge.jpg" class="userProfileImg"></td>
+                                  <td class="letterPic"><div class="lettericon">
+                                      <h5>G</h5>
+                                      </div>
+                                  </td>
+                               </tr>
+                               <tr> 
+                                    <td class="username"> ABC Training Institute </td> 
+                              </tr>
+                                    <!-- <tr> <td> <button type="button" class="btn btn-primary"> VIEW PROFILE </button> </td> </tr> -->
+                            </tbody>
+                        </table>
+                        </div>
+                        </li>
+                        <!--<li><a href="my-profile.html"><span class="icon-edit"></span> ABCD Training Institute</a></li>-->
+                        <li><a href="my-profile.html">Edit Profile</a></li>
+                        <li><a href="change-password.html">Change Password</a></li>
+                        <li><a href="">Logout</a></li>
+                        
+                    </ul>
+                </div>
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        	<ul class="skins">
+                <li><a href="default" class="skin-color default"></a></li>
+                <li><a href="orange" class="skin-color orange"></a></li>
+                <li><a href="dark" class="skin-color dark"></a></li>
+                <li>&nbsp;</li>
+                <li class="fixed"><a href="" class="skin-layout fixed"></a></li>
+                <li class="wide"><a href="" class="skin-layout wide"></a></li>
+            </ul><!--skins-->
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li class="active">User Profile</li>
+            </ul> 
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>User Profile</h1> 
+        </div><!--pagetitle-->
+        
+        <div class="maincontent">
+        	<div class="contentinner content-editprofile userprofilemainDiv">
+            	<h4 class="widgettitle nomargin">User Profile</h4>
+                <div class="widgetcontent bordered">
+                	<div class="row-fluid">
+                    	<div class="span4 profile-left subjectsleft">
+                        
+                        	<h4>Your Profile Photo</h4>
+                            
+                            <div class="profilethumb">
+                            	<a href="">Change Thumbnail</a>
+                                <img src="img/profilethumb.png" alt="" class="img-polaroid" />
+                            </div><!--profilethumb-->
+                            
+                            
+                            <h4>Selected Subjects</h4>
+                            
+                            <ul class="taglist">
+                            	<li><a href="">HTML5 <span class="icon-remove"></span></a></li>
+                                <li><a href="">CSS <span class="icon-remove"></span></a></li>
+                                <li><a href="">PHP <span class="icon-remove"></span></a></li>
+                                <li><a href="">jQuery <span class="icon-remove"></span></a></li>
+                                <li><a href="">Java <span class="icon-remove"></span></a></li>
+                                <li><a href="">GWT <span class="icon-remove"></span></a></li>
+                                <li><a href="">CodeNgniter <span class="icon-remove"></span></a></li>
+                                <li><a href="">javascipt <span class="icon-remove"></span></a></li>
+                                <li><a href="">botony <span class="icon-remove"></span></a></li>
+                                <li><a href="">Maths <span class="icon-remove"></span></a></li>
+                                <li><a href="">Bootstrap <span class="icon-remove"></span></a></li>
+                                <li><a href="">Bootstrap <span class="icon-remove"></span></a></li>
+                            </ul>
+                            
+                            
+                        </div><!--span3-->
+                        <div class="span8">
+                            <form action="editprofile.html" class="editprofileform userprofileform" method="post">
+                            	 <div class="userinformationWrapper">
+                                <h4>User Information</h4>
+                                
+                               
+                                <p>
+                                	<label>First Name :</label>
+                                     <span><b>Deepa</b></span>
+                                </p>
+                               
+                                <p>
+                                	<label>Last Name :</label>
+                                     <span><b>Mishra</b></span>
+                                </p>
+                                
+                                <p style=" float: left;width: 100%;">
+                                	<label>About Me:</label>
+                                    <span><b>Hello Are you ? what are you doing ??</b></span>
+                                </p>
+                                
+                                <br />
+                                
+                                <p>
+                                	<label>Email :</label>
+                                      <span><b>mishradeepa@gmail.com</b></span>
+                                    
+                                	
+                                </p>
+                                
+                                  <p>
+                                	<label>Phone No :</label>
+                                     <span><b>6787898909</b></span>
+                                    
+                                	
+                                </p>
+                                    </div>
+                                
+                                <div class="usereduactionDetail">
+                                
+                                <h4>Education Details</h4>
+<!--
+                                <p>
+                                	<label>College Name :</label>
+                                    <span><b>Dhanalaxmi college of Engneering, Chennai</b></span>
+                                	
+                                </p>
+                                
+                                   <p>
+                                	<label>Department Name :</label>
+                                    <span><b>B.E Electronincs and Communication</b></span>
+                                	
+                                </p>
+                                
+                                   <p>
+                                	<label>Year :</label>
+                                    <span><b>2006 - 2010</b></span>
+                                	
+                                </p>
+-->
+                                <div class="MainwrapperListEducationalDetails">
+                      <ul class="list-group">
+                            
+                                <li class="list-group-item">
+                                   
+                                    <span>Department Name ,</span>
+                                    <span>College Name,</span>
+                                    <span>2006-2010</span>
+                                
+                         
+                          </li>
+                                    
+                               <li class="list-group-item">
+                                   
+                                    <span>Electronics & communication ,</span>
+                                    <span>G.H Raisoni College of engineering,</span>
+                                    <span>2006-2010</span>
+                                
+                         
+                          </li>
+                                 
+                                <li class="list-group-item">
+                                   
+                                    <span>Electronics & communication ,</span>
+                                    <span>G.H Raisoni College of engineering,</span>
+                                    <span>2006-2010</span>
+                                
+                        
+                          </li>
+                            
+                                <li class="list-group-item">
+                                   
+                                    <span>Electronics & communication ,</span>
+                                    <span>G.H Raisoni College of engineering,</span>
+                                    <span>2006-2010</span>
+                                
+                        
+                          </li>
+                              
+                    </ul>
+            </div>
+                                    
+                                    </div>
+                                
+                                
+                                
+                              <div class="userexperiencewrapper">
+                                <h4>Experience Details</h4>
+<!--
+                                <p>
+                                	<label>Experience Title :</label>
+                                    <span><b>Project Manager</b></span>
+                                	
+                                </p>
+                                
+                                    <p>
+                                	<label>Experience Specilisation :</label>
+                                    <span><b>Testing</b></span>
+                                	
+                                </p>
+                                
+                                     <p>
+                                	<label>Experience Organisation :</label>
+                                    <span><b>5 years</b></span>
+                                	
+                                </p>
+                                
+                                       <p>
+                                	<label>Year :</label>
+                                    <span><b>Nov 2006 - Till Date</b></span>
+                                	
+                                </p>
+-->
+                
+                       <div class="MainwrapperListEducationalDetails">
+                      <ul class="list-group">
+                         
+                                <li class="list-group-item">
+                                   
+                                    <span>Experience Title ,</span>
+                                    <span>Experience Specilisation,</span>
+                                    <span>Experience Organisation,</span>
+                                    <span>year</span>
+                                
+                          
+                          </li>
+                                    
+                               <li class="list-group-item">
+                                   
+                                    <span>Project Manager,</span>
+                                    <span>Testing,</span>
+                                    <span>5 years,</span>
+                                   <span>Nov 2006 - Till Date</span>
+                                
+                          
+                          </li>
+                                 
+                              <li class="list-group-item">
+                                   
+                                    <span>Project Manager,</span>
+                                    <span>Testing,</span>
+                                    <span>5 years,</span>
+                                   <span>Nov 2006 - Till Date</span>
+                                
+                          
+                          </li>
+                             
+                              <li class="list-group-item">
+                                   
+                                    <span>Project Manager,</span>
+                                    <span>Testing,</span>
+                                    <span>5 years,</span>
+                                   <span>Nov 2006 - Till Date</span>
+                                
+                          
+                          </li>
+                              
+                    </ul>
+            </div>
+                                  
+                                  </div>
+                                
+                                
+                                
+                            </form>
+                        </div><!--span9-->
+                    </div><!--row-fluid-->
+                </div><!--widgetcontent-->
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy Online Services v1.0</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+
+    
+</div><!--mainwrapper-->
+<script type="text/javascript">
+jQuery(document).ready(function(){
+
+	jQuery('.profilethumb').hover(function(){
+		jQuery(this).find('a').fadeIn();
+	},function(){
+		jQuery(this).find('a').fadeOut();
+	});
+	
+	jQuery('.taglist a').click(function(){
+		return false;
+	});
+	jQuery('.taglist a span').click(function(){
+		jQuery(this).parent().remove();
+		return false;
+	});
+	
+});
+</script>
+</body>
+</html>

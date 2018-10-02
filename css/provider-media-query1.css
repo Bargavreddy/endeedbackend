@@ -1,0 +1,163 @@
+
+@media(min-width:768px) and (max-width:1024px){
+    .CreateEventForm .btn.btn-primary {
+  margin-left: 30%;
+  margin-top: 17px;
+}
+    .peviewslots {
+  width: 75%;
+}
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .MainEventSearch input {
+        width: 353px !important;
+    }
+    .EventInfoWrapper .event_info {
+         width: 81% !important;
+     }
+    .MainEventSearch img {
+        margin-left: 32% !important;
+          top: 106px;
+}
+    .serachBy .btn {
+          padding: 7px 12px !important;
+   }
+    .saved-ListWrapper1 .MainEventSearchsavedEvent .MainEventSearch input {
+            width: 574px;
+  }
+    .saved-ListWrapper1 .MainEventSearchsavedEvent .MainEventSearch img {
+      margin-left: 53% ;
+      top: 106px;
+}
+   .saved-ListWrapper1  .EventInfoWrapper .event_info {
+       width: 85% !important;
+   }
+    .boostrap-switch {
+  float: right;
+  margin-top: 0;
+  width: 48%;
+}
+
+}
+    
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+.stdform span.field, .stdform div.field {
+  margin-left: 220px !important;
+}
+
+.incorportae-file-uploading > p {
+  margin-bottom: 0 !important;
+}
+.onetwoeightzero {
+  margin-left: 0 !important;
+}
+.subjectsleft .taglist {
+  width: 50%;
+}
+.userprofileform textarea {
+  width: 450px !important;
+}
+.organizationviewprofile .stdform span.field, .stdform div.field {
+  margin-left: 220px !important;
+  margin-top: -34px;
+}
+.organizationviewprofile .stdform label {
+  width: 200px !important;
+    }
+.EventDetailField .input-xxlarge {
+  width: 487px;
+}
+.firstshot-images img {
+  padding: 12px !important;
+}
+.firstshot-images li {
+  margin: 0 12px 0 0 !important;
+}
+.upload-image-wrapper input {
+  width: 90px !important;
+}
+.firstshot-images li {
+  
+  max-height: 112px;
+  min-height: 10px !important;
+  min-width: 100px;
+}
+.upload-image-wrapper input[type="file"] {
+  height: 85px !important;
+ 
+}
+.upload-image-wrapper .img-responsive.upload-gallary-image {
+  left: 5.5%;
+  margin-top: -98px !important;
+}
+.upload-image-wrapper .upload-imagestext {
+  margin: -47px 0 0 31px !important;
+}
+.serachBy .btn {
+  padding: 6px 12px;
+}
+
+}
+
+
+@media only screen and (max-width:1280px){
+    
+.selectsubjectswrapper .span6 {
+  float: left !important;
+  margin: 0 10px 0 0 !important;
+  width: 48% !important;
+}
+    .stdform label {
+           display: block !important;
+           float: left !important;
+           width: 200px !important;
+        text-align: right !important;
+}
+    .CreateEventWrapper .InfrastructureField .savenext {
+           float: left;
+           margin: 14px 0 0 !important;
+           text-align: center !important;
+}
+    .savenext {
+  margin: 35px 0 0;
+  text-align: center;
+  width: 82%;
+}
+    .onlyweekends {
+  margin-left: 222px !important;
+}
+    .inputclasscreateevent{
+         width: 529px !important;
+    }
+.infrastructurewrapper li {
+  margin: 0 6px 0 4px !important;
+}
+.lastbuttonsforpreview .savenext {
+  margin: 35px 0 0 130px;
+  text-align: center;
+  width: 118%;
+}
+
+}
+
+/*
+@media screen and (min-width: 768px) and (max-width: 820px) {
+    .EventDetailField .input-xxlarge {
+  width: 533px !important;
+}
+
+}
+*/
+
+/* IE9, IE10 */
+@media screen and (min-width:0\0) {
+
+    .event-list-main-content-wrapper, .createevnet-page-content{ margin-top: -5px;}
+/*    .saved-page-content{ margin-top: -530px;}*/
+  
+    .plainwidget .registration{margin: -12px 0px 0px 28px;}
+
+}

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Edneed</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+ <link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/event-list.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap-fileupload.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-timepicker.min.css" type="text/css" />
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery.autogrow-textarea.js"></script>
+<script type="text/javascript" src="js/charCount.js"></script>
+<script type="text/javascript" src="js/ui.spinner.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/forms.js"></script>
+</head>
+
+ <style>
+
+.popupforonlinetraining .leftwrapper {
+  float: left;
+  padding: 0 0 0 6px;
+  width: 31% !important;
+}
+     
+     
+     
+     
+     
+    </style>
+
+<body>
+<iframe id="allchatiframediv" src="allchats.html" class="chatiframesection" style="display:none;"></iframe>
+    <iframe id="allregisteriframediv" src="registration_global.html" class="registerframesection" style="display:none;"></iframe>
+<div class="mainwrapper">
+	
+      <!-- START OF LEFT PANEL -->
+     <div class="leftpanel mainLogo-wrapper">
+    	
+        <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form>
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+       <div class="plainwidget animate3 fadeInUp">
+<!--
+            <div id="chats-right-top" class="enquiries">
+             <span><img src="img/chat.png"><span class="badge badge-important">6</span><span>Chats</span></span>
+            </div>
+-->
+<!--
+
+              <div id="views-right-top" class="views">
+                 <span><img src="img/views.png"><span class="badge badge-important">6</span><span>Views</span></span>
+              </div>
+-->         
+              <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+        </div>
+        <!--plainwidget-->
+        
+         <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+<!--                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>-->
+                 <li class="dropdown"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+
+                    </ul>
+                </li>
+                  <li class="dropdown"><a href="#"><span class="iconsweets-day"></span>Trainings</a>
+                         
+                        
+                           <ul>
+                               <li class=""><a href="trainings-list.html">All Trainings</a></li>
+                               <li><a href="create-event.html">Create Traning(s)</a></li>
+                               <li><a href="host-training.html">Host Trainings</a></li>
+                             </ul>
+                        
+                        </li>
+                    <li class="active"><a href="online-trainings.html"><span class="icon-time"></span>Track Trainings</a></li>
+                    <li><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+            	<div class="dropdown notification">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html">
+                    	<span class="iconsweets-globe iconsweets-white"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                    	<li class="nav-header">Notifications</li>
+                        <li>
+                        	<a href="">
+                        	<strong>3 people viewed your profile</strong><br />
+                            <img src="img/thumbs/thumb1.png" alt="" />
+                            <img src="img/thumbs/thumb2.png" alt="" />
+                            <img src="img/thumbs/thumb3.png" alt="" />
+                            </a>
+                        </li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Jack</strong> <small class="muted"> - 19 hours ago</small></a></li>
+                        <li><a href=""><span class="icon-envelope"></span> New message from <strong>Daniel</strong> <small class="muted"> - 2 days ago</small></a></li>
+                        <li><a href=""><span class="icon-user"></span> <strong>Bruce</strong> is now following you <small class="muted"> - 2 days ago</small></a></li>
+                        <li class="viewmore"><a href="">View More Notifications</a></li>
+                    </ul>
+                </div><!--dropdown-->
+                
+    			<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html">Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="editprofile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href=""><span class="icon-wrench"></span> Account Settings</a></li>
+                        <li><a href=""><span class="icon-eye-open"></span> Privacy Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        	
+        	<ul class="breadcrumb">
+                <li><a href="trainings-list.html">Home</a> <span class="divider">/</span></li>
+                <li class="active">Online Trainings</li>
+            </ul>
+        </div><!--breadcrumbs-->
+      
+        
+        <div class="maincontent">
+        	<div class="contentinner">
+            	<h4 class="widgettitle">Filter</h4>
+                <div class="widgetcontent">
+                    	
+                    <div class="mainwrapperfilter">
+                        <div class="Trainingdatewrapper">
+                         <label>Training Dates</label>
+                          <span class="searchinputfielddatepicker">
+                                <label><input type="text" id="dateshow12"  placeholder="From"></label> 
+                          </span>
+                    </div>
+                        
+                         <div class="Trainingdatewrapper">
+                       
+                          <span class="searchinputfielddatepicker" style="margin: 25px 0 0 !important;">
+                                <label><input type="text" id="dateshow13"  placeholder="To"></label> 
+                          </span>
+                    </div>
+                        
+                        <div class="trainernamefilterwrapper">
+                        
+                                  <p>
+                        	<label>Trainer Name</label>
+                            <span class="formwrapper">
+                            	<select data-placeholder="Select Trainer Name" style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value=""></option> 
+                                  <option value="United Kingdom">Deepa Mishra</option> 
+                                  <option value="Afghanistan">Loganathan Ganeshan</option> 
+                                  <option value="Albania">Bhargav</option> 
+                                  <option value="Algeria">Nikitha</option> 
+                                   <option value="United Kingdom">Deepa Mishra</option> 
+                                  <option value="Afghanistan">Loganathan Ganeshan</option> 
+                                  <option value="Albania">Bhargav</option> 
+                                  <option value="Algeria">Nikitha</option> 
+                                   <option value="United Kingdom">Deepa Mishra</option> 
+                                  <option value="Afghanistan">Loganathan Ganeshan</option> 
+                                  <option value="Albania">Bhargav</option> 
+                                  <option value="Algeria">Nikitha</option> 
+                                    <option value="United Kingdom">Deepa Mishra</option> 
+                                  <option value="Afghanistan">Loganathan Ganeshan</option> 
+                                  <option value="Albania">Bhargav</option> 
+                                  <option value="Algeria">Nikitha</option> 
+                                </select>
+                            </span>
+                        </p>
+                            
+                        </div>
+                        
+                        
+                           <div class="trainernamefilterwrapper">
+                        
+                                  <p>
+                        	<label>Training Name</label>
+                            <span class="formwrapper">
+                            	<select data-placeholder="Select Training Name" style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value=""></option> 
+                                  <option  value="United States">Java Training</option> 
+                                  <option value="United Kingdom">Object Oriented language </option> 
+                                  <option value="Afghanistan">HTML Training</option> 
+                                  <option value="Albania">C++ Training</option> 
+                                  <option  value="United States">Java Training</option> 
+                                  <option value="United Kingdom">Object Oriented language </option> 
+                                  <option value="Afghanistan">HTML Training</option> 
+                                  <option value="Albania">C++ Training</option> 
+                                 <option  value="United States">Java Training</option> 
+                                  <option value="United Kingdom">Object Oriented language </option> 
+                                  <option value="Afghanistan">HTML Training</option> 
+                                  <option value="Albania">C++ Training</option>  
+                                   <option  value="United States">Java Training</option> 
+                                  <option value="United Kingdom">Object Oriented language </option> 
+                                  <option value="Afghanistan">HTML Training</option> 
+                                  <option value="Albania">C++ Training</option> 
+                                </select>
+                            </span>
+                        </p>
+                            
+                        </div>
+                        
+                        
+                        
+                          <div class="trainernamefilterwrapper statusfiltersection">
+                                  <p>
+                        	<label>Training Status</label>
+                            <span class="formwrapper">
+                            	<select data-placeholder="Select Training Status" style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value=""></option> 
+                                  <option value="United Kingdom">In Progress</option> 
+                                  <option value="Afghanistan">Completed</option> 
+                                  <option value="Albania">Not Yet Started</option> 
+                                  
+                                </select>
+                            </span>
+                        </p>
+                            
+                        </div>
+                        
+                        
+                        <div class="trainernamefilterwrapper clearsection">
+                              <label>Clear</label>
+                            <a class="btn btn-info btn-rounded gotrackfilter" href="">GO</a>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                    </div> 
+                     
+                <div class="" style=" float: left;width: 100%;">
+                    
+                    <table class="table table-bordered onlinetrainingstable" id="dyntable">
+                    <colgroup>
+                        <col class="con0" style="align: center; width: 4%" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                        <col class="con0" />
+                        <col class="con1" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                          	<th class="head0 nosort">Sr No</th>
+                            <th class="head0">Training Start Date</th>
+                            <th class="head1">Training Name</th>
+                            <th class="head0">No of Attendees</th>
+                            <th class="head1">Training Schedule</th>
+                            <th class="head0">Trainer Name</th>
+                             <th class="head0">Training Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd DEC'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                           <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           2
+                          </span></td>
+                            <td class="center">22nd JAN'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                           <td class="center"><a href="#">View Detail</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">Completed</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           3
+                          </span></td>
+                            <td class="center">22-4-16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                       <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">Not Yet started</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            4
+                          </span></td>
+                            <td class="center">22nd AUG'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                           <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                           5
+                          </span></td>
+                            <td class="center">22-4-16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                            <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">Completed</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd MAY'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                          <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">Not Yet Started</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd APR'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                           <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">Completed</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd JUN'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                            <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd JUL'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                            <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd AUG'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                          <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd SEP'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                             <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd DEC'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                           <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                        <tr class="gradeX">
+                          <td class="aligncenter"><span class="center">
+                            1
+                          </span></td>
+                            <td class="center">22nd JAN'16</td>
+                            <td class="center">Java Training</td>
+                            <td class="center">10</td>
+                          <td class="center"><a href="#listofscheduletrainings" data-toggle="modal">View Schedule</a></td>
+                           <td class="center">Deepa Mishra</td>
+                           <td class="center">In progress</td>
+                        </tr>
+                       
+                        
+                    </tbody>
+                </table>
+                    
+                    
+                    
+                	
+                </div>
+                
+                </div><!--widgetcontent-->
+                
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+     <div class="footer">
+    	<div class="footerleft">Edneed Online Services</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+    
+    
+    <!--Start pop up pop up list for schedule trainings -->
+    
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in Listofdealoftheday listofoffermodal popupforonlinetraining" id="listofscheduletrainings">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                            <h3 id="myModalLabel">Training Name</h3>
+            </div>
+            <div class="modal-body">
+                
+             
+                    <div class="leftwrapper1">
+                     <span class="titleforschedule">Date</span>
+                    </div>
+                    
+                    <div class="middlewrapper1">
+                      <span class="titleforschedulefortiming">Timing</span>
+                    </div>
+                    
+                    <div class="rightwrapper1">
+                     <span class="noofattendees">No Of Attendees</span>
+                    </div>
+                
+                  <div class="statusindividual">
+                     <span class="noofattendees">Status</span>
+                    </div>
+                
+                   <div class="mainlistwrapper currentscheduleslot">    
+                
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">10</span>
+                    </div>
+                       
+                       <div class="statusforindividualwrapper">
+                           <span>Completed</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                
+                  <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">20</span>
+                    </div>
+                      
+                        <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                
+                  <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">30</span>
+                    </div>
+                      
+                        <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                
+                  <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                        <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">10</span>
+                    </div>
+                      
+                    <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                  
+                </div>
+                
+                
+                  <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">20</span>
+                    </div>
+                      
+                      <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                
+                  <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">25</span>
+                    </div>
+                      
+                      <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                 <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">15</span>
+                    </div>
+                     
+                     <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                 <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                       <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">10</span>
+                    </div>
+                     
+                     <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                  
+                </div>
+                
+                 <div class="mainlistwrapper">
+                   <div class="leftwrapper">
+                           <p class="date">22nd MAY'16</p>
+                    </div>  
+                    
+                    
+                    <div class="middlewrapper">
+                        <span>00:00 - 1:00</span>
+                    </div>
+                    
+                    
+                    <div class="rightwrapper">
+                        <span class="upcoming">15</span>
+                    </div>
+                     
+                     <div class="statusforindividualwrapper">
+                           <span>In Process</span>
+                       </div>
+                    
+                </div>
+                
+            </div>
+    
+        </div>
+    
+    <!--End pop up list for schedule trainings -->
+    
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+     (function($){
+          $("#dateshow12").datepicker();
+         $("#dateshow13").datepicker();
+
+})(jQuery);
+    
+    </script>
+    
+
+
+<!--
+   <script>
+    // Change the selector if needed
+var $table = $('table.scroll'),
+    $bodyCells = $table.find('tbody tr:first').children(),
+    colWidth;
+
+// Adjust the width of thead cells when window resizes
+$(window).resize(function() {
+    // Get the tbody columns width array
+    colWidth = $bodyCells.map(function() {
+        return $(this).width();
+    }).get();
+    
+    // Set the width of thead columns
+    $table.find('thead tr').children().each(function(i, v) {
+        $(v).width(colWidth[i]);
+    });    
+}).resize(); // Trigger resize handler
+    </script> 
+-->
+</div><!--mainwrapper-->
+</body>
+</html>

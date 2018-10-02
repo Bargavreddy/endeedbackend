@@ -1,0 +1,845 @@
+.event-list-main-content-wrapper .ui-tabs-nav li.ui-state-active a {
+  border-bottom: 2px solid #e60000;
+  color: #e60000;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.event-list-main-content-wrapper .ui-tabs-nav li.ui-state-active a {
+  background-color: transparent;
+  text-decoration: none;
+}
+.event-list-main-content-wrapper .ui-tabs-nav li a {
+  border-right: medium none !important;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 14px 20px !important;
+}
+.createeventbutton {
+    background-color: #fff;
+    border: 1px solid #4996cf;
+    border-radius: 3px;
+    color: #4996cf;
+    float: right;
+    font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    margin: 0px 14px 0 0;
+    padding: 5px 7px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    right: 1px;
+    margin-top: 20px;
+}
+.createeventbutton img {
+  display: inline;
+  float: left;
+  height: 11px;
+  margin: 5px 5px 2px 0;
+  width: 11px;
+}
+.mainfilteroptionswrapperforsecond .active .secondtshot, .mainfilteroptionswrapperforthird .active .thirdshot, .mainfilteroptionswrapperforfourth .active .fourthshot, .mainfilteroptionswrapperfortrainingtype .active .trainingtypetshot {
+  color: #fff;
+}
+.clearfilterpanel {
+  float: right;
+}
+.clearfilterpanel .iconfa-trash {
+  float: left;
+  font-size: 14px;
+  margin: 1px 7px 0 0;
+}
+.mainsectioneventlist .event_Date {
+  background-image: url("../img/calendar_cir_icon_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+  height: 45px;
+  margin: 1px 14px 16px 6px;
+  padding: 10px 5px 0;
+  text-align: center;
+  width: 45px;
+}
+.countofinterestedpersons {
+  background-color: #3a87ad;
+  border-radius: 50%;
+  color: #fff !important;
+  font-size: 12px;
+  margin: 0 1px 0 11px;
+  padding: 1px 6px;
+}
+.confirmedevent {
+  float: left;
+  margin: 5px 0 0 24px;
+}
+.mainsectioneventlist .event_Date span {
+  color: #fff;
+  float: left;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 900 !important;
+  line-height: 6px;
+  padding: 0;
+  text-shadow: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.mainsectioneventlist .trainersection {
+  float: left;
+  text-align: center;
+  width: 10%;
+  margin-top: 0px !important;
+}
+.trainer-imageleft img {
+    border-radius: 50%;
+    height: 50px;
+    margin: 0 0 0 22px;
+    text-align: center;
+    width: 50px;
+}
+.sectionshare {
+  float: right;
+  width: 100%;
+}
+.invoicesection {
+  border-top: 1px dashed #ddd;
+  float: left;
+  padding: 5px 0;
+  width: 100%;
+}
+.invoicesection > ul {
+  margin: 0 !important;
+}
+.invoicesection .inactive {
+  background-color: transparent;
+}
+.invoicesection li {
+  float: left;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  list-style: outside none none;
+  margin: 9px 2px 0 6px;
+  text-align: center;
+  width: 18%;
+}
+.trainer-imageleft label {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
+.mainsectioneventlist .event_Date label {
+  color: #4d4d4d;
+  float: left;
+  font-size: 20px;
+  font-weight: 500 !important;
+  line-height: 46px;
+  padding: 0;
+  width: 100%;
+}
+.clearfiltertbutton {
+  background-color: transparent;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  color: #777;
+  float: right;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  margin: 15px 19px 0 0 !important;
+  padding: 1px 5px;
+  position: relative;
+}
+.filteredbysection {
+    float: left;
+    width: 100%;
+    margin-top: -13px;
+    margin-bottom: 8px;
+}
+.mainsectioneventlist {
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 1px #bbb;
+  float: left;
+  margin: 0 0 10px;
+  padding: 10px;
+  width: 98%;
+}
+.mainsectioneventlist .event_info {
+  float: left;
+  margin: 0 0 0 3px;
+  width: 45%;
+}
+.trainingName {
+  color: #777;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+.mainsectioneventlist .event_info .categoryfuture {
+  color: #f69b10;
+  display: inline;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 0px 0px 0px 9px;
+}
+.mainsectioneventlist .title {
+  color: #676767;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 5px 0 3px;
+}
+.mainsectioneventlist .event_info .iconfa-map-marker, .EventInfoWrapper .event_infoforclasroom .iconfa-map-marker {
+  color: #ff471a;
+  font-size: 17px;
+}
+.mainsectioneventlist .event_info .address {
+  color: #676767;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  padding: 0 0 0 8px;
+}
+.mainsectioneventlist .event_info .event_timingTag {
+  color: #8c8c8c;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 3px 0 10px;
+}
+.event-list-main-content-wrapper .ui-tabs-panel {
+  background: #eae8eb none repeat scroll 0 0;
+  margin-top: -4px;
+}
+.Event-ListWrapper .pricingwraper {
+  float: left;
+  margin: 0 50px;
+  text-align: center;
+}
+.eventcategory {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  float: left;
+  padding: 2px 11px;
+}
+.eventcategory span {
+  color: #0778aa;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
+.eventcategory > label {
+  display: inline;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.Event-ListWrapper .pricingsection {
+  float: left;
+  margin: 19px 0 10px;
+  text-align: left !important;
+  width: 100%;
+}
+.Event-ListWrapper .pricingwraper span {
+  color: #838688;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.Event-ListWrapper .pricingwraper label {
+  color: #4994cf;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  margin: 0 13px 0 0;
+}
+.event-list-main-content-wrapper .alternateeventlist {
+  background-color: #f7f5f8;
+}
+.event-list-main-content-wrapper .rightpanelnotifiaction {
+  float: right;
+  width: 15%;
+}
+.event-list-main-content-wrapper .editpanel {
+  float: right;
+}
+.event-list-main-content-wrapper .notificationpanel {
+  float: left;
+  margin: 0;
+}
+.event-list-main-content-wrapper .notificationpanel img {
+  float: right;
+  height: 22px;
+  width: 22px;
+}
+.event-list-main-content-wrapper .notificationpanel > span {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+.pricingsection .activeoffer {
+/*  border: 2px solid #33cc33;*/
+  border-radius: 3px;
+  color: #fff !important;
+}
+.comonsectioneditset img {
+  float: left;
+  height: 20px;
+  margin: -11px 0 0 -28px;
+  width: 20px;
+}
+.event-list-main-content-wrapper .ui-tabs-nav {
+  height: 48px;
+}
+.pricingwraper .LMOSet {
+  border: 2px solid #ff3300;
+  border-radius: 3px;
+  color: red;
+  margin: 0 0 0 13px;
+  padding: 1px 16px;
+}
+.pricingwraper .LMOSet:hover {
+  color: red;
+    text-decoration: none ;
+}
+.pricingwraper .iconfa-plus {
+  color: #ff3300;
+  margin: 0 8px 0 0;
+}
+
+/* css for last minute offer */
+.Lastminute  .modal-header {
+    background-color: #0778aa;
+    color: #fff;
+}
+.Lastminute  .modal-header h3 {
+  color: #fff;
+  line-height: 30px;
+  margin: 0;
+  font-family: sans-serif;
+}
+.Lastminute .close {
+  color: #fff;
+  opacity: 1;
+}
+.rightpanelnotifiaction .editpanel .btn-primary{
+background: #00b7ea; 
+background: -moz-linear-gradient(top, #00b7ea 0%, #009ec3 100%); 
+background: -webkit-linear-gradient(top, #00b7ea 0%,#009ec3 100%); 
+background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#009ec3',GradientType=0 ); 
+border-color: #2a85bc;
+border-radius: 3px !important;
+float: right;
+font-family: sans-serif;
+margin: 6px 0 0;
+padding: 3px 4px;
+    font-weight: normal;
+}
+.rightpanelnotifiaction .editpanel .dropdown-menu {
+  margin: 35px 0 0 !important;
+}
+.editpanel .iconfa-pencil {
+  color: #fff !important;
+  padding: 0 8px 0 3px;
+}
+.editpanel .iconfa-bell {
+  float: left;
+  font-size: 15px;
+  margin: 1px 0 0;
+  padding: 0 5px;
+}
+.actioneditcreate .btn {
+  background-color: Transparent !important;
+  background-image: none !important;
+  border: 1px solid #e6e6e6 !important;
+  border-radius: 4px;
+  box-shadow: none !important;
+  color: #999999 !important;
+  font-family: sans-serif;
+    font-weight: normal;
+}
+.Event-ListWrapper .edit-profile-dropdown a {
+  background-color: #f2f2f2;
+  float: left;
+  margin: 0 0 1px;
+  padding: 6px !important;
+  text-align: left !important;
+  width: 93%;
+}
+.notificationpanel  .notificationall {
+  background-color: #fff !important;
+  color: #777 !important;
+  margin: 0 5px;
+}
+.event-list-main-content-wrapper .MainEventSearch .icon-search {
+  margin: 2px 5px 0 95px;
+  position: absolute;
+  top: 2px !important;
+}
+.event-list-main-content-wrapper .MainEventSearch .serachBy {
+  margin-left: -28px;
+  margin-top: -2px;
+  width: 117px;
+}
+/*
+.event-list-main-content-wrapper .MainEventSearch img {
+  margin-left: 67%;
+  position: absolute;
+  top: 90px;
+}
+*/
+.event-list-main-content-wrapper .MainEventSearch img {
+  left: 190px;
+  position: absolute;
+  top: 4px;
+}
+.event-list-main-content-wrapper .MainEventSearch {
+  float: left;
+  margin: 10px 0 5px;
+  width: 100%;
+}
+.event-list-main-content-wrapper .breadcrumb {
+  margin: -1px 0 9px 11px !important;
+}
+#EventFilterByBtn .iconfa-filter {
+  font-size: 14px;
+  margin: 0 8px 0 0;
+}
+.alltrainingsection .selector {
+  width: 150px;
+}
+.filterbybutton {
+  background: #fff none repeat scroll 0 0 !important;
+  border: 2px solid #ccc;
+  border-radius: 3px !important;
+  color: #777 !important;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px !important;
+}
+.EvtLstFilterByContentDiv {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 10px #9d9d9d;
+  display: none;
+  height: 380px;
+  left: 10px;
+  margin-left: 6px;
+  overflow: hidden;
+  padding: 20px 10px;
+  position: absolute;
+  right: 0;
+  top: 124px;
+  width: 968px;
+  z-index: 999;
+}
+.event-list-main-content-wrapper .breadcrumb li.active {
+  color: #666;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
+.event-list-main-content-wrapper .myeventslistsearch {
+  float: left !important;
+}
+.EvtLstFilterByContentDiv .btn-group {
+ font-size: 12px !important;
+ font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
+.confirmedevent  label {
+  display: inline;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
+.confirmedeventconfirmationmodal .confirmwrappercontent .mainTextError {
+  margin: 10px 0;
+}
+.confirmedeventconfirmationmodal .confirmwrappercontent .mainTextError li {
+  list-style: outside none none;
+}
+.confirmedeventconfirmationmodal .confirmwrappercontent .mainTextError p {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 18px 0 40px;
+}
+.confirmedeventconfirmationmodal .confirmwrappercontent .mainTextError > ul {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  margin: 14px 0 41px;
+  text-align: left;
+}
+.confirmedeventconfirmationmodal .confirmwrappercontent .mainTextError label {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: left;
+}
+.confirmeventcategory  span {
+  color: #2eb82e !important;
+}
+.confirmeventcategory {
+   border:2px solid #33cc33 !important;
+  color: #777 !important;
+}
+.confirmeventcategory .countofinterestedpersons {
+  color: #fff !important;
+}
+        .EvtLstFilterByContentDiv p:hover
+        {
+            text-decoration: underline;
+        }
+        .EvtLstFilterMainTable
+        {
+            border-collapse: collapse;
+            width: 100%;
+        }  
+
+.mainfilteroptionswrapper > li {
+  border-bottom: 1px solid #e6e6e6;
+  list-style: outside none none;
+  padding: 20px 23px 20px 14px;
+  position: relative;
+}
+.firstFileterArrow, .secondFileterArrow, .thiredFileterArrow {
+  margin-top: 5px !important;
+  position: absolute;
+  right: 20px;
+}
+.secondtshot.view123.active {
+    position: relative;
+}
+.mainfilteroptionswrapper > li:last-child {
+  border-bottom: medium none;
+}
+.secondtshot, .thirdshot, .fourthshot, .selectedsubjectsshot {
+  color: #777;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.selectedsubjects:hover, .Allsubjects:hover, .firstshot:hover,.selectedsubjects:active, .Allsubjects:active, .firstshot:active {
+  color: #fff !important;
+  text-decoration: none;
+}
+.selectedsubjectsshot {
+  white-space: normal !important;
+}
+.mainfilteroptionswrapperforsecond li, .mainfilteroptionswrapperforthird li, .mainfilteroptionswrapperforfourth li, .mainfilteroptionswrapperforselectedsubjects li, .mainfilteroptionswrapperfortrainingtype li {
+  border-bottom: 1px dashed #e6e6e6;
+  list-style: outside none none;
+  padding: 13px 32px 13px 16px;
+  white-space: nowrap;
+  width: 185px;
+}
+.firstshot:focus, .secondtshot:focus, .thirdshot:focus, .fourthshot:focus, .firstshot:active, .secondtshot:active, .thirdshot:active, .fourthshot:active  {
+  text-decoration: none !important;
+    color: #fff !important;
+}
+.mainfilteroptionswrapperforsecond  {
+           margin: 0 0 0 37px;
+}
+.mainfilteroptionswrapperforthird{
+     margin: 0px 0px 0px 40px;
+}
+.mainfilteroptionswrapperforfourth{
+   margin: 0px 0px 0px 40px;
+}
+ .mainfilteroptionswrapperforselectedsubjects {
+  background-color: #f2f2f2;
+  height: 375px;
+  margin: 0 0 0 1px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 245px;
+}
+     
+.filtersecondoption {
+        float: left;
+   }
+     .filtermainoption {
+  float: left;
+}
+     .filterthirdoption {
+  float: left;
+}
+.filterfourthoption {
+  float: left;
+  margin: 0;
+}
+.filtermainoption {
+  float: left;
+}
+.mainfilteroptionswrapperforsecond > li:hover, .mainfilteroptionswrapperforthird li:hover, .mainfilteroptionswrapperforfourth li:hover, .mainfilteroptionswrapperforselectedsubjects li:hover, .mainfilteroptionswrapperfortrainingtype li:hover {
+  background-color: #f2f2f2;
+         color: #777;
+}
+.secondtshot:hover, .thirdshot:hover, .fourthshot:hover, .selectedsubjectsshot:hover, .trainingtypetshot:hover {
+  color: #777 !important;
+  text-decoration: none !important;
+}
+.mainfilteroptionswrapperforsecond {
+    background-color: #f8f8f8;
+  margin: 0 0 0 1px;
+}
+.mainfilteroptionswrapperfortrainingtype {
+     background-color: #f8f8f8;
+  margin: 0 0 0 1px;
+}
+.mainfilteroptionswrapperforthird {
+  background-color: #f8f8f8;
+  margin: 0 0 0 1px;
+}
+.filtertrainingtypeoption{
+    float: left;
+}
+.mainfilteroptionswrapperforfourth {
+  background-color: #f8f8f8;
+  margin: 0 0 0 1px;
+  padding: 0 0 1px;
+}
+.fourthshot .datepickerfromdate.hasDatepicker {
+  width: 63px;
+}
+.fourthshot .datepickertodate.hasDatepicker {
+  width: 63px;
+}
+     .filterselectedsubjects {
+  float: left;
+}
+.mainfilteroptionswrapperforselectedsubjects{
+    float: left;
+}
+.firstshot, .Allsubjects, .selectedsubjects, .trainingytpe {
+  color: #fff !important;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-decoration: none !important;
+}
+.mainfilteroptionswrapper .iconfa-gift, .mainfilteroptionswrapper .iconfa-book, .mainfilteroptionswrapper .iconfa-edit{
+  color: #0778aa;
+  font-size: 16px;
+  padding: 0 10px 0 0;
+}
+.firstshot > img, .Allsubjects img, .selectedsubjects img, .secondtshot img, .thirdshot img, .trainingytpe img{
+  display: inline;
+  float: right;
+  margin-top: -13px;
+  padding: 0;
+  width: 10px;
+}
+.selectedsubjectsshot img {
+  display: inline;
+  float: right;
+  height: 10px;
+  margin-top: -16px;
+  width: 10px;
+}
+.divderline {
+  border: 1px solid orange;
+  height: 0;
+}
+.mainfilteroptionswrapper {
+  background-color: #999;
+  width: 210px;
+}
+.EvtLstFilterByContentDiv .active {
+  background-color: #bbb;
+  color: #777;
+}
+.filterok {
+  margin: 0 0 0 7px;
+  padding: 1px 7px;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+}
+.mainfilteroptionswrapperforsecond > li:last-child, .mainfilteroptionswrapperforthird > li:last-child, .mainfilteroptionswrapperforfourth > li:last-child {
+  border-bottom: medium none;
+}
+.filterfourthoption .dateselection {
+  display: inline;
+  float: left;
+  margin: 0 6px 0 0;
+}
+.sharepanel .shareeventbutton {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #93cede 0%, #75bdd1 41%, #49a5bf 100%) repeat scroll 0 0;
+  border: medium none;
+  border-radius: 3px;
+  box-shadow: none !important;
+  color: #fff;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 4px 8px;
+  text-shadow: none;
+}
+.sharepanel .iconfa-share {
+  float: left;
+  font-size: 16px;
+  margin: 4px 5px 0 0;
+}
+.sharepanel .caret {
+  border-top: 4px solid #fff;
+}
+.sharepanel .iconfa-share-alt {
+  margin: 0 5px 0 0;
+}
+.sharepanel .iconfa-copy{
+     margin: 0 5px 0 0;
+}
+.optionsforshare li {
+  background-color: #bbb;
+  border-radius: 3px;
+  list-style: outside none none;
+  margin: 9px 0 6px;
+  padding: 3px !important;
+  
+}
+.optionsforshare > ul {
+  margin: 0 !important;
+}
+.copylinkpanel .input-append a {
+  float: left;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  margin: 2px;
+  max-width: 150px;
+  min-width: 70px;
+  overflow: hidden;
+}
+.copylinkpanel .input-append img {
+  float: left;
+  height: 21px;
+  width: 21px;
+}
+.par.copylinkpanel {
+  float: right;
+  margin: 5px 0 0;
+  width: 182px;
+}
+.datesecton {
+  float: left;
+}
+.tooltipoptions {
+  background-color: #000;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  padding: 1px 10px;
+  position: absolute;
+  right: 157px;
+  top: 191px;
+}
+.editoptionforoffers {
+  color: #0778aa;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: underline;
+}
+.listofoffermodal .leftwrapper {
+  float: left;
+  padding: 0 0 0 6px;
+  width: 44% !important;
+}
+.listofoffermodal .middlewrapper {
+  float: left;
+  margin: 0 0 0 -23px;
+  width: 21%;
+}
+.listofoffermodal .middlewrapper > span {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.listofoffermodal .upcoming {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 12px 0 31px;
+}
+.listofoffermodal .date {
+  font-size: 14px;
+}
+.listofoffermodal .mainlistwrapper {
+  padding: 10px 12px;
+    min-height: 0px !important;
+}
+.coursefeeinformation {
+  border-bottom: 1px solid #ddd;
+  margin: 17px 0 13px;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 100%;
+}
+.coursefeeinformation > span {
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: right;
+  width: 72%;
+}
+.submitforeditoffer {
+  margin: 19px 0 0 -23px;
+}
+.coursefeeinformation label {
+  display: inline;
+  font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 0 0 35px;
+}
+.enterofferamount {
+  display: block;
+}
+.dealofthewrapper {
+  float: left;
+  width: 51%;
+}
+.coursefee > spam {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+/* css for completed events */
+
+.completedeventsearch .serachBy {
+  margin-left: -9px !important;
+  margin-top: -2px !important;
+}
+.completedeventsearch img {
+  margin-left: 67% !important;
+}
+.searchbyoptions {
+  text-align: left;
+  width: 198px;
+}
+.completedeventsearch .icon-search {
+  margin: 1px 5px 0 130px !important;
+  position: absolute;
+  top: 89px !important;
+}
+ .completedeventsearch {
+  margin: 10px 0 15px 3px !important;
+}
+.overridingtext .mainTextError p{
+    font-family: 'HelveticaNeue', Arial, Helvetica, sans-serif; !important;
+    font-size: 15px !important;
+    margin: 50px 0 40px !important;
+}
+.payment-type {
+  float: right;
+  text-align: center;
+}
+.payment-status {
+  float: right;
+}
+.payment-type label {
+  color: Green !important;
+  display: block !important;
+  font-size: 11px !important;
+}
+.payment-status > label {
+  color: Green !important;
+  display: inline !important;
+  font-size: 11px !important;
+}
+.saveddatesection {
+  float: left;
+  margin: 12px 0 0;
+}
+.saveddatesection > span {
+  font-family: sans-serif;
+}
+.freeeventsection{
+   font-size:20px;
+    color:green !important;
+}
+.comonsectioneditset {
+  display: block;
+  width: auto;
+}
+.tabsforalltraining li a {
+  background-color: transparent !important;
+  color: #000 !important;
+}
+.tabsforalltraining li:first-child {
+ border-left: none !important;
+}
+.tabsforalltraining li a {
+border-bottom: 2px solid red;
+    border-top:0px !important;
+}
+.MainEventSearch .navbar-inner {
+  padding: 12px 20px;
+}

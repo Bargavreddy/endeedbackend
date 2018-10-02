@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Provider Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/custom_style_2.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery.alerts.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<style>
+.right-tick {
+  background-color: transparent !important;
+  border: medium none !important;
+  box-shadow: none !important;
+  display: inline;
+  height: 20px !important;
+  min-height: 39px !important;
+  min-width: 20px !important;
+  padding: 11px !important;
+  width: 94px !important;
+}
+.verified {
+  margin: -28px 0 0;
+}
+.IFSCCode #uniform-undefined {
+    float: none !important;
+}
+  .choose-country {
+  margin-left: 133px !important;
+}
+    .add-country{margin-left: 1px !important;}
+    .configuration .selector {
+  width: 240px !important;
+}
+.fiftypwrcentthree {
+  float: left;
+  width: 29%;
+}
+.fiftypercentthree {
+  float: left;
+  width: 42%;
+}
+.fiftypercentthree label {
+  width: 102px !important;
+}
+.fiftypwrcentthree label {
+  width: 135px !important;
+}
+.stdform div .field {
+  margin-left: 0px !important;
+}
+/*
+.selectLanuages:nth-child(even) {
+        background-color: #f2f2f2;
+}
+*/
+.upload-logos-section .progressvideosection {
+  height: 15px !important;
+  margin: 9px 0 24px 188px;
+  width: 39%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+      <div class="leftpanel mainLogo-wrapper">
+    	
+       <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/><span>v1.0</span></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form  method="post">
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+            <div class="plainwidget animate3 fadeInUp">
+            <div id="chats-right-top" class="enquiries">
+             <span><img src="img/chat.png"><span class="badge badge-important">6</span><span>Chats</span></span>
+            </div>
+<!--
+
+              <div id="views-right-top" class="views">
+                 <span><img src="img/views.png"><span class="badge badge-important">6</span><span>Views</span></span>
+              </div>
+-->         
+              <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+
+
+        </div>
+        <!--plainwidget-->
+        
+         <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>
+                 <li class="dropdown active"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+
+                    </ul>
+                </li>
+                 <li class="dropdown"><a href="#"><span class="iconsweets-day"></span> Tranings</a>
+                	<ul>
+                        	<li><a href="event-list.html">My Tranings</a></li>
+                           <li><a href="create-event.html">Create Tranings(s)</a></li>
+                          <li><a href="active-events.html">Active Tranings</a></li>
+                           <li><a href="completed-events.html">Completed Tranings</a></li>
+                          <li><a href="saved-event.html">Saved Tranings</a></li>
+                        <li><a href="online-trainings.html">Online Tracking</a></li>
+
+                    </ul>
+                </li>
+
+                    <li><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+                    <li><a href="my-packages.html"><span class="iconsweets-documents"></span>My Packages</a></li>
+                    <li><a href="faq.html"><span class="iconsweets-book-large"></span>FAQ's</a></li>
+                    <li><a href="videos.html"><span class="icon-facetime-video"></span>How To Videos</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+    				<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/image.png"/>Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my-profile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                     
+                        
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li><a href="forms.html">profile</a> <span class="divider">/</span></li>
+                <li class="active">My Profile</li>
+            </ul>
+        </div><!--breadcrumbs-->
+          <div class="pagetitle">
+        	<h1>Profile</h1> 
+<!--            <span class="View-profile"><a class="btn btn-info btn-rounded" href="organissation-viewprofile.html">View Profile</a></span>-->
+            
+<!--
+            <div class="profileincomplete">
+                <img src="img/alertprofileimg.png"/>
+                <label>Profile Incomplete </label>
+                         	   <div class="dropdown userinfo">
+                    <a class="dropdown-toggle dropdownforalertprofile" data-toggle="dropdown" onclick="searchby();" data-target="#" href="/page.html" style=""><b class="caret"></b></a>
+                    <ul class="dropdown-menu info_menu infomenuprofile" style="">
+                        <li><a href="">Demo Video</a></li>
+                        <li><a href="">Communication Address</a></li>
+                        <li><a href="">Languages</a></li>
+                         <li><a href="">Pan Card</a></li>
+                         <li><a href="">Bank Details</a></li>
+                         <li><a href="">Education Details</a></li>
+                         <li><a href="">Certifications Details</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+-->
+        </div><!--pagetitle-->
+        
+        <div class="maincontent">
+        	<div class="contentinner">
+                
+            
+                <div class="widgetcontent">
+                	
+                    <!-- START OF TABBED WIZARD -->
+                    <form class="stdform provider-info" method="post">
+                    <div id="wizard2" class="wizard tabbedwizard">
+                    	
+                        <ul class="tabbedmenu">
+                            <li>
+                            	<a href="#wiz1step2_1">
+                                	<span class="h2">Freelancer Details</span>
+                                    <span class="label">Basic Information</span>
+                                </a>
+                            </li>
+<!--
+                            <li>
+                            	<a href="#wiz1step2_2">
+                                	<span class="h2">Document Details</span>
+                                    <span class="label">Document Information</span>
+                                </a>
+                            </li>
+-->
+<!--
+                            <li>
+                            	<a href="#wiz1step2_3">
+                                	<span class="h2">Bank Details</span>
+                                    <span class="label">Account Information</span>
+                                </a>
+                            </li>
+-->
+                              <li>
+                            	<a href="#wiz1step2_4">
+                                	<span class="h2">Additional Information</span>
+                                    <span class="label">Additional Information</span>
+                                </a>
+                            </li>
+                            
+                            
+                             <li>
+                            	<a href="#wiz1step2_3">
+                                	<span class="h2"> My Demos </span>
+                                    <span class="label"> Training demo Videos </span>
+                                </a>
+                            </li>
+                            
+                             <li>
+                            	<a href="#wiz1step2_5">
+                                	<span class="h2"> My Exams </span>
+                                    <span class="label"> Training Related Exams </span>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                        
+                        	
+                        <div id="wiz1step2_1" class="col-lg-12 formwiz provider-details">
+<!--                        	<h4>Step 1: Basic Information</h4>-->
+                            
+                            <h3>Basic information</h3>
+                            
+                             <div class="mainBasicInformationWrapper">
+                            
+                            <div class="fiftypercent">
+                        	
+                                <p>
+                                    <label>User Name :</label>
+                                    <span class="field"><input type="text" name="OrganizationName" class="input-xlarge" /></span>
+                                </p>
+                                
+                                <p>
+                                    <label>Email :</label>
+                                    <span class="field"><input type="text" name="email" class="input-xlarge" /></span>
+                                </p>
+                                
+<!--
+                                <p>
+                                    <label id="label_website">Block Url :</label>
+                                    <span class="field"><input type="text" name="website" id="org_website" class="input-xlarge progressCnt"></span>
+                                </p>
+-->
+                                
+                                
+                                      <p>
+                        	<label>About  :</label>
+<!--
+                            <span class="field"><textarea id="autoResizeTA" cols="80" rows="5" class="input-xlarge" style="resize: vertical" placeholder=""></textarea></span> 
+                            <lablel class="maxcharacters">(Max 500 char)</lablel>
+-->
+                        <span class="formwrapper selectslotsDiv descriptionfreelancer" data-target="#abouttraining" data-toggle="modal"><i class="iconfa-pencil"></i>Click here to write about you</span>
+                                          
+                        </p>
+                                
+                                
+                                
+                            </div>
+                            
+                            <div class="fiftypercent verify-otp">
+                            
+
+                             <p>
+<!--
+                                    <label>Organization Display Name :</label>
+                                    <span class="field"><input type="text" name="OrganizationDisplayName<" class="input-xlarge" /></span>
+-->
+                                </p>
+
+                                
+                                 <p>
+                                    <label>Verify OTP, sent to : <span class="clrblk">+91 9008050305 <span style="display: block;"><u><a href="#" onclick="change-number();" class="mrgn_l10">Change Number</a> </u></span></span><br></label>
+                                    <span class="field verifyOTP"><input type="text" name="verifyOTP" class="input-small" /><a class="btn btn-rounded verify-btn" href="">Verify</a>
+                                   
+                                        <p style="margin-top:-18px !important">If you don't receive SMS in 5 mins, click<u><a class="" href="#"> Resend OTP </a></u><span id="Pin-No2-Error" class="err-msg"></span></p>                                                              
+                                                           
+                                     </span>
+                                     <span class="changeNumberToMobileNumber" style="display:none;"><input type="text" name="verifyOTP" class="input-small" /><a class="btn btn-info btn-rounded" href="">Send OTP</a></span>
+                                </p>
+                                
+                                
+                                       <p>
+                                    <label>Mobile Number : <span class="clrblk">+91 9008050305 <span style="display: block;">   <u><a   class="mrgn_l10" href="#mobilenimberreenter" data-toggle="modal" >Change Number</a> </u>  </span></span><br></label>
+<!--                                   <a href="" class="btn btn-rounded verify-btn verified">Verified</a> -->
+<span class="field verifyOTP"><img class="right-tick" src="img/verified-button.png"/> </span>
+                                    </p>
+                                
+                                
+                            
+                            
+                            </div>
+                                   <div class="upload-logos-section" style="margin:20px 0px 0px 0px;">
+                            <div class="fiftypercent">
+
+                                <p>
+                            <label>Upload Profile image :</label>
+                            <span class="field">
+                            	<input type="file" class="uniform-file" name="filename" />
+<!--                               <span class="example-logo" id="exampleLogo"> <u>Example Logo </u></span>-->
+<!--                                <div class="image-hover" id="example1"><img src="img/appIcon_256.png"/></div>-->
+                                
+                            </span>
+                        </p>
+                                
+                        
+                                
+                                </div>
+                                
+                                 <div class="fiftypercent">
+                                
+                                 <p>
+                                    <label>Uploaded Profile image :</label>
+                                    <span class="field upload organisation"><img src="img/appIcon_256.png"/></span>
+                                </p>
+                                     
+                                     
+                                </div>
+                            
+                            </div>
+                            </div>
+                            
+                            
+                              <h3 style="float:left;width:100%;"> Communication address </h3>
+                            
+                            
+                              <div class="communication communicationAddr">
+                                 <p>
+                                    <label>Address:</label>
+                                    <span class="field"><input type="text" name="address1" class="input-xlarge" /></span>
+                                </p>
+                            
+<!--
+                                 <p>
+                                    <label>Address Line 2 :</label>
+                                    <span class="field"><input type="text" name="address2" class="input-xlarge" /></span>
+                                </p>
+                                  
+                                   <p>
+                                    <label>Address Line 3 :</label>
+                                    <span class="field"><input type="text" name="address3" class="input-xlarge" /></span>
+                                </p>
+-->
+                            
+                                                
+                                
+                        <p>
+                        	<label>State :</label>
+                            <span class="field">
+							<select name="select" disabled="disabled" class="chzn-select selectWidthIncreased">
+                            	<option value="">Choose One</option>
+                                <option value="">Selection One</option>
+                                <option value="">Selection Two</option>
+                                <option value="">Selection Three</option>
+                                <option value="">Selection Four</option>
+                            </select>
+                            </span>
+                        </p>
+                                 
+                             <p>
+                        	<label>City :</label>
+                            <span class="field">
+							<select name="select" disabled="disabled" class="chzn-select selectWidthIncreased">
+                            	<option value="">Choose One</option>
+                                <option value="">Selection One</option>
+                                <option value="">Selection Two</option>
+                                <option value="">Selection Three</option>
+                                <option value="">Selection Four</option>
+                            </select>
+                            </span>
+                        </p>    
+                                 
+                              
+                                
+                       <p>
+                        <label>Pin Code :</label>
+                        <span class="field"><input type="text" name="pin-code" class="input-xlarge" /></span>
+                    </p>         
+                     
+                               
+                            
+                            </div>
+                          
+          
+                     <div class="mainaddsectionforlanguage">
+                         
+                              <h3>Languages Known</h3>
+                         
+                                <div class="SearchWrapper">
+                                    <span class="searchMain"><i class="icon-search"></i><input class="searchsubjects" type="text" placeholder="Start typing Languages"><label class="savelanguage">Save</label><i class=" iconfa-remove-sign"></i></span>
+                                           
+
+<!--
+                                           <div class="ListItemsSubjects">
+                                               
+                                               <ul>
+                                              <li class="even">Hindi
+                                                   <p  class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                    <li class="odd">English
+                                                     <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                   <li class="even">French
+                                                     <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                     <li class="odd">Tamil
+                                                     <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                 <li class="even">Kannada
+                                                    <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                    <li class="odd">Marathi
+                                                   <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                  <li class="even">Gujrati
+                                                   <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                   <li class="odd">Oriya
+                                                   <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                      <li class="even">Bengali
+                                                      <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                   <li class="odd">Unjabi
+                                                    <p class="checkboxSelectSubjects"><input type="checkbox"></p>
+                                                   </li>
+                                                 
+                                               </ul>
+                                               
+                                       </div>
+-->
+
+                                    </div>
+                         
+                         
+                         
+                      
+                          <div class="selectedlanguagepanel">
+<!--
+                               <h4 class="widgettitle selectedlanguagetitile" style="margin-bottom:0px !important;">Selected Language</h4>
+                             <ul class="morethansix">
+                                 <li><label>English</label><i class=" icon-remove"></i></li>
+                                 <li class="even"><label>Hindi</label><i class=" icon-remove"></i></li>
+                                  <li><label>French</label><i class=" icon-remove"></i></li>
+                                 
+                              </ul>
+-->
+                              
+<!--
+                        <p>
+                               <span class="field">
+                            	<input name="tags" id="tags" class="input-large" value="javscript,jquery,css,html" />
+                            </span>
+                        </p>
+-->
+                              
+                              
+                              <p>
+                               <span class="field tagsinput">
+                                   <span class="tag"><span>Hindi&nbsp;&nbsp;</span><a href="#" title="Removing tag">x</a></span>
+                                   <span class="tag"><span>English&nbsp;&nbsp;</span><a href="#" title="Removing tag">x</a></span>
+                                   <span class="tag"><span>Marathi&nbsp;&nbsp;</span><a href="#" title="Removing tag">x</a></span>
+                                   <span class="tag"><span>Telugu&nbsp;&nbsp;</span><a href="#" title="Removing tag">x</a></span>
+                                  
+                            </span>
+                        </p>
+                              
+                              
+                              
+                         </div>
+                    
+                    </div>
+                            
+                            	<h3 class="pancardetails">Document details <small>(For invoicing and payment purpose)</small></h3> 
+                            <div class="fiftypercent">
+                               
+                                
+                                 <p>
+                                    <label>Pan Card Number</label>
+                                    <span class="field"><input type="text" name="PanCardNumber" class="input-xlarge" /></span>
+                                </p>
+                                
+<!--
+                                 <p>
+                                    <label>Service Tax<span class="ifapplied">(If applied)</span></label>
+                                    <span class="field"><input type="text" name="ServiceTax" class="input-xlarge" /></span>
+                                </p>
+-->
+
+                            </div>
+                            
+                            <div class="fiftypercent">
+                  
+                            <p>
+                            <label>File Upload</label>
+                            <span class="field">
+                               
+                                <button class="btn btn-primary btnView" href="#viewdocument" data-toggle="modal"><i class="iconfa-eye-open"></i>View</button>
+                                <button class="btn btnchange" type="reset"><i class="iconfa-pencil"></i>Change</button>
+                         
+                                
+                                </span>
+                        </p>
+                              
+                                
+<!--
+                         <p>
+                            <label>File Upload</label>
+                            <span class="field">
+                            	<div class="uploader" id="uniform-undefined">
+                                    <input type="file" name="filename" class="uniform-file" size="19" style="opacity: 0;">
+                                    <span class="filename" style="-moz-user-select: none;">No file selected</span>
+                                    <span class="action" style="-moz-user-select: none;">Upload</span>
+                                </div>
+                            </span>
+                        </p>
+                              
+-->
+                                
+                              
+                                </div>
+                            
+                            
+                            
+                            <h3 class="bankdetails">Bank details</h3>
+                            <div class="par terms">
+                                <div class="fiftypercent">
+                                <p>
+                                    <label>Beneficiary Name :</label>
+                                    <span class="field"><input type="text" name="BeneficiaryName" class="input-xlarge" /></span>
+                                </p>
+                                
+                                 <p>
+                                    <label>Account Number :</label>
+                                    <span class="field"><input type="text" name="CurrentAccountNumber" class="input-xlarge" /></span>
+                                </p>
+                                
+                                 <p>
+                                    <label>IFSC Code</label>
+                                    <span class="field"><input type="text" name="IFSCCode" class="input-xlarge" /></span>
+<!--                                      <span class="IFSCForgot pull-right" href="#IFSCCode" data-toggle="modal"><u>I don't remember IFSC code</u></span> <span class="IFSCForgot pull-right" href="#IFSCCode" data-toggle="modal"><u>I don't remember IFSC code</u></span>-->
+                                 </p>
+                                    
+<!--
+                                    <p>
+                                <label style=" margin: 19px 0 0;">Bank Name</label>
+                                <span class="field"><select name="selection" id="selection2" class="chzn-select selectWidthIncreased" disabled="disabled">
+                                    <option value="">Select Type of Proof</option>
+                                    <option value="">Landlline Bill</option>
+                                    <option value="1">Bank statement</option>
+                                    <option value="2">Electricity Bill</option>
+                                    <option value="3">Rental Agreement</option>
+                                
+                                </select></span>
+                                </p>
+-->
+                                
+                                 
+                                
+                                </div>
+                            <div class="fiftypercent">
+<!--
+                               <p>
+                            <label>Upload Scanned cancelled Cheque Copy :</label>
+                            <span class="field">
+                            	<input type="file" class="uniform-file" name="filename" />
+                            </span>
+                        </p>
+                                
+-->
+                                
+<!--
+                                <p>
+                                    <label>Repeat Account Number :</label>
+                                    <span class="field"><input type="text" name="RepeatAccountNumber" class="input-xlarge" /></span>
+                                </p>
+-->
+                                
+<!--
+                                 <p>
+                                     <label>Please Verify IFSC :</label>
+                                 <button class="btn btn-primary">Please verify IFSC</button>
+                                     
+                        </p>
+-->
+<!--
+                                
+                               
+                                
+                                <p style="margin:31px 0px 0px 0px;">
+                                <label>Branch Name</label>
+                                <span class="field"><select name="selection" id="selection2" class="chzn-select selectWidthIncreased" disabled="disabled">
+                                    <option value="">Select Type of Proof</option>
+                                    <option value="">Landlline Bill</option>
+                                    <option value="1">Bank statement</option>
+                                    <option value="2">Electricity Bill</option>
+                                    <option value="3">Rental Agreement</option>
+                                
+                                </select></span>
+                            </p>
+-->
+                                </div>
+                               
+                                
+<!--                                <p><input type="checkbox"  /> I agree with the terms and agreement...</p>-->
+                            </div>
+                            
+                            
+                                
+                       
+                            <h3 class="agreement">Agreement</h3>
+                            
+                            <div class="legal-agreement">
+                                 <p><input type="checkbox" name="check2" class="alertboxbutton" />Please accept the<a href="#">Terms & Condition</a><br />
+                            	  </p>
+                                
+                            </div>
+                                                             
+                        </div><!--#wiz1step2_1-->
+                        
+                        <div id="wiz1step2_4" class="configuration">
+                            
+                           <!--Start Associations--> 
+                            
+                            <div class="Associations addeducationdetail">
+                                 <div class="firstapperanceforeducation">
+                                     <div class="title">
+                                      <h2>Associate As a trainer with Organisation</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button type="button" style="margin-left: 34% !important;" class="btn btn-info btn-rounded addnewdemobutton" href="#forassociations" data-toggle="modal"><i class="iconfa-plus"></i> Add Association</button>
+                                    </div>
+                                
+                                </div> 
+                                 
+                                 <div class="mainsectionforexperience">
+                                 
+                                 
+                              
+                                 <div class="maintitlesectionforeducation">
+                                  <div class="title">
+                                     <h2>Associations</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button  id="addmoreassociations" href="#forassociations" data-toggle="modal" class="btn btn-info btn-rounded addnewdemobutton" type="button"><i class="iconfa-plus"></i> Add Associations</button>
+                                    </div>
+                                
+                                </div>
+                                 
+                                 <table class="MyProfileCertificationTable educationtablesaveddata expeiencetable" align="center">
+                                <tbody>
+                                <tr>
+                                    <th>Associate Title</th>
+                                    <th>Associate Orgnazations Name</th>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>Deepa Mishra</td>
+                                   <td><div class="removeEdit"><span><a href="#">Edit  </a>/
+                                    <a class="alertboxbuttonremove removedemorecord">&nbsp;&nbsp;Remove</a>
+                                      </span></div></td>
+                                  
+                                </tr>
+                                 
+                                </tbody>
+                                </table>   
+                       
+                                        </div>
+                            
+                    <!--#wizard-->
+                                
+                        
+                    </form>
+                                        
+                    <!-- END OF TABBED WIZARD -->
+                        </div>
+                        
+                           <!--End Associations-->
+                            
+                        
+                        <!--Start Education-->
+                            
+                            <div class="experiencesection addeducationdetail">
+                                   <h4></h4>
+                                     <div class="firstapperanceforeducation">
+                                     <div class="title">
+                                      <h2>Add your Education background Details</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button type="button" style="margin-left: 34% !important;" class="btn btn-info btn-rounded addnewdemobutton" href="#foraddeducation" data-toggle="modal"><i class="iconfa-plus"></i> Add Education</button>
+                                    </div>
+                                
+                                </div>
+                        
+                              
+                              <div class="mainsectionforeducation">
+                                   <div class="maintitlesectionforeducation">
+                                  <div class="title">
+                                      <h2>Add your education background deatils</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button type="button" style="margin-left: 34% !important;" class="btn btn-info btn-rounded addnewdemobutton" href="#foraddeducation" data-toggle="modal"><i class="iconfa-plus"></i> Add Education</button>
+                                    </div>
+                                
+                                </div>
+                                 
+                                   <table class="MyProfileCertificationTable educationtablesaveddata" align="center">
+                                <tbody>
+                                <tr>
+                                    <th>School / College Name</th>
+                                    <th>Degree</th>
+                                    <th>Deaprtment</th>
+                                    <th>Start Year</th>
+                                     <th>End Year</th>
+                                </tr>
+                                <tr>
+                                    <td>Raisoni college of Engneering</td>
+                                    <td>M.C.A</td>
+                                    <td>Communication</td>
+                                     <td>2005</td>
+                                    <td>2008</td>
+                                   <td><div class="removeEdit"><span><a href="#">Edit  </a>/
+                                    <a class="alertboxbuttonremove removedemorecord">&nbsp;&nbsp;Remove</a>
+                                      </span></div></td>
+                                  
+                                </tr>
+                                 
+                                </tbody>
+                                </table>   
+                                     
+                                </div>
+                                
+                           </div>      
+                                
+                        <!--End Education-->  
+                        
+                        
+                        
+                             <div class="Associations addeducationdetail">
+                                   <h4></h4>
+                                 <div class="firstapperanceforeducation">
+                                     <div class="title">
+                                      <h2>Add your Experience background deatils</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button type="button" style="margin-left: 34% !important;" class="btn btn-info btn-rounded addnewdemobutton" href="#foraddexperience" data-toggle="modal"><i class="iconfa-plus"></i> Add Experience</button>
+                                    </div>
+                                
+                                </div> 
+                                 
+                                 <div class="mainsectionforexperience">
+                                 
+                                 
+                              
+                                 <div class="maintitlesectionforeducation">
+                                  <div class="title">
+                                     <h2>Add your Experience  Details</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button  id="addmoreassociations" href="#foraddexperience" data-toggle="modal" class="btn btn-info btn-rounded addnewdemobutton" type="button"><i class="iconfa-plus"></i> Add Experience</button>
+                                    </div>
+                                
+                                </div>
+                                 
+                                 <table class="MyProfileCertificationTable educationtablesaveddata expeiencetable" align="center">
+                                <tbody>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Department</th>
+                                    <th>Organization Name</th>
+                                    <th>Start Month</th>
+                                     <th>End Month</th>
+                                     <th>Start Year</th>
+                                     <th>End Year</th>
+                                </tr>
+                                <tr>
+                                    <td>Java</td>
+                                    <td>Elctronic and communication</td>
+                                    <td>Communication</td>
+                                     <td>January</td>
+                                    <td>2008</td>
+                                    <td>December</td>
+                                    <td>2010</td>
+                                   <td><div class="removeEdit"><span><a href="#">Edit  </a>/
+                                    <a class="alertboxbuttonremove removedemorecord">&nbsp;&nbsp;Remove</a>
+                                      </span></div></td>
+                                  
+                                </tr>
+                                 
+                                </tbody>
+                                </table>   
+                       
+                                        </div>
+                            
+                    <!--#wizard-->
+                                
+                        
+                    </form>
+                                        
+                    <!-- END OF TABBED WIZARD -->
+                        </div>
+                        
+                        
+                        
+                            
+                                <div class="firstapperanceforeducation addeducationdetail">
+                                     <h4></h4>
+                                     <div class="title">
+                                      <h2>Add your Certifications Details</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button type="button" style="margin-left: 34% !important;" class="btn btn-info btn-rounded addnewdemobutton" href="#foraddcertification" data-toggle="modal"><i class="iconfa-plus"></i>Add Certifications</button>
+                                    </div>
+                                
+                                </div> 
+                            
+                            
+                            
+                           
+                            <div class="Additionalinformationprofile">
+                                
+                                <div class="maintitlesectionforeducation addeducationdetail">
+                                  <div class="title">
+                                      <h2>Add your Certifications background Details</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button data-toggle="modal" href="#foraddcertification" class="btn btn-info btn-rounded addnewdemobutton" style="margin-left: 34% !important;" type="button"><i class="iconfa-plus"></i> Add Certification</button>
+                                    </div>
+                                
+                                </div>
+                                
+                                
+                            <table class="MyProfileCertificationTable" align="center">
+                                <tbody>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Agency</th>
+                                    <th>Select Month</th>
+                                    <th>Select Year</th>
+                                   <th></th>
+                                </tr>
+                                <tr>
+                                    <td>Java Certification</td>
+                                    <td>W3schools</td>
+                                    <td>January</td>
+                                     <td>2012</td>
+                                  <td><div class="removeEdit"><span><a href="#">Edit &nbsp; </a>/<span>
+                                    <a class="alertboxbuttonremove removedemorecord" >&nbsp;&nbsp;Remove</a>
+                                       </span></span></div></td>
+                                    <!--<td>
+                                    <button class="MyProfileCerAddBtn"><i class="iconfa-plus"></i>Add</button>
+                                    </td>-->
+                                </tr>
+                                
+                                </tbody>
+                                </table>   
+             
+                            </div> 
+                            
+                            
+                            
+                            
+                        </div><!--#wiz1step2_4-->
+                    
+                    
+                     <div id="wiz1step2_3" class="configuration">
+                                    
+                                                    <div class="firstapperanceforeducation addeducationdetail" style="text-align: center;">
+                                     <div class="title">
+                                      <h2> Add Demo Videos For Trainings </h2>
+                                    </div>
+                                    <div class="educationbuttonadd" style="width: 100%; margin: 0px 0px 06px 0px;">
+                                         <input type="file" class="custom-file-input" style="float: left; margin-left: 30%;">
+                                    </div> 
+                                </div>   
+                            
+                            <div class="Additionalinformationprofile">
+                                <div class="maintitlesectionforeducation addeducationdetail">
+                                  <div class="title">
+                                      <h2 class="certifiactioncdetail">Add Demo Videos For Trainings </h2>
+                                    </div>
+                                    <div class="educationbuttonadd" style="margin: 0px 0px 06px 0px;">
+                                         <input type="file" class="custom-file-input">
+                                    </div>                                
+                                </div>
+                                
+                                
+                            <table class="MyProfileCertificationTable videoListViewTable" align="center">
+                                <tbody>
+                                <tr>
+                                    <th> Sr.No </th>
+                                    <th> Video Name </th>
+                                    <th> Video </th>
+                                    <th></th>
+                                </tr>
+                                    
+                                <tr>
+                                    <td> 1 </td>
+                                    <td> HTML5 & CSS3 Basics.mp4 </td>
+                                     <td> <button data-target="#addexam_Modal" data-toggle="modal" class="btn btn-info btn-rounded addnewdemobutton" style="margin: 02px 0% 02px 0% !important;" type="button"> View </button> </td>
+                                    <td><div class="removeEdit"><span>
+                                    <a class="alertboxbuttonremove removedemorecord" >&nbsp;&nbsp;Remove</a>
+                                      </span></div></td>
+                                </tr>
+                                
+                                </tbody>
+                                </table>   
+             
+                            </div>    
+                        </div>
+                    
+                    
+                    <div id="wiz1step2_5" class="formwiz document-detail">
+
+                                                    
+                                                    
+                                                    <div class="firstapperanceforeducation addeducationdetail" style="text-align: center;">
+                                     <div class="title">
+                                      <h2>Add your Exams </h2>
+                                    </div>
+                                    <div class="educationbuttonadd" style="width:100%;">
+                                         <button type="button" style="margin: 06px 0% 30px 0% !important;" class="btn btn-info btn-rounded addnewdemobutton" href="#addexam_Modal" data-toggle="modal"><i class="iconfa-plus"></i>Add Exam </button>
+                                    </div>
+                                
+                                </div> 
+                            
+                            <div class="Additionalinformationprofile">
+                                <div class="maintitlesectionforeducation addeducationdetail">
+                                  <div class="title">
+                                      <h2 class="certifiactioncdetail">Add your Exams</h2>
+                                    </div>
+                                    <div class="educationbuttonadd">
+                                         <button data-target="#addexam_Modal" data-toggle="modal" class="btn btn-info btn-rounded addnewdemobutton" style="margin: 06px 0% 30px 0% !important;" type="button"><i class="iconfa-plus"></i> Add Exams</button>
+                                    </div>                                
+                                </div>
+                                
+                                
+                            <table class="MyProfileCertificationTable examListViewTable" align="center">
+                                <tbody>
+                                <tr>
+                                    <th> Exam Name </th>
+                                    <th> Category </th>
+                                    <th> Price (INR) </th>
+                                    <th> Questions </th>
+                                    <th> Taken </th>
+                                    <th></th>
+                                </tr>
+                                    
+                                <tr>
+                                    <td>Java Certification</td>
+                                    <td>Foundation</td>
+                                    <td> 50 </td>
+                                     <td> <button   class="btn btn-info btn-rounded addnewdemobutton" style="margin: 02px 0% 02px 0% !important;" type="button"> Add Question</button> </td>
+                                    <td> - </td>
+                                    <td><div class="removeEdit"><span><a href="#">Edit &nbsp; </a>/<span>
+                                    <a class="alertboxbuttonremove removedemorecord" >&nbsp;&nbsp;Remove</a>
+                                       </span></span></div></td>
+                                </tr>
+                                 
+                                <tr>
+                                    <td>Java Certification</td>
+                                    <td>Foundation</td>
+                                    <td> 50 </td>
+                                     <td> <button   class="btn btn-info btn-rounded addnewdemobutton" style="margin: 02px 0% 02px 0% !important;" type="button"> View Question</button> </td>
+                                    <td> 10 </td>
+                                    <td><div class="removeEdit"><span><a href="#">Edit &nbsp; </a>/<span>
+                                    <a class="alertboxbuttonremove removedemorecord" >&nbsp;&nbsp;Remove</a>
+                                       </span></span></div></td>
+                                </tr>
+                                
+                                </tbody>
+                                </table>   
+             
+                            </div>               
+                        </div> <!-- #wiz1step2_2 -->
+                    
+                    <!--End My exams-->
+                        
+                    </div><!--#wizard-->
+                    </form>
+                                        
+                    <!-- END OF TABBED WIZARD -->
+                    
+                </div><!--widgetcontent-->
+                
+                
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    
+    <!--Start Pop Up IFSC Code If not remembered-->
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in IFSCCode" id="IFSCCode">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Select IFSC Code</h3>
+            </div>
+            <div class="modal-body">
+              <form class="stdform"  method="post">
+                    <p>
+                        	<label>Select Bank :</label>
+                            <span class="field">
+                            <select name="select" class="chzn-select selectWidthIncreased">
+                            	<option value="">Central bank of indaia</option>
+                                <option value="">ICICI Bank</option>
+                                <option value="">HDFC Bank</option>
+                                <option value="">Yes Bank</option>
+                                <option value="">State bank of India</option>
+                            </select>
+                            
+                            </span>
+                        </p>
+                  
+                  
+                   <p>
+                        	<label>Select State :</label>
+                            <span class="field">
+                            <select name="select" class="chzn-select selectWidthIncreased">
+                            	<option value="">Mahrashtra</option>
+                                <option value="">Karnataka</option>
+                                <option value="">Madhay pradesh</option>
+                                <option value="">Andhra Pradesh</option>
+                            
+                            </select>
+                            
+                            </span>
+                        </p>
+                  
+                     <p>
+                        	<label>Select District :</label>
+                            <span class="field">
+                            <select name="select" class="chzn-select selectWidthIncreased">
+                            	<option value="">Mahrashtra</option>
+                                <option value="">Karnataka</option>
+                                <option value="">Madhay pradesh</option>
+                                <option value="">Andhra Pradesh</option>
+                            
+                            </select>
+                            
+                            </span>
+                        </p>
+                  
+                  
+                      <p>
+                        	<label>Select Branch :</label>
+                            <span class="field">
+                            <select name="select" class="chzn-select selectWidthIncreased">
+                            	<option value="">Mahrashtra</option>
+                                <option value="">Karnataka</option>
+                                <option value="">Madhay pradesh</option>
+                                <option value="">Andhra Pradesh</option>
+                            
+                            </select>
+                            
+                            </span>
+                        </p>
+                  <p>
+                    <label>IFSC Code :</label>
+                    <span class="field" style="line-height: 29px;"><b>123456767898</b></span>
+                  </p>
+                  
+                    <p>
+                    <label>Bank Address :</label>
+                    <span class="field" style="line-height: 29px;"><b>Marathalli, Bangalore</b></span>
+                  </p>
+                  
+                  <p class="stdformbutton">
+                        	<button class="btn btn-primary">Submit Button</button>
+                        </p>
+                  
+                </form>
+           
+            
+            </div>
+            <div class="modal-footer">
+              
+            </div>
+    </div><!--#myModal-->
+    
+     <!--End Pop Up IFSC Code If not remembered-->
+    
+    
+    <!--Start Pop Up View Document-->
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in ViewDocument" id="viewdocument">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">View Document</h3>
+            </div>
+            <div class="modal-body">
+                <div class="image-wrapper">
+              <img src="img/sample.jpg"/>
+                </div>
+                                        
+
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Close</button>
+            </div>
+    </div><!--#myModal-->
+    
+
+
+
+ <!--Start Pop Up for Add Associations-->
+    
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in foraddeducationdetailmodal" id="forassociations">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Associations Details</h3>
+            </div>
+            <div class="modal-body">
+                <div class="Additionalinformationprofile">
+                    
+                      <p style="margin-top:20px !important; margin-bottom:0px !important;">
+                                    <label>Association Title :</label>
+                                    <span class="field"><input type="text"  name="educationdegree" class="input-xlarge" /></span>
+                                     
+                                </p>
+                    
+                    
+                                <p style="margin-bottom:0px !important;">
+                                    <label>Associate Organization  :</label>
+                                    <span style="position:relative;" class="field"><img class="loaderforadditional" alt="" src="img/loaders/loader3.gif"><input type="text" id="associationoption" name="schoolcollegename" class="input-xlarge" /></span>
+                                    
+                                </p>
+                    
+                    <div class="optionforassociations" style="display:none;">
+                        
+                        <ul>
+                            <li><img src="img/avatar.png"><span>Skilllogic</span></li>
+                            <li><img src="img/organization-img.png"><span>Synsis</span></li>
+                          <li><img src="img/avatar.png"><span>Skilllogic</span></li>
+                            <li><img src="img/avatar.png"><span>Synsis</span></li>
+                            <li><img src="img/avatar.png"><span>Skilllogic</span></li>
+                             <li><img src="img/organization-img.png"><span>Synsis</span></li>
+                          <li><img src="img/avatar.png"><span>Skilllogic</span></li>
+                            <li><img src="img/avatar.png"><span>Synsis</span></li>
+                        
+                        </ul>
+                    
+                    </div>
+                            </div>
+                                        
+
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Save</button>
+            </div>
+    </div><!--#myModal-->
+    
+    
+    <!--End Pop Up for Add Associations-->
+
+
+
+
+    
+    
+      <!--Start Pop Up for Add education-->
+    
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in foraddeducationdetailmodal" id="foraddeducation">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Education Detail</h3>
+            </div>
+            <div class="modal-body">
+                <div class="Additionalinformationprofile">
+                                <p style="margin-bottom:0px !important;">
+                                    <label>School / College Name  :</label>
+                                    <span class="field" style="position:relative;"><img class="loaderforadditional" alt="" src="img/loaders/loader3.gif"><input type="text" id="collegeoptions" name="schoolcollegename" class="input-xlarge" /></span>
+                                    
+                                </p>
+                    
+                    <div class="optionforcollege" style="display:none;">
+                        
+                        <ul>
+                           <li><img src="img/avatar.png"><span>M.C.A</span>,<label>Marathalli</label></li>
+                            <li>Raisoni</li>
+                            <li>Raisoni</li>
+                            <li>Raisoni</li>
+                            <li>Raisoni</li>
+                            <li>Raisoni</li>
+                            <li>Raisoni</li>
+                            <li>Raisoni</li>
+                        
+                        </ul>
+                    
+                    </div>
+                                
+                                 <p style="margin-top:20px !important; margin-bottom:0px !important;">
+                                    <label>Degree :</label>
+                                     <span class="field" style="position:relative;"><img class="loaderforadditional" alt="" src="img/loaders/loader3.gif"><input type="text" id="optionsdegreesection" name="educationdegree" class="input-xlarge" /></span>
+                                     
+                                </p>
+                    
+                    <div class="optionfordegree" style="display:none;">
+                       <ul>
+                         <li>M.C.A</li>
+                           <li>M.C.A</li>
+                           <li>M.C.A</li>
+                           <li>M.C.A</li>
+                           <li>M.C.A</li>
+                           <li>M.C.A</li>
+                           <li>M.C.A</li>
+                        
+                        </ul>
+                    </div>
+                            
+                                <p style="margin-top:20px !important;">
+                                    <label>Department :</label>
+                                    <span class="field"><input type="text"  name="educationdepartment" class="input-xlarge" /></span>
+                                    
+                            
+                                </p>
+                                
+                                   <p class="currentlyassociated">
+                                <label>Current School / College Name</label>
+                                    <span class="field"><input type="checkbox" id="currenteducation" /></span>
+                                
+                                
+                                </p>
+                                
+                                
+                                <div class="certifiactionMonthwrapper">
+                                <div class="fiftypercent">
+                                
+                         <p class="startyeareducation">
+                                     <label class="country-configuration">Start Year:</label>
+                            <span class="field formwrapper onetwoeightzero">
+                            		<select data-placeholder="Select Year..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select year...</option> 
+                                  <option value="January">1990</option> 
+                                  <option value="February">1991</option> 
+                                  <option value="March">1992</option> 
+                                  <option value="April">1993</option> 
+                                  <option value="May">1994</option> 
+                                  <option value="June">1995</option> 
+                                  <option value="July">1996</option> 
+                                        <option value="March">1992</option> 
+                                  <option value="April">1993</option> 
+                                  <option value="May">1994</option> 
+                                  <option value="June">1995</option> 
+                                  <option value="July">1996</option>
+                                        <option value="March">1992</option> 
+                                  <option value="April">1993</option> 
+                                  <option value="May">1994</option> 
+                                  <option value="June">1995</option> 
+                                  <option value="July">1996</option>
+                                
+                                </select>
+                            </span>
+                        </p>
+                                    
+                                    
+                                    
+                                    
+                                      
+                                
+                          <p class="endyeareducation">
+                                     <label class="country-configuration">End Year:</label>
+                            <span class="field formwrapper onetwoeightzero">
+                            	<select data-placeholder="Select Year..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select year...</option> 
+                                  <option value="January">1990</option> 
+                                  <option value="February">1991</option> 
+                                  <option value="March">1992</option> 
+                                  <option value="April">1993</option> 
+                                  <option value="May">1994</option> 
+                                  <option value="June">1995</option> 
+                                  <option value="July">1996</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                                    
+                                 </div>  
+                                    
+                                    </div>
+                                
+                            </div>
+                                        
+
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Save</button>
+            </div>
+    </div><!--#myModal-->
+    
+    
+    <!--End Pop Up for Add education-->
+    
+    
+    <!--Start Pop Up for Add experience-->
+    
+       <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in foraddeducationdetailmodal" id="foraddexperience">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Experience Detail</h3>
+            </div>
+            <div class="modal-body">
+                <div class="Additionalinformationprofile">
+                                <p>
+                                    <label>Title :</label>
+                                    <span class="field"><input type="text" name="experienceTitle" class="input-xlarge" /></span>
+                                </p>
+                            
+                                <p>
+                                    <label>Department :</label>
+                                    <span class="field"><input type="text" id="experiencedepartment" name="Department" class="input-xlarge" /></span>
+                                
+                                </p>
+                                
+                                 <p>
+                                    <label>Organization Name :</label>
+                                    <span class="field"><input type="text" name="Department" id="departmentoptionsection" class="input-xlarge" /></span>
+                                </p>
+                    
+                    
+                       
+                                <p class="currentlyassociated">
+                                <label>Current Organization</label>
+                                    <span class="field"><input type="checkbox" id="currntlyassociated" /></span>
+                                
+                                
+                                </p>
+                                
+                                
+                                <div class="certifiactionMonthwrapper experiencedatessection">
+                                <div class="fiftypercent">
+                                
+                         <p>
+                                     <label class="country-configuration">Start Month :</label>
+                            <span class="formwrapper field  onetwoeightzero">
+                            	<select data-placeholder="Select Month..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select Month...</option> 
+                                  <option value="January">January</option> 
+                                  <option value="February">February</option> 
+                                  <option value="March">March</option> 
+                                  <option value="April">April</option> 
+                                  <option value="May">May</option> 
+                                  <option value="June">June</option> 
+                                  <option value="July">July</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                                
+                          <p>
+                                     <label class="country-configuration">Start Year :</label>
+                            <span class="formwrapper field  onetwoeightzero">
+                            	<select data-placeholder="Select Year..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select year...</option> 
+                                  <option value="January">1990</option> 
+                                  <option value="February">1991</option> 
+                                  <option value="March">1992</option> 
+                                  <option value="April">1993</option> 
+                                  <option value="May">1994</option> 
+                                  <option value="June">1995</option> 
+                                  <option value="July">1996</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                            
+                            
+                                    </div>
+                            
+                                
+                                <div class="certifiactionMonthwrapperTo">
+                                <div class="fiftypercent">
+                                
+                         <p>
+                                     <label class="country-configuration">End Month :</label>
+                            <span class="formwrapper field  onetwoeightzero">
+                            	<select data-placeholder="Select Month..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select Month...</option> 
+                                  <option value="January">January</option> 
+                                  <option value="February">February</option> 
+                                  <option value="March">March</option> 
+                                  <option value="April">April</option> 
+                                  <option value="May">May</option> 
+                                  <option value="June">June</option> 
+                                  <option value="July">July</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                                  
+                                    
+                                
+                          <p>
+                                     <label class="country-configuration">End Year :</label>
+                            <span class="formwrapper field  onetwoeightzero">
+                            	<select data-placeholder="Select Year..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select year...</option> 
+                                  <option value="January">1990</option> 
+                                  <option value="February">1991</option> 
+                                  <option value="March">1992</option> 
+                                  <option value="April">1993</option> 
+                                  <option value="May">1994</option> 
+                                  <option value="June">1995</option> 
+                                  <option value="July">1996</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                            
+                            
+                            </div>
+                            
+                            </div>
+                               
+                               
+                        </div>
+                                
+                                
+                        <!--#wiz1step2_5-->
+                        
+                    </div>
+                                        
+
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Save</button>
+            </div>
+    </div><!--#myModal-->
+    
+    
+     <!--End Pop Up for Add experience-->
+    
+    
+      <!--Start Pop Up for Add certifications-->
+    
+       <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in foraddeducationdetailmodal" id="foraddcertification">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Certification Detail</h3>
+            </div>
+            <div class="modal-body">
+                <div class="Additionalinformationprofile">
+                                <p>
+                                    <label>Title :</label>
+                                    <span class="field"><input type="text" name="certificationTitle" class="input-xlarge" /></span>
+                                </p>
+                            
+                                <p>
+                                    <label>Agency :</label>
+                                    <span class="field"><input type="text" id="certificationAgency" name="Department" class="input-xlarge" /></span>
+                                
+                                </p>
+                                
+                                
+                                <div class="certifiactionMonthwrapper experiencedatessection">
+                                <div class="fiftypercent">
+                                
+                         <p>
+                                     <label class="country-configuration">Select Month :</label>
+                            <span class="formwrapper field  onetwoeightzero">
+                            	<select data-placeholder="Select Month..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select Month...</option> 
+                                  <option value="January">January</option> 
+                                  <option value="February">February</option> 
+                                  <option value="March">March</option> 
+                                  <option value="April">April</option> 
+                                  <option value="May">May</option> 
+                                  <option value="June">June</option> 
+                                  <option value="July">July</option> 
+                                    <option value="August">August</option> 
+                                    <option value="September">September</option> 
+                                    <option value="October">October</option> 
+                                    <option value="November">November</option> 
+                                    <option value="December">December</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                                
+                          <p>
+                                     <label class="country-configuration">Select Year :</label>
+                            <span class="formwrapper field  onetwoeightzero">
+                            	<select data-placeholder="Select Year..." style="width:350px" class="chzn-select" tabindex="2">
+                                  <option value="">Select year...</option> 
+                                  <option value="">1990</option> 
+                                  <option value="">1991</option> 
+                                  <option value="">1992</option> 
+                                  <option value="">1993</option> 
+                                  <option value="">1994</option> 
+                                  <option value="">1995</option> 
+                                  <option value="">1996</option> 
+                                    <option value="">1997</option> 
+                                    <option value="">1998</option> 
+                                    <option value="">1999</option> 
+                                    <option value="">2000</option> 
+                                    <option value="">2001</option> 
+                                    <option value="">2002</option> 
+                                    <option value="">2003</option> 
+                                    <option value="">2004</option> 
+                                    <option value="">2005</option> 
+                                    <option value="">2006</option> 
+                                     <option value="">2007</option> 
+                                     <option value="">2008</option> 
+                                     <option value="">2009</option> 
+                                     <option value="">2010</option> 
+                                     <option value="">2011</option> 
+                                     <option value="">2012</option> 
+                                     <option value="">2013</option> 
+                                     <option value="">2014</option> 
+                                     <option value="">2015</option> 
+                                     <option value="">2016</option> 
+                                
+                                </select>
+                            </span>
+                        </p>
+                                    </div>
+                            
+                               
+                        </div>
+                                
+                        <!--#wiz1step2_5-->
+                        
+                    </div>
+                                        
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Save</button>
+            </div>
+    </div><!--#myModal-->
+    
+    
+     <!--End Pop Up for Add certifications-->
+    
+ 
+    <!--Start mobile Number pop up-->
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in mobilenimberreenter" id="mobilenimberreenter">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Provide your Mobile Number</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                 <input type="text" placeholder="ReEnter Mobile Number ">
+                 <a href="" class="btn btn-info btn-rounded">Send OTP</a>
+                
+                </p>
+                                        
+
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Close</button>
+            </div>
+    </div><!--#myModal-->
+    <!--End Mobile Number pop up-->
+
+
+
+ <!--Start Pop Up for Add Exams -->
+    
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in foraddeducationdetailmodal" id="addexam_Modal">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Exam Information </h3>
+            </div>
+            <div class="modal-body">
+                <div class="Additionalinformationprofile">
+                                <p style="margin-bottom:0px !important;">
+                                    <label>Exam Name  :</label>
+                                    <span class="field"><input type="text" id="collegeoptions" name="schoolcollegename" class="input-xlarge" /></span>
+                                    
+                                </p>
+                    <div class="certifiactionMonthwrapper">
+                                <div class="fiftypercent">
+                                
+                         <p class="startyeareducation exam_cate">
+                                     <label class="country-configuration"> Category  :</label>
+                            <span class="field formwrapper onetwoeightzero">
+                            		<select class="chzn-select" tabindex="2">
+                                  <option value="">Select Category </option> 
+                                  <option value="January">Foundation</option> 
+                                  <option value="February"> Advanced </option> 
+                                  <option value="March">Expert </option> 
+                                </select>
+                            </span>
+                        </p>
+                              
+                                 </div>  
+                                    
+                                    </div>
+                                
+                                
+                                 <p style="margin-top:20px !important; margin-bottom:0px !important;">
+                                    <label> Price :</label>
+                                    <span class="field"><input type="text" id="optionsdegreesection" name="educationdegree" class="input-xlarge" /></span>
+                                     
+                                </p>
+                    
+                    
+                            
+                                <p style="margin-top:20px !important;">
+                                    <label>No.of Questions :</label>
+                                    <span class="field"><input type="text"  name="educationdepartment" class="input-xlarge" />
+                                    <small class="number_info_Label"> (Mininum - 10 , Maxinum - 20) </small>
+                                    </span>
+                                    
+                            
+                                </p>
+                                
+                                   
+                                
+                                
+                            </div>
+                                        
+
+            </div>
+            <div class="modal-footer">
+               <button class="btn btn-primary">Save</button>
+            </div>
+    </div><!--#myModal-->
+    
+    
+    <!-- End Pop Up for Add Exam -->
+    
+    
+    
+    <!--Start modal about write something-->
+
+<div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" class="modal hide fade in abouttrainingmodal" id="abouttraining">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">Write about you </h3>
+            </div>
+            <div class="modal-body">
+                <textarea></textarea>
+                  <button class="btn btn-primary submitdescriptions">Submit</button>
+
+            </div>
+    </div>
+<!--End modal about write something-->
+
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy Online Services v1.0</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+
+<script src='http://cdn.tinymce.com/4/tinymce.min.js'></script>
+<!--<script src="js/index.js"></script>-->
+      <script type="text/javascript">
+      tinymce.init({
+  selector: 'textarea',
+  height: 500,
+  theme: 'modern',
+  plugins: [
+    'advlist autolink lists link image charmap print preview hr anchor pagebreak',
+    'searchreplace wordcount visualblocks visualchars code fullscreen',
+    'insertdatetime media nonbreaking save table contextmenu directionality',
+    'emoticons template paste textcolor colorpicker textpattern imagetools'
+  ],
+  toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+  toolbar2: 'print preview media | forecolor backcolor emoticons',
+  image_advtab: true,
+  templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+  ],
+  content_css: [
+    '//fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',
+    '//www.tinymce.com/css/codepen.min.css'
+  ]
+ });
+</script>
+    
+</div><!--mainwrapper-->
+    <script type="text/javascript">
+jQuery(document).ready(function(){
+        jQuery('.alertboxbutton').click(function(){
+   jViewagreement('Are you sure, </br> You want to accept the Legal agreement', 'Legal Agreement');
+});
+});
+</script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		// Smart Wizard 	
+  		jQuery('#wizard').smartWizard({onFinish: onFinishCallback});
+      	jQuery('#wizard2').smartWizard({onFinish: onFinishCallback});
+		jQuery('#wizard3').smartWizard({onFinish: onFinishCallback});
+		jQuery('#wizard4').smartWizard({onFinish: onFinishCallback});
+		
+		function onFinishCallback(){
+			alert('Finish Clicked');
+		} 
+		
+		//jQuery(".inline").colorbox({inline:true, width: '60%', height: '500px'});
+		
+		jQuery('select, input:checkbox').uniform();
+	});
+</script>
+<script type="text/javascript">
+   jQuery(document).ready(function(){
+    jQuery("#exampleLogo").hover(function(){
+    jQuery("#example1").toggleClass("image-hover-show");
+    });
+});
+</script>
+    
+<script type="text/javascript">
+   jQuery(document).ready(function(){
+    jQuery("#exampleLogo1").hover(function(){
+    jQuery("#example2").toggleClass("image-hover-show1");
+    });
+});
+    
+</script>
+
+<script type="text/javascript">
+         ( function($) {
+	               $("#currntlyassociated").click(function(){
+                  $(".certifiactionMonthwrapperTo").hide();
+                                          
+                     });
+                $("#currenteducation").click(function(){
+                  $(".endyeareducation").hide();
+                                          
+                     });
+                } ) ( jQuery );
+</script>
+    
+ <script type="text/javascript">
+         ( function($) {
+	               $("#addmoreassociations").click(function(){
+                  $(".AdditionalinformationprofilenextRow").show();
+                                          
+                     });
+                } ) ( jQuery );
+</script>
+
+<script type="text/javascript">
+         ( function($) {
+	               $("#addmorecertifications").click(function(){
+                  $(".additionalinformationprofilenextrow").show();
+                     });
+                } ) ( jQuery );
+</script>
+
+
+<script type="text/javascript">
+         ( function($) {
+	               $("#optionsdegreesection").click(function(){
+                  $(".optionfordegree").show();
+                     });
+         $("#departmentoptionsection").click(function(){
+                  $(".optionfordepartment").show();
+                     });
+      $("#collegeoptions").click(function(){
+                  $(".optionforcollege").show();
+                     });
+             $("#associationoption").click(function(){
+                  $(".optionforassociations").show();
+                     });
+             $("#experiencedepartment").click(function(){
+                  $(".experiencedepartment").show();
+                     });
+                } ) ( jQuery );
+</script>
+
+ <script type="text/javascript">
+     var searchclick=0;
+        function searchby(){
+                          
+            if(searchclick == 0){
+                jQuery(".infomenuprofile").show();
+                searchclick++;
+            }else{
+                jQuery(".infomenuprofile").hide();
+                searchclick=0;
+            }
+           
+            // jQuery(".optionstraining").trigger("click");
+        };
+</script>
+
+
+<script type="text/javascript" src="js/forms.js"></script>
+</body>
+</html>

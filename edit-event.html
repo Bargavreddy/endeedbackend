@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Provider Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+    <link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/bootstrap-fileupload.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-timepicker.min.css" type="text/css" />
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="js/jquery.autogrow-textarea.js"></script>
+<script type="text/javascript" src="js/charCount.js"></script>
+<script type="text/javascript" src="js/ui.spinner.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/forms.js"></script>
+</head>
+
+<body>
+
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+    <div class="leftpanel mainLogo-wrapper">
+    	
+       <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/><span>v1.0</span></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form  method="post">
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+         <div class="plainwidget animate3 fadeInUp">
+        	<div class="enquiries">
+             <span><i class="iconfa-group"></i><span class="badge badge-important">6</span><span>Views</span></span>
+            </div>
+
+           <div class="views">
+                <span><i class="iconfa-envelope-alt"></i><span class="badge badge-important">6</span><span>Enquiries</span></span>
+            
+            </div>
+             <div class="registration">
+                 <span><i class="iconfa-tasks"></i><span class="badge badge-important">6</span><span>Registration</span></span>
+              </div>
+        </div><!--plainwidget-->
+        
+        <div class="leftmenu">        
+              <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>
+                 <li class="dropdown"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+
+                    </ul>
+                </li>
+                 <li class="dropdown active"><a href="#"><span class="iconsweets-day"></span> Events</a>
+                	<ul>
+                        	<li><a href="event-list.html">My Events</a></li>
+                           <li><a href="create-event.html">Create Event</a></li>
+                            <li><a href="saved-event.html">Saved Event</a></li>
+                           <li><a href="expired-events.html">Expired Event</a></li>
+
+
+                    </ul>
+                </li>
+              
+<!--                 <li><a href="typography.html"> Events</a></li>-->
+                    <li><a href="invoice-list.html"><span class="iconsweets-documents"></span>Invoice</a></li>
+                    <li><a href="messages.html"><span class="iconsweets-admin"></span> Reports</a></li>
+                    <li><a href="buttons.html"><span class="icon-signal"></span>Tickets</a></li>
+                    <li><a href="calendar.html"><span class="icon-calendar"></span>Events Calendar</a></li>
+                    <li><a href="faq.html"><span class="iconsweets-book-large"></span>FAQ's</a></li>
+                    <li><a href="relationship-manager.html"><span class="iconsweets-admin"></span> Relationship Manager</a></li>
+                    <li><a href="charts.html"><span class="icon-signal"></span>Insights & Analytics</a></li>
+                     <li><a href="feedback.html"><span class="iconfa-star"></span>Trainer feedback & CSR</a></li>
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+        	<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/image.png"/>Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my-profile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                     
+                        
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        	<ul class="skins">
+                <li><a href="default" class="skin-color default"></a></li>
+                <li><a href="orange" class="skin-color orange"></a></li>
+                <li><a href="dark" class="skin-color dark"></a></li>
+                <li>&nbsp;</li>
+                <li class="fixed"><a href="" class="skin-layout fixed"></a></li>
+                <li class="wide"><a href="" class="skin-layout wide"></a></li>
+            </ul><!--skins-->
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li><a href="forms.html">Events</a> <span class="divider">/</span></li>
+                <li class="active">Edit Event</li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle MyEventTitle">
+        	<h1>Edit Event</h1>
+    <span class="View-profile"><a class="btn btn-info btn-rounded edit-profile-PTI" href="event-list.html">My Event List</a></span>
+                   
+            
+        </div><!--pagetitle-->
+        
+        <div class="maincontent CreateEventWrapper">
+        	<div class="contentinner">
+            	<h4 class="widgettitle">Create Event</h4>
+                <div class="widgetcontent">
+                	<form class="stdform CreateEventForm"  method="post">
+                        
+                         <div class="widgetcontent">
+                        	<ul class="nav nav-pills">
+                              <li class="active event-Details-nav" id="eventDetailsTab" ><a>Event Details</a></li>
+                              <li class="event-Fee-nav" id="eventFeeTab" ><a>Event Fee</a></li>
+                              <li class="infrastructure-nav" ><a  id="infrastructureTab">Infrastructure</a></li>
+                              <li class="Preview-nav" ><a  id="PreviewTab">Preview</a></li>
+                            </ul>
+                         
+                        </div><!--widgetcontent-->
+                        
+                        
+                        
+                        <div class="EventDetailField">
+                    	<p>
+                        	<label>Event Title :</label>
+                            <span class="field"><input type="text" name="EventTitle" class="input-xxlarge" value="Java Training"  /></span>
+                            
+                        </p>
+                        
+                        <p>
+                        	<label>Subject :</label>
+                            <span class="field">
+                            <select name="select" class="uniformselect">
+                            	<option value="">Jquery</option>
+                                <option value="">Javascript</option>
+                                <option value="">HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">Java</option>
+                            </select>
+                            
+                            </span>
+                        </p>
+                            
+                        <p>
+                        	<label>Location :</label>
+                            <span class="field"><input type="text" name="Location" class="input-xxlarge" value="Marathalli, Bangalore"  /></span>
+                            
+                        </p>
+                            
+                             <p>
+                        	<label>Event Type :</label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Classroom Training &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> Online Training (e-learning) &nbsp; &nbsp;
+                                	<input type="radio" name="offline"  />Live Virtual Classroom (LVC)
+                            
+                            </span>
+                        </p>
+                            
+                            
+                        <p>
+                        	<label>No of Seats :</label>
+                            <span class="field"><input type="text" name="NoOfSeats" class="input-medium" value="50"  /></span>
+                            
+                        </p>
+                            
+                            <p>
+                        	<label></label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="weekends"  /> Only Weekends &nbsp; &nbsp;
+                            
+                            </span>
+                        </p>
+                            
+                            
+                            <p>
+                        	<label>Events Dates :</label>
+                            <span class="formwrapper">
+                            	<input type="text" id="datepicker" value="3-5-16"> 
+                              
+                                <input type="text" id="datepicker123" value="10-5-16"> 
+                                
+                            </span>
+                                   
+                        </p>
+                            
+                            
+                            <div class="par">
+                                        <label>Event Timing :</label>
+                              
+                             <div class="input-append bootstrap-timepicker">
+                                   <span>Start</span>
+				               <input id="timepicker1" type="text" class="input-small">
+				                <span class="add-on"><i class="icon-time"></i></span>
+			                 </div>
+                                
+                               
+                              
+                             <div class="input-append bootstrap-timepicker">
+                                      <span>End</span>
+				               <input id="timepicker2" type="text" class="input-small" value="10:15AM">
+				                <span class="add-on"><i class="icon-time"></i></span>
+			                 </div>
+                                
+                                
+                         </div>
+                            
+                         <p>
+                        	<label></label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="Day"  />Full Day Event (9.00 AM to 6.00 PM)  &nbsp; &nbsp;
+                            
+                            </span>
+                        </p>
+                            
+                            
+                        <p>
+                        	<label>Description</label>
+                            <span class="field">
+                                <textarea cols="80" rows="5" id="description" value="I want to join This Event" class="span5"></textarea>
+                            </span> 
+                        </p>
+                            
+                             <p>
+                        	<label>Add Trainer :</label>
+                            <span class="formwrapper">
+                            	<select data-placeholder="Trainer Name..." style="width:350px" class="chzn-select" tabindex="2" value="Deepa Mishra">
+                                  <option value="Deepa Mishra"></option> 
+                                  <option value="Deepa Mishra"><i class="iconfa-user"></i>Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option>  
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                <option value="Deepa Mishra">Deepa Mishra</option>  
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                   <option value="Deepa Mishra">Deepa Mishra</option> 
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                                   <option value="Deepa Mishra">Deepa Mishra</option>  
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                               <option value="Deepa Mishra">Deepa Mishra</option> 
+                              <option value="Deepa Mishra">Deepa Mishra</option> 
+                                <option value="Deepa Mishra">Deepa Mishra</option> 
+                                  <option value="Deepa Mishra">Deepa Mishra</option> 
+                                 <option value="Deepa Mishra">Deepa Mishra</option> 
+                            
+                                </select>
+                            </span>
+                        </p>
+                            
+                            
+                            <p class="tranerWrapper">
+                        	<label>Trainer :</label>
+                            <span class="field"><img src="img/avatar.png"/><span class="trainer">Trainer Name<span>Trainer Title</span></span></span>
+                            
+                        </p>
+                            
+                            
+                        <p>
+                        	<label>Add link :</label>
+                            <span class="field"><input type="text" name="AddLink" class="input-xxlarge" value="http:google.com"  /></span>
+                            
+                        </p>
+                            
+                            
+                        <p>
+                        	<label> Add Keywords to improve search for this event :</label>
+                            <span class="field">
+                            	<input name="keywords" id="tags" class="input-large" value="jquery,java,css" />
+                            </span>
+                        </p>
+                            
+                            
+                            
+                            <p class="stdformbutton">
+                        	<button class="btn btn-primary saveandeditlater">Save and edit later</button>
+                            <button class="btn btn-primary">Save and Next</button>
+                        </p>
+                            
+                         
+                            
+                            
+                            
+                            </div>
+                        
+                        
+                        <div class="EventFeeField" style="display:none;">
+                        <p>
+                        	<label>Event Category :</label>
+                            <span class="field">
+                            <select name="select" class="uniformselect">
+                                <option value="">Demo</option>
+                            	<option value="">Free</option>
+                                <option value="">Paid</option>
+                               
+                            </select>
+                            
+                            </span>
+                        </p>
+                            
+                             <p>
+                        	<label></label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Demo Free Event &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> Demo Paid Event &nbsp; &nbsp;
+                                	
+                            
+                            </span>
+                        </p>
+                            
+                            
+                       <p>
+                        	<label>Course Fee :</label>
+                            <span class="field"><input type="text" name="courseFee" value="10000" class="input-xxlarge"  /></span>
+                            
+                        </p>
+                            
+                        <p>
+                        	<label></label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offerForEvent"   />Include Offer for the Event  &nbsp; &nbsp;
+                            
+                            </span>
+                        </p>
+                            
+                            
+                        <p>
+                        	<label>Offer Amount :</label>
+                            <span class="field"><input type="text" name="OfferFee" value="2000" class="input-xxlarge"  /></span>
+                            
+                        </p>
+                            
+                               <p>
+                        	<label>Course Fee Details :</label>
+                            <span class="field">
+                                  <table class="evt-fee-table">
+                             <tbody>
+                             <tr><td style="padding: 0 0 0 27px;">Course Fee</td>
+                                 <td> Rs. <span> 10000 </span></td></tr>
+                           <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Offer Amount <span style="float:right;color:#ff5c33;margin:0 -1px">(-)</span></td>
+                               <td style="padding:0 0 0 13px;">Rs. <span> 2000 </span></td></tr>
+
+
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Offer price</td> 
+                               <td style="padding: 0 0 0 14px;"> Rs. <span> 8000 </span></td></tr>
+                                 
+                                  <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Service Tax&nbsp;(14.5%)<span style="float:right;color:#000;margin:0 -1px">(+)</span></td> 
+                               <td style="  padding: 0 0 0 14px;"> Rs. <span> 1200 </span> </td></tr>
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Effective Offer price</td> 
+                               <td style="padding: 0 0 0 16px;"> Rs. <span> 9200 </span></td></tr>
+                                 
+                            </tbody>
+                           </table>
+                                   </span>
+                            
+                        </p>
+                            
+                            
+                            
+                            
+                            
+                            <p class="stdformbutton">
+                        	<button class="btn btn-primary saveandeditlaterf">Save and edit later</button>
+                            <button class="btn btn-primary">Save and Next</button>
+                        </p>
+                            
+
+                        
+                        </div>
+                    
+                    
+                        <div class="InfrastructureField" style="display:none;">
+                                   <p>
+                        	<label>Lab Facilities :</label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Yes &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> No &nbsp; &nbsp;
+                                	
+                            </span>
+                        </p>
+                            
+                                     <p>
+                        	<label>Wifi Facilities :</label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Yes &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> No &nbsp; &nbsp;
+                                	
+                            </span>
+                        </p>
+                            
+                            
+                                          <p>
+                        	<label>Food Facilities :</label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Yes &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> No &nbsp; &nbsp;
+                                	
+                            </span>
+                        </p>
+                            
+                            
+                        <p>
+                        	<label>Snack / Refreshment :</label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Yes &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> No &nbsp; &nbsp;
+                                	
+                            </span>
+                        </p>
+                            
+                            
+                            <p>
+                        	<label>Placement Assistance :</label>
+                            <span class="formwrapper">
+                            
+                            	<input type="radio" name="offline"  /> Yes &nbsp; &nbsp;
+                                	<input type="radio" name="online"  /> No &nbsp; &nbsp;
+                                	
+                            </span>
+                        </p>
+                            
+                            
+                            
+                             <p class="stdformbutton">
+                        	<button class="btn btn-primary saveandeditlaterf">Save and edit later</button>
+                            <button class="btn btn-primary">Save and Next</button>
+                        </p>
+                            
+                          
+                            
+                          
+                        
+                        
+                        
+                        </div>
+      
+                        
+                        
+                        <div class="PreviewField" style="display:none;">
+                    	<p>
+                        	<label>Event Name :</label>
+                            <span class="field"><input type="text" name="EventName" class="input-xxlarge" placeholder="Getbuddy Java Name" disabled="disabled"  /></span>
+                            
+                        </p>
+                        
+                        <p>
+                        	<label>Subject :</label>
+                            <span class="field">
+                            <select name="select" class="uniformselect" disabled="disabled">
+                            	<option value="">Jquery</option>
+                                <option value="">Javascript</option>
+                                <option value="">HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">Java</option>
+                            </select>
+                            
+                            </span>
+                        </p>
+                            
+                                   
+                          <p>
+                        	<label>Description :</label>
+                            <span class="field"><input type="text" name="Description" class="input-xxlarge" placeholder="Event Description" disabled="disabled"  /></span>
+                            
+                        </p>
+                            
+                        <p>
+                        	<label>Location :</label>
+                            <span class="field"><input type="text" name="Location" placeholder="Bangalore" class="input-xxlarge" disabled="disabled"  /></span>
+                            
+                        </p>
+                            
+                            
+                            	<p>
+                        	<label>Start Date and Time :</label>
+                            <span class="field"><input type="text" name="EventName" class="input-xxlarge" placeholder="12/05/1990 12:00:00 AM" disabled="disabled"  /></span>
+                            
+                        </p>
+                            
+                                	<p>
+                        	<label>End Date and Time :</label>
+                            <span class="field"><input type="text" name="EventName" class="input-xxlarge" placeholder="12/05/1990 12:00:00 AM" disabled="disabled"  /></span>
+                            
+                        </p>
+                            
+                            
+                            <p class="tranerWrapper">
+                        	<label>Trainer :</label>
+                            <span class="field"><img src="img/avatar.png"/><span class="trainer">Trainer Name<span>Trainer Title</span></span></span>
+                            
+                        </p>
+                            
+                            
+                                <p>
+                        	<label>Add link :</label>
+                            <span class="field"><input type="text" name="AddLink" class="input-xxlarge" placeholder="Event Link" disabled="disabled"  /></span>
+                            
+                        </p>
+                            
+                            
+                                   <p>
+                        	<label>Event Type :</label>
+                            <span class="field"><input type="text" name="EventType" class="input-xxlarge" placeholder="Classroom training" disabled="disabled"  /></span>
+                            
+                        </p>
+                            
+                       
+                            
+                              <p>
+                        	<label> Add Keywords to improve search for this event :</label>
+                            <span class="field"><input type="text" name="keywords" class="input-xxlarge" placeholder="Java Training in banaglore" disabled="disabled"  /></span>
+                            </p>
+                            
+                            
+                               <p>
+                        	<label>Event Category :</label>
+                            <span class="field">
+                            <select name="select" class="uniformselect" disabled="disabled">
+                                <option value="">Demo</option>
+                            	<option value="">Free</option>
+                                <option value="">Paid</option>
+                               
+                            </select>
+                            
+                            </span>
+                        </p>
+                            
+                            
+                            <p>
+                        	<label>Course Fee Details :</label>
+                            <span class="field">
+                                     <table class="evt-fee-table">
+                             <tbody>
+                             <tr><td style="padding: 0 0 0 27px;">Course Fee</td>
+                                 <td> Rs. <span> 10000 </span></td></tr>
+                           <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Offer Amount <span style="float:right;color:#ff5c33;margin:0 -1px">(-)</span></td>
+                               <td style="padding:0 0 0 13px;">Rs. <span> 2000 </span></td></tr>
+
+
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Offer price</td> 
+                               <td style="padding: 0 0 0 14px;"> Rs. <span> 8000 </span></td></tr>
+                                 
+                                  <tr style=" border-bottom: 1px solid #ccc;"><td style="padding: 0 0 0 27px;">Service Tax&nbsp;(14.5%)<span style="float:right;color:#000;margin:0 -1px">(+)</span></td> 
+                               <td style="  padding: 0 0 0 14px;"> Rs. <span> 1200 </span> </td></tr>
+                                 <tr class="offer-amount"><td style="padding: 0 0 0 27px;">Effective Offer price</td> 
+                               <td style="padding: 0 0 0 16px;"> Rs. <span> 9200 </span></td></tr>
+                                 
+                            </tbody>
+                           </table>
+                                   </span>
+                            
+                        </p>
+                            
+                            
+                            <p class="stdformbutton">
+                              
+                                 <a href="#"><button class="btn btn-primary">Save as Draft</button></a>
+                                  <a href="#"><button class="btn btn-primary">Submit event</button></a>
+                                
+                        </p>
+                            
+                         
+                            
+                            
+                            </div>
+                        
+                        
+                        
+                        
+
+                 
+                
+               
+                    </form>
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy Online Services v1.0</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+
+    
+</div><!--mainwrapper-->
+<script type="text/javascript">
+     (function($){
+    $( "#datepicker" ).datepicker();
+          $( "#datepicker123" ).datepicker();
+
+})(jQuery);
+    
+    </script>
+    <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#eventDetailsTab").click(function(){
+                                            
+                                           $(".EventFeeField").hide();
+                                           $(".InfrastructureField").hide();
+                                            $(".EventDetailField").show();
+                                            $(".PreviewField").hide();
+                                           
+                                          
+                                        });
+                                       $("#eventFeeTab").click(function()
+                                         {                                           
+                                            $(".EventDetailField").hide();
+                                            $(".PreviewField").hide();
+                                           $(".EventFeeField").show();
+                                           $(".InfrastructureField").hide();
+                                          
+                                           
+                                        });
+                                     $("#infrastructureTab").click(function()
+                                         {                                           
+                                            $(".EventDetailField").hide();
+                                            $(".PreviewField").hide();
+                                           $(".EventFeeField").hide();
+                                           $(".InfrastructureField").show();
+                                          
+                                           
+                                        });
+                                       $("#PreviewTab").click(function()
+                                         {                                           
+                                           $(".EventDetailField").hide();
+                                           $(".EventFeeField").hide();
+                                           $(".PreviewField").show();
+                                           $(".InfrastructureField").hide();
+                                          
+                                        });
+                                       } ) ( jQuery );
+                                  </script>
+    
+<script type="text/javascript">
+        
+       ( function($) {
+    $('#eventDetailsTab').click(function () {
+        $( ".event-Details-nav" ).addClass("active");
+            $( ".event-Fee-nav" ).removeClass("active");
+            $( ".Preview-nav" ).removeClass("active");
+         $(".infrastructure-nav").removeClass("active");
+            
+    });
+           
+     $('#eventFeeTab').click(function () {
+        $( ".event-Fee-nav" ).addClass("active");
+            $( ".event-Details-nav" ).removeClass("active");
+          $(".infrastructure-nav").removeClass("active");
+            
+    });
+     $('#PreviewTab').click(function () {
+         $( ".Preview-nav" ).addClass("active");
+            $( ".event-Fee-nav" ).removeClass("active");
+            $( ".event-Details-nav" ).removeClass("active");
+          $(".infrastructure-nav").removeClass("active");
+            
+    });
+    $('#infrastructureTab').click(function () {
+          $( ".Preview-nav" ).removeClass("active");
+            $( ".event-Fee-nav" ).removeClass("active");
+            $( ".event-Details-nav" ).removeClass("active");
+               $(".infrastructure-nav").addClass("active");
+            
+    });
+ } ) ( jQuery );
+    
+</script>
+
+
+    
+  
+    
+</body>
+</html>

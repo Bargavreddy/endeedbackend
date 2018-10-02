@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Provider Getbuddy</title>
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<link rel="stylesheet" href="css/provider-media-query.css" type="text/css"/>
+<!--
+<link rel="stylesheet" href="css/bootstrap-fileupload.min.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap-timepicker.min.css" type="text/css" />
+-->
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--<script type="text/javascript" src="js/bootstrap-fileupload.min.js"></script>-->
+<!--<script type="text/javascript" src="js/bootstrap-timepicker.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery.validate.min.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery.tagsinput.min.js"></script>-->
+<!--<script type="text/javascript" src="js/jquery.autogrow-textarea.js"></script>-->
+<!--<script type="text/javascript" src="js/charCount.js"></script>-->
+<script type="text/javascript" src="js/ui.spinner.min.js"></script>
+<!--<script type="text/javascript" src="js/chosen.jquery.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/forms.js"></script>
+</head>
+<style>
+.viewprofile-basicinformation ul {
+  float: left;
+  margin: -63px 0 0 220px !important;
+  position: relative;
+  width: 67%;
+}
+</style>
+
+<body>
+
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+    <div class="leftpanel mainLogo-wrapper">
+    	
+         <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/><span>v1.0</span></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form action="results.html" method="post">
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+        <div class="plainwidget">
+        	<small>Using 16.8 GB of your 51.7 GB </small>
+        	<div class="progress progress-info">
+                <div class="bar" style="width: 20%"></div>
+            </div>
+            <small><strong>38% full</strong></small>
+        </div><!--plainwidget-->
+        
+            <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>
+                 <li class="dropdown active"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                        <li><a href="select-subjects.html">Select subjects</a></li>
+
+                    </ul>
+                </li>
+                 <li class="dropdown"><a href="#"><span class="iconsweets-day"></span> Tranings</a>
+                	<ul>
+                        	<li><a href="event-list.html">My Tranings</a></li>
+                           <li><a href="create-event.html">Create Tranings</a></li>
+                          <li><a href="active-events.html">Active Tranings</a></li>
+                           <li><a href="completed-events.html">Completed Tranings</a></li>
+                          <li><a href="saved-event.html">Saved Tranings</a></li>
+                        <li><a href="online-trainings.html">Online Tracking</a></li>
+
+                    </ul>
+                </li>
+
+                    <li><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+<!--                    <li><a href="my-packages.html"><span class="iconsweets-documents"></span>My Packages</a></li>-->
+                    <li><a href="faq.html"><span class="iconsweets-book-large"></span>FAQ's</a></li>
+<!--                    <li><a href="videos.html"><span class="icon-facetime-video"></span>How To Videos</a></li>-->
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+         	<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/image.png"/>Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my-profile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                     
+                        
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+        	<ul class="skins">
+                <div class="last-login">Last Login: Dec 25, 2012 5:30pm</div>
+            </ul>
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li><a href="forms.html">Profile</a> <span class="divider">/</span></li>
+                <li class="active">View Profile</li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>View Individual Profile</h1> 
+        </div><!--pagetitle-->
+        
+        <div class="maincontent viewprofilewrapper">
+        	<div class="contentinner organizationviewprofile">
+                 <div id="tabs">
+                <ul>
+                         <li><a href="#tabs-1">Basic Information</a></li>
+                        <li><a href="#tabs-2">Additional Information</a></li>
+                                    
+                </ul>
+            <div id="tabs-1">
+        	
+                <div class="contentinner organizationviewprofile">
+                <h4 class="widgettitle nomargin shadowed">Basic Information</h4>
+                <div class="widgetcontent bordered shadowed nopadding">
+                    <form class="stdform stdform2">
+                      
+                        <div class="viewprofile-basicinformation">
+                        
+                          <p>
+                                <label>User Name</label>
+                                <span class="field setfieldheight">G.H.Raisoni College of Engineering</span>
+                            </p>
+                        
+                            <p>
+                                <label>Email Address</label>
+                                <span class="field setfieldheight">deepa77@gmail.com</span>
+                            </p>
+                            <p>
+                                <label>Mobile Number</label>
+                                <span class="field setfieldheight">7878789878</span>
+                            </p>
+                        
+                            <p>
+                                <label>About</label>
+                                <span class="field setfieldheight">Hi This is a very good App.</span>
+                            </p>
+                            
+                            
+                            <p>
+                             <label>Language Known</label>
+                                <span class="field setfieldheight" style="min-height:50px !important;">
+                                            <ul>
+                                               <li>English</li>
+                                               <li>Hindi</li>
+                                               <li>Telugu</li>
+                                               <li>Tamil</li>
+                                              <li>Gujrati</li>
+                                              <li>Kannada</li>
+                                                <li>English</li>
+                                               <li>Hindi</li>
+                                               <li>Telugu</li>
+                                               <li>Tamil</li>
+                                              <li>Gujrati</li>
+                                              <li>Kannada</li>
+                                                <li>English</li>
+                                               <li>Hindi</li>
+                                               <li>Telugu</li>
+                                               <li>Tamil</li>
+                                              <li>Gujrati</li>
+                                              <li>Kannada</li>
+                                            </ul>
+                                </span>
+                            </p>
+                        
+                        </div>
+                        
+                 <h4 class="widgettitle nomargin shadowed ">Communication Address</h4>
+                
+                <p class="addressmainorganization ">
+                                <label>Address Information </label>
+                                <span class="field">  <small> Address </small> <br> <small>345678</small><br/><small>City</small></br><small>State</small></span>
+                            </p>
+                    
+                        
+                           <h4 class="widgettitle nomargin shadowed">Document Details</h4>
+                           
+                           <p>
+                                <label>Pan Card Number</label>
+                                <span class="field setfieldheight">2345456789<span class="view-document">View Document <button data-toggle="modal" href="#viewdocument1" class="btn btn-rounded btnView">View</button></span></span>
+                            </p>
+                        
+              
+                        <h4 class="widgettitle nomargin shadowed">Bank Account Information</h4>
+                         <p>
+                                <label>Benificiary Name</label>
+                                <span class="field setfieldheight">Loganathan Ganeshan</span>
+                            </p>
+                          <p>
+                                <label>Account Number</label>
+                                <span class="field setfieldheight">127878789890</span>
+                            </p>
+                         <p>
+                                <label>IFSC Code</label>
+                                <span class="field setfieldheight">127878789890</span>
+                            </p>
+<!--
+                        <p>
+                                <label>Bank Name</label>
+                                <span class="field setfieldheight">ICICI Bank</span>
+                            </p>
+                        <p>
+                                <label>Branch Name</label>
+                                <span class="field setfieldheight">Marathalli, Bangalore</span>
+                            </p>
+        
+                        <p>
+                                <label>Cancelled Cheque </label>
+                                <span class="field setfieldheight"><span class="cancel-scan-copy">View Document <button data-toggle="modal" href="#viewdocument1" class="btn btn-rounded btnView">View</button></span></span>
+                            </p>
+-->
+ 
+                        
+                        </form>
+                
+                 <div class="main-logo-wrpper-org">
+                    <div class="field imagePTILogo">
+                       <img src="img/appIcon_256.png">
+                    </div>
+                    </div>
+                       
+            
+                     </div>
+                     
+                     
+            </div>
+                
+                
+           </div>
+    
+            <div id="tabs-2">
+                
+        	<div class="contentinner organizationviewprofile">
+                
+                  <!--Start Education-->
+                
+                  <div class="contentinner organizationviewprofile">
+                  <h4 class="widgettitle nomargin shadowed ">Educations</h4>
+                <div class="widgetcontent bordered shadowed nopadding">
+                   
+                     <div class="maincertificate-wrapper associationMainWrapper">
+                <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>G.H Raisoni college of Engineering</h4>
+                    <label class="tainerprofession">Department Name</label>
+                    <span>Degree(Btech)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till date</span>
+                  
+                  </div>
+                </div>
+                
+                  <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>G.H Raisoni college of Engineering</h4>
+                   <label class="tainerprofession">Department Name</label>
+                    <span>Degree</span>
+                    <span class="startandenddateeducation">21-june-2012 to Till date</span>
+                       
+                  </div>
+                
+                </div>
+                         
+                  <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>G.H Raisoni college of Engineering</h4>
+                   <label class="tainerprofession">Department Name</label>
+                    <span>Degree</span>
+                    <span class="startandenddateeducation">21-june-2012 to Till date</span>
+                       
+                  </div>
+                
+                </div>
+                         
+                    <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>G.H Raisoni college of Engineering</h4>
+                   <label class="tainerprofession">Department Name</label>
+                    <span>Degree</span>
+                    <span class="startandenddateeducation">21-june-2012 to Till date</span>
+                       
+                  </div>
+                
+                </div>
+                         
+                    <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>G.H Raisoni college of Engineering</h4>
+                   <label class="tainerprofession">Department Name</label>
+                    <span>Degree</span>
+                    <span class="startandenddateeducation">21-june-2012 to Till date</span>
+                       
+                  </div>
+                
+                </div>
+                         
+                  <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>G.H Raisoni college of Engineering</h4>
+                   <label class="tainerprofession">Department Name</label>
+                    <span>Degree</span>
+                    <span class="startandenddateeducation">21-june-2012 to Till date</span>
+                       
+                  </div>
+                
+                </div>
+    
+                
+                </div>
+                    
+                </div>
+                
+                
+                <!--End Education-->
+                      
+                      
+                      
+                      
+                       <!--Start Experience-->
+                
+                  <div class="contentinner organizationviewprofile">
+                  <h4 class="widgettitle nomargin shadowed ">Experience</h4>
+                <div class="widgetcontent bordered shadowed nopadding">
+                   
+                     <div class="maincertificate-wrapper associationMainWrapper">
+                <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Organisation Name(Aabiance Technology)</h4>
+                    <label class="tainerprofession">Department Name(Android)</label>
+                    <span>Title (Android TeamLead)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till Now</span>
+                  
+                  </div>
+                </div>
+                
+                <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Organisation Name(Aabiance Technology)</h4>
+                    <label class="tainerprofession">Department Name(Android)</label>
+                    <span>Title (Android TeamLead)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till Now</span>
+                  
+                  </div>
+                </div>
+                         
+                 <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Organisation Name(Aabiance Technology)</h4>
+                    <label class="tainerprofession">Department Name(Android)</label>
+                    <span>Title (Android TeamLead)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till Now</span>
+                  
+                  </div>
+                </div>
+                         
+                 <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Organisation Name(Aabiance Technology)</h4>
+                    <label class="tainerprofession">Department Name(Android)</label>
+                    <span>Title (Android TeamLead)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till Now</span>
+                  
+                  </div>
+                </div>
+                         
+                 <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Organisation Name(Aabiance Technology)</h4>
+                    <label class="tainerprofession">Department Name(Android)</label>
+                    <span>Title (Android TeamLead)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till Now</span>
+                  
+                  </div>
+                </div>
+                         
+                <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Organisation Name(Aabiance Technology)</h4>
+                    <label class="tainerprofession">Department Name(Android)</label>
+                    <span>Title (Android TeamLead)</span>
+                        <span class="startandenddateeducation">21-june-2012 to Till Now</span>
+                  
+                  </div>
+                </div>
+    
+                
+                </div>
+                    
+                </div>
+                
+                
+                <!--End Experience-->
+                
+                
+                
+ <div class="contentinner organizationviewprofile">
+                <h4 class="widgettitle nomargin shadowed ">Certifications</h4>
+                <div class="widgetcontent bordered shadowed nopadding">
+                   
+                     <div class="maincertificate-wrapper">
+                <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                </div>
+                
+                  <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                
+                </div>
+                           <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                
+                </div>
+                           <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                
+                </div>
+                         
+                    <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                </div>
+                            <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                </div>
+                            <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                </div>
+                            <div class="right-part">
+                  <img src="img/whitepaper-icon.png">
+                    <div class="certificate-detail">
+                    <h4>Certificate Name</h4>
+                    <span>21-june-2012 to Till date</span>
+                  </div>
+                </div>
+<!--
+            <div class="viewallrecommendation paddlr0">
+                <a href="#"><u class="pull-right">View More</u></a>
+            </div>
+-->
+                
+             </div>
+     </div>
+    
+                
+                </div><!--widgetcontent-->
+            
+             </div><!--contentinner-->
+                
+             
+                
+                
+                <!--Start Trainers -->
+                
+                <div class="contentinner organizationviewprofile">
+ 
+                <h4 class="widgettitle nomargin shadowed ">Trainers</h4>
+                <div class="widgetcontent bordered shadowed nopadding">
+                   
+                     <div class="trainers" id="maindivtrainers">
+                   
+            <div class="col-md-12 trainer-content">
+                
+                <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                   <label class="tainerprofession">Java Trainer</label>
+                    <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                
+                <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                   <label class="tainerprofession">Java Trainer</label>
+                    <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+               
+                <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                   <label class="tainerprofession">Java Trainer</label>
+                    <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                
+                <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                   <label class="tainerprofession">Java Trainer</label>
+                    <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                
+                <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                   <label class="tainerprofession">Java Trainer</label>
+                   <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                  
+                      
+                    <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                     <h4>Sharath Reddy</h4>
+                         <label class="tainerprofession">Java Trainer</label>
+                  <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>          
+                
+                   <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Deepa Mishra</h4>
+                         <label class="tainerprofession">Java Trainer</label>
+                 <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                
+                
+               
+                
+                 <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                     <h4>Sharath Reddy</h4>
+                         <label class="tainerprofession">Java Trainer</label>
+                 <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                
+                
+                 <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                     <h4>Sharath Reddy</h4>
+                         <label class="tainerprofession">Java Trainer</label>
+                  <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+                
+                 <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                     <h4>Sharath Reddy</h4>
+                         <label class="tainerprofession">Java Trainer</label>
+                 <span class="trainer-panel-rating"><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star"></i><i class="iconfa-star-half"></i> <i class="iconfa-star-empty"></i><label class="ratingtotaltrainer">350 <small>Rating</small></label></span>
+                  </div>
+                </div>
+            
+            </div>
+                    
+                
+                    
+             <label class="no-trainers">No,Trainers</label>  
+                    
+                
+             </div>
+<!--            <div class="viewallfollowers"><a class="trainerfolloer" id="moretrainers"><u class="pull-right">Read More</u></a></div>-->
+    
+                
+                    
+                </div><!--widgetcontent-->
+            
+             </div><!--contentinner-->
+                
+                <!--End Trainers-->
+                
+              
+                      
+                      
+                      
+                
+                
+                   <!--Start followers-->
+                
+                <div class="contentinner organizationviewprofile">
+ 
+                <h4 class="widgettitle nomargin shadowed ">Followers</h4>
+                <div class="widgetcontent bordered shadowed nopadding">
+                   
+                     <div class="followers">
+                    <!--First part-->
+            <div class="followers-content">
+                
+                <div class="right-part rightpartrectangular">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                    <span>Quality Manager at Infosys</span>
+                  </div>
+                </div>
+                
+                              
+                    <div class="right-part">
+                 <div class="followers-img1">
+                              <span>A</span>
+                        </div>
+                    <div class="certificate-detail">
+                     <h4>Sharath Reddy</h4>
+                    <span>Founder of xyz</span>
+                  </div>
+                </div>          
+                
+                   <div class="right-part">
+                  <img src="img/trainer_image.jpg">
+                    <div class="certificate-detail">
+                    <h4>Gopal Redddy</h4>
+                    <span>Quality Manager at Infosys</span>
+                  </div>
+                </div>
+                
+                  
+                              
+              
+                
+                
+              
+                
+                              
+                 
+                
+            
+            </div>
+                    
+<!--                    <div class="viewallfollowers"><a class="nextfollower"><u class="pull-right">View More</u></a></div>-->
+                
+             </div>
+    
+                
+                    <!--End organisation logo-->
+                </div><!--widgetcontent-->
+            
+             </div><!--contentinner-->
+                
+                <!--End followers-->
+                
+                
+           </div>
+    
+    
+            </div><!--End tabs-->
+                
+        </div>    
+        </div>
+            
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Getbuddy online services v1.0</div>
+    </div><!--footer-->
+
+    
+</div><!--mainwrapper-->
+       <!--Start Pop Up View Document-->
+    <div aria-hidden="false" aria-labelledby="myModalLabel" role="dialog"  class="modal hide fade in ViewDocument" id="viewdocument1">
+            <div class="modal-header">
+              <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+              <h3 id="myModalLabel">View Document</h3>
+            </div>
+            <div class="modal-body">
+                <div class="image-wrapper">
+              <img src="img/sample.jpg"/>
+                </div>
+                                        
+
+            </div>
+<!--
+            <div class="modal-footer">
+               <button class="btn btn-primary">Close</button>
+            </div>
+-->
+    </div><!--#myModal-->
+    
+    
+    
+     <!--End Pop Up View Document-->
+</body>
+</html>

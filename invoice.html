@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Edneed</title>
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="prettify/prettify.css" type="text/css" />
+<link rel="stylesheet" href="css/custom-style.css" type="text/css"/>
+<script type="text/javascript" src="prettify/prettify.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.alerts.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</head>
+<style>
+.invoice-table {
+  margin-top: 5px !important;
+}
+.print-invoice .btn {
+  font-size: 13px;
+  font-weight: bold;
+  margin: -21px -1px 0 0 !important;
+  padding: 7px 9px;
+  width: auto;
+}
+.btn-group.print-invoice {
+  margin: 0 20px 0 0;
+}
+.print-invoice .dropdown-menu a {
+  text-align: left;
+}
+</style>
+
+<body>
+
+<iframe id="allregisteriframediv" src="registration_global.html" class="registerframesection" style="display:none;"></iframe>
+<!--    <iframe class="closechat"> <i class="icon-remove closebuttonchat" id="closechat"></i></iframe>-->
+  
+<div class="mainwrapper">
+	
+    <!-- START OF LEFT PANEL -->
+     <div class="leftpanel mainLogo-wrapper">
+    	
+        <div class="logopanel ">
+        	<h1><a href="dashboard.html"><img src="img/gb_logo_white_2.png"/></a></h1>
+        </div><!--logopanel-->
+        
+        <div class="datewidget">Today is Tuesday, Dec 25, 2012 5:30pm</div>
+    
+    	<div class="searchwidget">
+        	<form action="results.html" method="post">
+            	<div class="input-append">
+                    <input type="text" class="span2 search-query" placeholder="Search here...">
+                    <button type="submit" class="btn"><span class="icon-search"></span></button>
+                </div>
+            </form>
+        </div><!--searchwidget-->
+        
+            <div class="plainwidget animate3 fadeInUp">
+       
+              <div class="registration">
+                 <span><img src="img/registraion.png"><span class="badge badge-important">6</span><span>Registrations</span></span>
+              </div>
+
+
+          </div>
+        <!--plainwidget-->
+        
+        <div class="leftmenu">        
+                    <ul class="nav nav-tabs nav-stacked">
+            	<li class="nav-header">Main Navigation</li>
+<!--                <li><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>-->
+                 <li class="dropdown"><a href="#"><span class="icon-user"></span> Profile</a>
+                	<ul>
+                     
+                    	<li><a href="my-profile.html">My profile</a></li>
+                    </ul>
+                </li>
+                 <li class="dropdown"><a href="#"><span class="iconsweets-day"></span>Trainings</a>
+                         
+                        
+                           <ul>
+                               <li class=""><a href="trainings-list.html">All Trainings</a></li>
+                               <li><a href="create-event.html">Create Traning(s)</a></li>
+                               <li><a href="host-training.html">Host Trainings</a></li>
+                             </ul>
+                        
+                 </li>
+                    <li><a href="online-trainings.html"><span class="icon-time"></span>Track Trainings</a></li>
+                    <li class="active"><a href="invoice-list.html"><span class="icon-list-alt"></span>Invoice</a></li>
+
+
+            </ul>
+        </div><!--leftmenu-->
+        
+    </div><!--mainleft-->
+    <!-- END OF LEFT PANEL -->
+    
+    <!-- START OF RIGHT PANEL -->
+    <div class="rightpanel">
+    	<div class="headerpanel">
+        	<a href="" class="showmenu"></a>
+            
+            <div class="headerright">
+            	<div class="dropdown userinfo">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html"><img src="img/image.png"/>Hi, ThemePixels! <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="my-profile.html"><span class="icon-edit"></span> Edit Profile</a></li>
+                        <li><a href="index.html"><span class="icon-off"></span> Sign Out</a></li>
+                     
+                        
+                    </ul>
+                </div><!--dropdown-->
+    		
+            </div><!--headerright-->
+            
+    	</div><!--headerpanel-->
+        <div class="breadcrumbwidget">
+
+        	<ul class="skins">
+                <div class="last-login">Last Login: Dec 25, 2012 5:30pm</div>
+            </ul>
+
+            <!--skins-->
+        	<ul class="breadcrumb">
+                <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
+                <li class="active">Invoice</li>
+            </ul>
+        </div><!--breadcrumbs-->
+        <div class="pagetitle">
+        	<h1>Invoice</h1>
+             <span class="View-profile"><a href="invoice-list.html" class="btn btn-info btn-rounded">View Invoice List</a></span>
+        </div><!--pagetitle-->
+        
+        <div class="maincontent">
+        	<div class="contentinner">
+            	
+            	<div class="row-fluid">
+                
+                <div class="span6">
+                
+                  <div class="invoice_logo"><img src="img/sample.jpg" alt="" class="img-polaroid" /></div>
+                  
+                  <table class="table table-bordered table-invoice fromaddress">
+                      <tr>
+                          <td class="width30">From:</td>
+                          <td class="width70">
+                            <strong>ThemePixels, Inc.</strong> <br />
+                            201 Something St., Something Town, <br />
+                            YT 242, Country 6546 <br />
+                            Tel No: 324 445-4544 <br />
+                            Email: youremail@companyname.com
+                          </td>
+                      </tr>
+                  </table>
+                </div><!--span6-->
+            
+				<div class="span6">
+                
+               	
+                  <table class="table table-bordered table-invoice">
+                      <tr>
+                          <td class="width30">Invoice No:</td>
+                          <td class="width70"><strong>12345678989</strong></td>
+                      </tr>
+                      <tr>
+                          <td class="width30">Training-ID and Name:</td>
+                          <td class="width70"><strong>GB5678789 <span class="trainingname">Object oriented programming language Training</strong></span></td>
+                      </tr>
+                      <tr>
+                        <td>Issue Date:</td>
+                        <td><strong>June 23, 2012</strong></td>
+                    </tr>
+                        <tr>
+                          <td>Due Date:</td>
+                          <td><strong>November 01, 2012</strong></td>
+                      </tr>
+                  </table>
+                    </br>
+                    
+                    <table class="table table-bordered table-invoice fromaddress">
+                      <tr>
+                          <td class="width30">To:</td>
+                          <td class="width70">
+                            <strong>Getbuddy Online Services Pvt Ltd.</strong> <br />
+                            2nd floor, Central East Wing Rao Building, <br />
+                          Neil Rao Towers, EPIP Zone, Whitefiled, Banglore <br />
+                            Tel No: 324 445-4544 <br />
+                            Email: www.getbuddy.com
+                          </td>
+                      </tr>
+                  </table>
+                </div><!--span6-->
+                
+            </div><!--row-fluid-->
+            
+            <div class="clearfix"><br /></div>
+            
+            <table class="table table-bordered table-invoice-full calculationpart">
+                    <colgroup>
+                        <col class="con0 width15" />
+                        <col class="con1 width45" />
+                        <col class="con0 width5" />
+                        <col class="con1 width15" />
+                        <col class="con0 width20" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="head0"> S No.</th>
+                            <th class="head1">Description</th>
+                            <th class="head0 right"> No.Of&nbsp;Students</th>
+                            <th class="head1 right">Rate</th>
+                            <th class="head0 right">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Training Fee</td>
+                            <td class="right">12</td>
+                            <td class="right">12500.00</td>
+                            <td class="right"><strong>150000.00</strong></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Training Fee</td>
+                            <td class="right">05</td>
+                            <td class="right">10000.00</td>
+                            <td class="right"><strong>50000.00</strong></td>
+                        </tr>
+<!--
+                        <tr>
+                            <td>3</td>
+                            <td>Last Minute Offer</td>
+                            <td class="right">08</td>
+                            <td class="right">5000.00</td>
+                            <td class="right"><strong>40000.00</strong></td>
+                        </tr>
+-->
+<!--
+                        <tr>
+                            <td>4</td>
+                            <td>Deal of the day </br><span class="offer">Offer Amount(Rs 2000 off on the Course Fee)</span></td>
+                            <td class="right">04</td>
+                            <td class="right">8000.00</td>
+                            <td class="right"><strong>32000.00</strong></td>
+                        </tr>
+-->
+<!--
+                        <tr>
+                            <td>5</td>
+                            <td>Deal of the day</br><span class="offer">Offer Amount(Rs 3000 off on the Offer Fee)</span></td>
+                            <td class="right">02</td>
+                            <td class="right">7000.00</td>
+                            <td class="right"><strong>14000.00</strong></td>
+                        </tr>
+-->
+  <tr>
+                            <td>6</td>
+                            <td>Foundation Level Exam</br><span class="offer">HTML Basic Introduction</span></td>
+                            <td class="right">20</td>
+                            <td class="right">200.00</td>
+                            <td class="right"><strong>4000.00</strong></td>
+                        </tr>
+  <tr>
+                            <td>7</td>
+                            <td>Advanced Level Exam</br><span class="offer">Object Oriented programming language</span></td>
+                            <td class="right">15</td>
+                            <td class="right">200.00</td>
+                            <td class="right"><strong>3000.00</strong></td>
+                        </tr>
+  <tr>
+                            <td>8</td>
+                            <td>Expert Level Exam</br><span class="offer">HTML Canvas</span></td>
+                            <td class="right">10</td>
+                            <td class="right">200.00</td>
+                            <td class="right"><strong>2000.00</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                                
+                <table class="table invoice-table mainsummarytable">
+                    <tbody class="settelment">
+                        
+<!--                            <h3 class="deduction-calculation">Deduction Calculation</h3>-->
+
+<!--
+                        	<td class="msg-invoice deduction-calculation-table">
+
+                               
+                            </td>
+-->
+
+                        <tr class="">
+                            <td>Total Training Fee&nbsp;&nbsp;(A)</td>
+                            <td>13000.00</td>
+                        </tr>
+                        
+                        <tr class="">
+                            <td>Services Tax (15%)&nbsp;&nbsp;(B)<span class="gboffer">Applied On 1/4 of Total training Fee (A)</span></span></td>
+                            <td>1880.00</td>
+                        </tr>
+                   <tr>
+                       <td>GB Marketplace Fee (5%)&nbsp;&nbsp;(C)<span class="gboffer">Applied On Total training Fee (A)</span></td>
+                    <td>(-) 650</td>
+                  </tr>
+                   <tr>
+                       <td>Service Tax (15%)&nbsp;&nbsp;(D)<span class="gboffer">Applied On GB Marketplace Fee (C)</span></td>
+                    <td style=" border-bottom: 1px solid #ccc;">(-) 94</td>
+                  </tr>
+                    <tr>
+                       <td>Final Payble Amount To Provider&nbsp;&nbsp;(E)<span class="settelment">(Settelment Amount)</span><span class="formula-payble-amount">(E = A + B - C - D)</span></td>
+                    <td>14136.00</td>
+                     </tr>
+                    </tbody>
+          </table>
+			
+          <div class="amountdue">
+             <div class="btn-group print-invoice">
+                                             <button class="btn btn-success">Print Invoice</button>
+<!--                                            <button class="btn btn-success dropdown-toggle print-button"></button>-->
+                 
+<!--
+                                            <ul class="dropdown-menu dropup">
+                                              <li><a href="#">Print Summary Invoice</a></li>
+                                              <li><a href="#">Print Detailed Invoice</a></li>
+                                              <li><a href="#">Print Summary & Detailed Invoice</a></li>
+                                            </ul>
+-->
+                                          </div>
+              <a class="btn btn-primary btn-rounded view-detailed-invoice" href="view-detail-invoice.html"> <i class="iconsweets-magnifying iconsweets-white"></i>  &nbsp; View Detailed Invoice</a>
+          	<h1><span>Settlement Amount</span> 14136.00</h1> <br />
+              
+              <div class="approve">
+               <p><span>Approve Invoice</span><img src="img/approve-circle.png" class="imgapprove1"/><img src="img/accepted-icon.png" class="imgapprove2" style="display:none;"/></p>
+
+              <span class="date">Approved Date : <label>20-1-16</label></span>
+                  <span class="time">Approved Time : <label>10:00 AM</label></span>
+
+
+</div>
+            
+          </div>
+
+          
+          
+                
+                
+            </div><!--contentinner-->
+        </div><!--maincontent-->
+        
+    </div><!--mainright-->
+    <!-- END OF RIGHT PANEL -->
+    
+    <div class="clearfix"></div>
+    
+    <div class="footer">
+    	<div class="footerleft">Edneed Online Services</div>
+<!--    	<div class="footerright">&copy; ThemePixels - <a href="http://twitter.com/themepixels">Follow me on Twitter</a> - <a href="http://dribbble.com/themepixels">Follow me on Dribbble</a></div>-->
+    </div><!--footer-->
+
+    
+</div><!--mainwrapper-->
+<!--
+<script type="text/javascript">
+jQuery(document).ready(function(){
+        jQuery('.alertboxbutton1').click(function(){
+   jAlert('Do you want to mark as the Event as Complete, </br> Once Marked complete, No changes can be made to the Event.', 'Mark Event As Complete');
+});
+});
+</script>
+-->
+<script type="text/javascript">
+jQuery(document).ready(function(){
+ jQuery('.imgapprove1').click(function(){
+ jQuery('.imgapprove1').hide();
+     jQuery('.imgapprove2').show();
+      jAlert('Do you want to mark as the Training as Complete, </br> Once Marked complete, No changes can be made to the Training.', 'Mark Training As Complete');
+ });
+});
+</script>
+<script type="text/javascript">
+                                 ( function($) {
+	                                  $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       } ) ( jQuery );
+                                  </script>
+
+ <!--for iframe section-->
+    
+         <script type="text/javascript">
+                                 ( function($) {
+	                                  $("#allchat-eventlist").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#enquirieschat").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                       $("#chatnowforparticularuser").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                     $("#chats-right-top").click(function(){
+                                            $(".chatiframesection").show();
+                                          
+                                        });
+                                      $("#views-right-top").click(function(){
+                                            $(".chatviewframesection").show();
+                                          
+                                        });
+                                     $("#demonotifiaction").click(function(){
+                                            $(".demoframesection").show();
+                                          
+                                        });
+                                       $(".registration").click(function(){
+                                            $(".registerframesection").show();
+                                          
+                                        });
+                                     
+                                       } ) ( jQuery );
+                                  </script>
+     <!--End for iframe section-->
+
+</body>
+</html>
